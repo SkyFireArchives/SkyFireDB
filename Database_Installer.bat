@@ -25,8 +25,9 @@ SET /p world_db= World Database:
 
 SET dumppath=.\dump\
 SET mysqlpath=.\mysql\
-SET devsql=.\base
+SET devsql=.\dev\
 SET changsql=.\update_packs
+SET basesql=.\base\world_blank.sql
 
 :Begin
 CLS
@@ -67,8 +68,14 @@ ECHO DROP database IF EXISTS `%world_db%`; > %devsql%\databaseclean.sql
 ECHO CREATE database IF NOT EXISTS `%world_db%`; >> %devsql%\databaseclean.sql
 	%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% < %devsql%\databaseclean.sql
 @DEL %devsql%\databaseclean.sql
+PAUSE
+ECHO Lets make a clean database.
+
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %basesql%
+
 ECHO Database %world_db% successfully created !
 ECHO.
+PAUSE
 ECHO Importing Data now...
 ECHO.
 FOR %%C IN (%devsql%\*.sql) DO (
