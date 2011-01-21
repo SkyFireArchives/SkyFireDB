@@ -18,6 +18,7 @@ CREATE TABLE `player_factionchange_achievement` (
 
 LOCK TABLES `player_factionchange_achievement` WRITE;
 /*!40000 ALTER TABLE `player_factionchange_achievement` DISABLE KEYS */;
+INSERT INTO `player_factionchange_achievement` VALUES (33,1358),(34,1356),(37,1357),(203,1251),(604,603),(610,615),(611,616),(612,617),(613,618),(614,619),(701,700),(707,708),(709,708),(711,710),(713,712),(873,220),(899,901),(942,943),(1012,1011),(1028,1031),(1029,1032),(1030,1033),(1034,1036),(1151,224),(1189,1271),(1191,1272),(1192,1273),(1255,259),(1279,1280),(1676,1677),(1678,1680),(1686,1685),(2421,2420),(3556,3557);
 /*!40000 ALTER TABLE `player_factionchange_achievement` ENABLE KEYS */;
 UNLOCK TABLES;
 DELIMITER ;;

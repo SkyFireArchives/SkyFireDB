@@ -19,6 +19,7 @@ CREATE TABLE `vehicle_scaling_info` (
 
 LOCK TABLES `vehicle_scaling_info` WRITE;
 /*!40000 ALTER TABLE `vehicle_scaling_info` DISABLE KEYS */;
+INSERT INTO `vehicle_scaling_info` VALUES (336,170,0.01),(335,170,0.01),(338,170,0.01);
 /*!40000 ALTER TABLE `vehicle_scaling_info` ENABLE KEYS */;
 UNLOCK TABLES;
 DELIMITER ;;

@@ -20,6 +20,7 @@ CREATE TABLE `version` (
 
 LOCK TABLES `version` WRITE;
 /*!40000 ALTER TABLE `version` DISABLE KEYS */;
+INSERT INTO `version` VALUES ('SkyFire/TrinityCore Rev: 0 Release Hash: Archive (Win32,little-endian)',0,'SkyFireDB 403.1.12','SkyFireDB 403.1.12',0);
 /*!40000 ALTER TABLE `version` ENABLE KEYS */;
 UNLOCK TABLES;
 DELIMITER ;;

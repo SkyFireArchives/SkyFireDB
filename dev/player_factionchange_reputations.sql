@@ -18,6 +18,7 @@ CREATE TABLE `player_factionchange_reputations` (
 
 LOCK TABLES `player_factionchange_reputations` WRITE;
 /*!40000 ALTER TABLE `player_factionchange_reputations` DISABLE KEYS */;
+INSERT INTO `player_factionchange_reputations` VALUES (47,530),(54,81),(69,68),(72,76),(509,510),(730,729),(890,889),(930,911),(946,947),(978,941),(1037,1052),(1050,1085),(1068,1064),(1126,1067);
 /*!40000 ALTER TABLE `player_factionchange_reputations` ENABLE KEYS */;
 UNLOCK TABLES;
 DELIMITER ;;

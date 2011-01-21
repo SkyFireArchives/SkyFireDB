@@ -19,6 +19,7 @@ CREATE TABLE `season_linked_event` (
 
 LOCK TABLES `season_linked_event` WRITE;
 /*!40000 ALTER TABLE `season_linked_event` DISABLE KEYS */;
+INSERT INTO `season_linked_event` VALUES (1,124),(2,125),(3,126),(4,127),(5,128),(6,129),(7,130),(8,131);
 /*!40000 ALTER TABLE `season_linked_event` ENABLE KEYS */;
 UNLOCK TABLES;
 DELIMITER ;;

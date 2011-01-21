@@ -39,6 +39,7 @@ CREATE TABLE `creature_ai_scripts` (
 
 LOCK TABLES `creature_ai_scripts` WRITE;
 /*!40000 ALTER TABLE `creature_ai_scripts` DISABLE KEYS */;
+INSERT INTO `creature_ai_scripts` VALUES (1,36942,0,0,100,0,1000,2000,2000,3000,11,20549,0,0,0,0,0,0,0,0,0,0,'Fledlging Brave - War Stomp'),(2,36942,0,0,100,0,2000,3000,2000,3000,11,81502,0,1,0,0,0,0,0,0,0,0,'Fledgling Brave - Cleave'),(3,36943,0,0,100,10,600,0,-1,-1,11,81653,0,0,0,0,0,0,0,0,0,0,'Bristleback Invader - Bristleback(DNI)'),(4,36943,0,0,100,0,2000,3000,2000,3000,11,11977,0,0,0,0,0,0,0,0,0,0,'Bristleback Invader - Rend'),(5,36942,0,0,100,0,3000,4000,3000,4000,11,70092,0,0,0,0,0,0,0,0,0,0,'Fledgling Brave - Shoot'),(6,36943,0,0,100,10,600,0,-1,-1,102,2,0,0,0,0,0,0,0,0,0,0,'Bristleback Invader - Set Agressive');
 /*!40000 ALTER TABLE `creature_ai_scripts` ENABLE KEYS */;
 UNLOCK TABLES;
 DELIMITER ;;

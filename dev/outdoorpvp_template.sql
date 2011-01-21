@@ -19,7 +19,7 @@ CREATE TABLE `outdoorpvp_template` (
 
 LOCK TABLES `outdoorpvp_template` WRITE;
 /*!40000 ALTER TABLE `outdoorpvp_template` DISABLE KEYS */;
-INSERT INTO `outdoorpvp_template` VALUES (1,'','Hellfire Peninsula'),(2,'','Nagrand'),(3,'','Terokkar Forest'),(4,'','Zangarmarsh'),(5,'','Silithus'),(6,'','Eastern Plaguelands');
+INSERT INTO `outdoorpvp_template` VALUES (1,'outdoorpvp_hp','Hellfire Peninsula'),(2,'outdoorpvp_na','Nagrand'),(3,'outdoorpvp_tf','Terokkar Forest'),(4,'outdoorpvp_zm','Zangarmarsh'),(5,'outdoorpvp_si','Silithus'),(6,'outdoorpvp_ep','Eastern Plaguelands');
 /*!40000 ALTER TABLE `outdoorpvp_template` ENABLE KEYS */;
 UNLOCK TABLES;
 DELIMITER ;;
