@@ -1,3 +1,4 @@
+--  25_01_2011_Herbalism_Herbal_loot
 --    [WOW CLASIC];
 
 -- Peace Bloom  (http://www.wowhead.com/object=1618)
