@@ -22,10 +22,144 @@ CREATE TABLE `spell_target_position` (
 
 LOCK TABLES `spell_target_position` WRITE;
 /*!40000 ALTER TABLE `spell_target_position` DISABLE KEYS */;
-INSERT INTO `spell_target_position` VALUES (70781,631,-17.0711,2211.47,30.0546,3.14159),(70856,631,-503.593,2211.47,62.7621,3.14159),(70857,631,-615.146,2211.47,199.909,0),(70858,631,-549.073,2211.29,539.223,0),(70859,631,4199.48,2769.32,351.372,3.12414),(70861,631,4356.58,2565.75,220.402,4.71238),(70860,631,529.397,-2124.66,1041.37,3.14159),(3565,1,9660.81,2513.64,1331.66,3.06),(32271,530,-4029.93,-11572.2,-138.296,2.43),(3562,0,-4613.62,-915.38,501.062,3.88),(3567,1,1469.85,-4221.52,58.9939,5.98),(32272,530,9998.49,-7106.78,47.7055,2.44),(3561,0,-9003.46,870.031,29.6206,5.28),(49359,1,-3730.72,-4422.21,30.4836,0.810732),(3566,1,-964.98,283.433,111.187,3.02),(3563,0,1773.47,61.121,-46.3207,0.54),(49358,0,-10442,-3291.46,20.179,1.30292),(33690,530,-1800.75,5408.09,-12.4274,2.81),(35715,530,-1904.76,5443.43,-12.4272,5.96),(53140,571,5807.81,587.977,660.939,1.663),(65728,0,-11714.1,-3169.54,-5.5,3.364),(65729,0,-11714.1,-3169.54,-5.5,3.364);
+INSERT INTO `spell_target_position` VALUES (70781,631,-17.0711,2211.47,30.0546,3.14159),(70856,631,-503.593,2211.47,62.7621,3.14159),(70857,631,-615.146,2211.47,199.909,0),(70858,631,-549.073,2211.29,539.223,0),(70859,631,4199.48,2769.32,351.372,3.12414),(70861,631,4356.58,2565.75,220.402,4.71238),(70860,631,529.397,-2124.66,1041.37,3.14159),(3565,1,9660.81,2513.64,1331.66,3.06),(32271,530,-4029.93,-11572.2,-138.296,2.43),(3562,0,-4613.62,-915.38,501.062,3.88),(3567,1,1469.85,-4221.52,58.9939,5.98),(32272,530,9998.49,-7106.78,47.7055,2.44),(3561,0,-9003.46,870.031,29.6206,5.28),(49359,1,-3730.72,-4422.21,30.4836,0.810732),(3566,1,-964.98,283.433,111.187,3.02),(3563,0,1773.47,61.121,-46.3207,0.54),(49358,0,-10442,-3291.46,20.179,1.30292),(33690,530,-1800.75,5408.09,-12.4274,2.81),(35715,530,-1904.76,5443.43,-12.4272,5.96),(53140,571,5807.81,587.977,660.939,1.663),(65728,0,-11714.1,-3169.54,-5.5,3.364),(65729,0,-11714.1,-3169.54,-5.5,3.364),(17611,0,1773.47,61.121,-46.3207,0.54),(17609,1,1469.85,-4221.52,58.9939,5.98),(17610,1,-964.98,283.433,111.187,3.02),(32270,530,9998.49,-7106.78,47.7055,2.44),(33728,530,-1823.71,5416.97,-12.4274,2.79036),(35718,530,-1904.76,5443.43,-12.4272,5.96),(49363,0,-10442,-3291.46,20.179,1.30292),(53141,571,5807.81,587.977,660.939,1.663),(17334,0,-9003.46,870.031,29.6206,2.28),(44089,0,-4613.62,-915.38,501.062,3.88),(17608,1,9660.81,2513.64,1331.66,3.06),(32268,530,-4029.93,-11572.2,-138.296,2.43),(49362,1,-3730.72,-4422.21,30.4836,0.810732),(49305,578,983.108,1054.51,359.967,3.354);
 /*!40000 ALTER TABLE `spell_target_position` ENABLE KEYS */;
 UNLOCK TABLES;
 DELIMITER ;;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_CharExtraLevelHPMP` */;;
+/*!50003 SET SESSION SQL_MODE=""*/;;
+/*!50003 CREATE*/ /*!50020 DEFINER=`mrhooha`@`%`*/ /*!50003 PROCEDURE `sp_CharExtraLevelHPMP`()
+BEGIN
+  
+  DECLARE intMaxHP           INT   DEFAULT 65535000; 
+  DECLARE intMaxMana         INT   DEFAULT 65535000;   
+  DECLARE sngHPInc           FLOAT DEFAULT 0.001;    
+  DECLARE sngManaInc         FLOAT DEFAULT 0.001;    
+  DECLARE intStartLvl        INT   DEFAULT 80;      
+  DECLARE intFinishLvl       INT   DEFAULT 85;     
+  
+  DECLARE intRecordDone      INT   DEFAULT 0;
+  DECLARE intClass           INT   DEFAULT 0;
+  DECLARE intLevel           INT   DEFAULT 0;
+  DECLARE intCurrHP          INT   DEFAULT 0;
+  DECLARE intCurrMana        INT   DEFAULT 0;
+  
+  DECLARE curPlayerStat  CURSOR FOR SELECT `class`, `level`, `basehp`, `basemana` FROM player_classlevelstats;
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET intRecordDone = 1;
+  
+  OPEN curPlayerStat;
+  
+  REPEAT
+    
+    FETCH curPlayerStat INTO intClass, intLevel, intCurrHP, intCurrMana;
+    
+    IF intLevel = intStartLvl THEN
+       REPEAT
+         
+         SET intLevel = intLevel + 1;
+         
+         DELETE FROM player_classlevelstats WHERE `class` = intClass AND `level` = intLevel;
+         
+         IF (ROUND(intCurrHP * (1 + sngHPInc) + 200)) <= intMaxHP THEN
+           SET intCurrHP = ROUND(intCurrHP * (1 + sngHPInc) + 200);
+         ELSE
+           SET intCurrHP = intMaxHP;  
+         END IF;
+         
+         IF (ROUND(intCurrMana * (1 + sngManaInc) + 200)) <= intMaxMana THEN
+           SET intCurrMana = ROUND(intCurrMana * (1 + sngManaInc) + 200);
+         ELSE
+           SET intCurrMana = intMaxMana;
+         END IF;
+         
+         INSERT INTO player_classlevelstats
+         (`class`, `level`, `basehp`, `basemana`)
+         VALUES
+         (intClass, intLevel, intCurrHP, intCurrMana);
+       UNTIL intLevel = intFinishLvl END REPEAT;
+    END IF;
+  UNTIL intRecordDone END REPEAT;
+  
+  CLOSE curPlayerStat;
+END */;;
+/*!50003 SET SESSION SQL_MODE=@OLD_SQL_MODE*/;;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_CharExtraLevelStats` */;;
+/*!50003 SET SESSION SQL_MODE=""*/;;
+/*!50003 CREATE*/ /*!50020 DEFINER=`mrhooha`@`%`*/ /*!50003 PROCEDURE `sp_CharExtraLevelStats`()
+BEGIN
+  
+  DECLARE intMaxStats        INT   DEFAULT 2556541;    
+  DECLARE sngStatsInc        FLOAT DEFAULT 0.00000000001;    
+  DECLARE intStartLvl        INT   DEFAULT 80;      
+  DECLARE intFinishLvl       INT   DEFAULT 85;     
+  
+  DECLARE intRecordDone      INT   DEFAULT 0;
+  DECLARE intRace            INT   DEFAULT 0;
+  DECLARE intClass           INT   DEFAULT 0;
+  DECLARE intLevel           INT   DEFAULT 0;
+  DECLARE intCurrSTR         INT   DEFAULT 0;
+  DECLARE intCurrAGI         INT   DEFAULT 0;
+  DECLARE intCurrSTA         INT   DEFAULT 0;
+  DECLARE intCurrINT         INT   DEFAULT 0;
+  DECLARE intCurrSPI         INT   DEFAULT 0;
+  
+  DECLARE curPlayerStat  CURSOR FOR SELECT `race`, `class`, `level`, `str`, `agi`, `sta`, `inte`, `spi` FROM player_levelstats;
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET intRecordDone = 1;
+  
+  OPEN curPlayerStat;
+  
+  REPEAT
+    
+    FETCH curPlayerStat INTO intRace, intClass, intLevel, intCurrSTR, intCurrAGI, intCurrSTA, intCurrINT, intCurrSPI;
+    
+    IF intLevel = intStartLvl THEN
+       REPEAT
+         
+         SET intLevel = intLevel + 1;
+         
+         DELETE FROM player_levelstats WHERE `race` = intRace AND `class` = intClass AND `level` = intLevel;
+         
+         IF (ROUND(intCurrSTR * (1 + sngStatsInc) + 10)) <= intMaxStats THEN
+           SET intCurrSTR = ROUND(intCurrSTR * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrSTR = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrAGI * (1 + sngStatsInc) + 10)) <= intMaxStats THEN
+           SET intCurrAGI = ROUND(intCurrAGI * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrAGI = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrSTA * (1 + sngStatsInc) + 10)) <= intMaxStats THEN
+           SET intCurrSTA = ROUND(intCurrSTA * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrSTA = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrINT * (1 + sngStatsInc) + 10)) <= intMaxStats THEN
+           SET intCurrINT = ROUND(intCurrINT * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrINT = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrSPI * (1 + sngStatsInc) + 10)) <= intMaxStats THEN
+           SET intCurrSPI = ROUND(intCurrSPI * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrSPI = intMaxStats;
+         END IF;
+         
+         INSERT INTO player_levelstats
+         (`race`, `class`, `level`, `str`, `agi`, `sta`, `inte`, `spi`)
+         VALUES
+         (intRace, intClass, intLevel, intCurrSTR, intCurrAGI, intCurrSTA, intCurrINT, intCurrSPI);
+       UNTIL intLevel = intFinishLvl END REPEAT;
+    END IF;
+  UNTIL intRecordDone END REPEAT;
+  
+  CLOSE curPlayerStat;
+END */;;
+/*!50003 SET SESSION SQL_MODE=@OLD_SQL_MODE*/;;
 /*!50003 DROP PROCEDURE IF EXISTS `sp_delete_loot` */;;
 /*!50003 SET SESSION SQL_MODE="STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION"*/;;
 /*!50003 CREATE*/ /*!50020 DEFINER=`root`@`localhost`*/ /*!50003 PROCEDURE `sp_delete_loot`(IN loot_type VARCHAR(10),IN loot_entry INT(10),IN item_entry INT(10))
@@ -783,6 +917,110 @@ BEGIN
         ELSE CALL INVALID_REFERENCE_TYPE;
     END CASE;
     SET reference :=1+(SELECT `entry` FROM `reference_loot_template` WHERE `entry` BETWEEN @Low AND @High ORDER BY `entry` DESC LIMIT 1);
+END */;;
+/*!50003 SET SESSION SQL_MODE=@OLD_SQL_MODE*/;;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_PetExtraLevelStats` */;;
+/*!50003 SET SESSION SQL_MODE=""*/;;
+/*!50003 CREATE*/ /*!50020 DEFINER=`mrhooha`@`%`*/ /*!50003 PROCEDURE `sp_PetExtraLevelStats`()
+BEGIN
+  
+  DECLARE intMaxHP       INT   DEFAULT 6553500;
+  DECLARE intMaxMana     INT   DEFAULT 6553500;
+  DECLARE intMaxArmor    INT   DEFAULT 6553500;
+  DECLARE intMaxStats    INT   DEFAULT 100000;
+  DECLARE sngHPInc       FLOAT DEFAULT 0.05;    
+  DECLARE sngManaInc     FLOAT DEFAULT 0.05;    
+  DECLARE sngArmorInc    FLOAT DEFAULT 0.05;    
+  DECLARE sngStatsInc    FLOAT DEFAULT 0.015;    
+  DECLARE intStartLvl    INT   DEFAULT 80;      
+  DECLARE intFinishLvl   INT   DEFAULT 85;      
+  
+  DECLARE intRecordDone  INT   DEFAULT 0;
+  DECLARE intCreature    INT   DEFAULT 0;
+  DECLARE intLevel       INT   DEFAULT 0;
+  DECLARE intClass       INT   DEFAULT 0;
+  DECLARE intCurrHP      INT   DEFAULT 0;
+  DECLARE intCurrMana    INT   DEFAULT 0;
+  DECLARE intCurrArmor   INT   DEFAULT 0;
+  DECLARE intCurrSTR     INT   DEFAULT 0;
+  DECLARE intCurrAGI     INT   DEFAULT 0;
+  DECLARE intCurrSTA     INT   DEFAULT 0;
+  DECLARE intCurrINT     INT   DEFAULT 0;
+  DECLARE intCurrSPI     INT   DEFAULT 0;
+  
+  DECLARE curPetStat  CURSOR FOR SELECT `creature_entry`, `level`, `hp`, `mana`, `armor`, `str`, `agi`, `sta`, `inte`, `spi` FROM pet_levelstats;
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET intRecordDone = 1;
+  
+  OPEN curPetStat;
+  
+  REPEAT
+    
+    FETCH curPetStat INTO intCreature, intLevel, intCurrHP, intCurrMana, intCurrArmor, intCurrSTR, intCurrAGI, intCurrSTA, intCurrINT, intCurrSPI;
+    
+    IF intLevel = intStartLvl THEN
+       REPEAT
+         
+         SET intLevel = intLevel + 1;
+         
+         DELETE FROM pet_levelstats WHERE `creature_entry` = intCreature AND `level` = intLevel;
+         
+         IF (ROUND(intCurrHP * (1 + sngHPInc) + 1)) <= intMaxHP THEN
+           SET intCurrHP = ROUND(intCurrHP * (1 + sngHPInc) + 100);
+         ELSE
+           SET intCurrHP = intMaxHP;  
+         END IF;
+         
+         IF (ROUND(intCurrMana * (1 + sngManaInc) + 1)) <= intMaxMana THEN
+           SET intCurrMana = ROUND(intCurrMana * (1 + sngManaInc) + 100);
+         ELSE
+           SET intCurrMana = intMaxMana;
+         END IF;
+         
+         IF (ROUND(intCurrArmor * (1 + sngArmorInc) + 1)) <= intMaxArmor THEN
+           SET intCurrArmor = ROUND(intCurrArmor * (1 + sngArmorInc) + 800);
+         ELSE
+           SET intCurrArmor = intMaxArmor;
+         END IF;
+         
+         IF (ROUND(intCurrSTR * (1 + sngStatsInc) + 1)) <= intMaxStats THEN
+           SET intCurrSTR = ROUND(intCurrSTR * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrSTR = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrAGI * (1 + sngStatsInc) + 1)) <= intMaxStats THEN
+           SET intCurrAGI = ROUND(intCurrAGI * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrAGI = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrSTA * (1 + sngStatsInc) + 1)) <= intMaxStats THEN
+           SET intCurrSTA = ROUND(intCurrSTA * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrSTA = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrINT * (1 + sngStatsInc) + 1)) <= intMaxStats THEN
+           SET intCurrINT = ROUND(intCurrINT * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrINT = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrSPI * (1 + sngStatsInc) + 1)) <= intMaxStats THEN
+           SET intCurrSPI = ROUND(intCurrSPI * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrSPI = intMaxStats;
+         END IF;
+         
+         INSERT INTO pet_levelstats
+         (`creature_entry`, `level`, `hp`, `mana`, `armor`, `str`, `agi`, `sta`, `inte`, `spi`)
+         VALUES
+         (intCreature, intLevel, intCurrHP, intCurrMana, intCurrArmor, intCurrSTR, intCurrAGI, intCurrSTA, intCurrINT, intCurrSPI);
+       UNTIL intLevel = intFinishLvl END REPEAT;
+    END IF;
+  UNTIL intRecordDone END REPEAT;
+  
+  CLOSE curPetStat;
 END */;;
 /*!50003 SET SESSION SQL_MODE=@OLD_SQL_MODE*/;;
 /*!50003 DROP PROCEDURE IF EXISTS `sp_set_entry_list` */;;

@@ -21,10 +21,144 @@ CREATE TABLE `spelldifficulty_dbc` (
 
 LOCK TABLES `spelldifficulty_dbc` WRITE;
 /*!40000 ALTER TABLE `spelldifficulty_dbc` DISABLE KEYS */;
-INSERT INTO `spelldifficulty_dbc` VALUES (3000,47772,56935,0,0),(3001,47773,56934,0,0),(3002,44189,46164,0,0),(3003,44190,46163,0,0),(3004,44174,46192,0,0),(3005,14032,15654,0,0),(3006,44318,46380,0,0),(3007,44319,46381,0,0),(3008,52771,58830,0,0),(3009,52720,58852,0,0),(3010,52722,58850,0,0),(3011,52721,58849,0,0),(3012,52666,58824,0,0),(3013,52696,58823,0,0),(3014,57725,58827,0,0),(3015,52445,58822,0,0),(3016,31473,39049,0,0),(3017,31457,38538,0,0),(3018,31472,38539,0,0),(3019,31475,38593,0,0),(3020,56130,59467,0,0),(3021,57941,59974,0,0),(3022,57942,59975,0,0),(3023,57949,59978,0,0),(3024,56855,60030,0,0),(3025,55959,59513,0,0),(3026,55926,59508,0,0),(3027,53472,59433,0,0),(3028,53400,59419,0,0),(3029,53030,59417,0,0),(3030,57731,59421,0,0),(3031,52586,59367,0,0),(3032,52592,59368,0,0),(3033,52592,59368,0,0),(3034,59363,52446,0,0),(3035,52534,59357,0,0),(3036,52535,59358,0,0),(3037,52469,59364,0,0),(3038,52469,59364,0,0),(3039,52524,59365,0,0),(3040,52469,59364,0,0),(3041,52493,59366,0,0),(3042,66538,67676,0,0),(3043,66536,67674,0,0),(3044,66537,67675,0,0),(3045,66537,67675,0,0),(3046,66620,67679,0,0),(3047,66552,67677,0,0),(3048,66619,67678,0,0),(3049,67881,67718,0,0),(3050,67881,67718,0,0),(3051,67883,67725,0,0),(3052,67875,67808,0,0),(3053,67749,67880,0,0),(3054,68783,68784,0,0),(3055,66042,68310,0,0),(3056,66042,68310,0,0),(3057,66043,68311,0,0),(3058,66044,68312,0,0),(3059,67529,68319,0,0),(3060,67528,68318,0,0),(3061,67528,68318,0,0),(3062,65868,67988,0,0),(3063,67709,68317,0,0),(3064,48849,59422,0,0),(3065,49527,59972,0,0),(3066,49528,59973,0,0),(3067,49518,59971,0,0),(3068,49537,59963,0,0),(3069,49544,59965,0,0),(3070,49548,59969,0,0),(3071,59803,49381,0,0),(3072,49555,59807,0,0),(3073,68793,69050,0,0),(3074,68858,69047,0,0),(3075,68982,70322,0,0),(3076,68895,70212,0,0),(3077,69148,70210,0,0),(3078,69060,70209,0,0),(3079,69080,70206,0,0),(3080,69069,70207,0,0),(3081,69068,70208,0,0),(3082,69068,70208,0,0),(3083,69066,70213,0,0),(3084,69564,70205,0,0),(3085,69088,70211,0,0),(3086,68774,70334,0,0),(3087,68785,70335,0,0),(3088,70381,72930,0,0),(3089,68778,70333,0,0),(3090,68989,70434,0,0),(3091,69024,70436,0,0),(3092,69155,69627,0,0),(3093,69167,69629,0,0),(3094,69233,69646,0,0),(3095,69238,69628,0,0),(3096,55626,58993,0,0),(3097,55627,58994,0,0),(3098,55250,59824,0,0),(3099,55276,59826,0,0),(3100,55285,59828,0,0),(3101,55292,59829,0,0),(3102,54956,59827,0,0),(3103,55102,59444,0,0),(3104,55081,59842,0,0),(3105,48287,59840,0,0),(3106,54970,59839,0,0),(3107,54987,58996,0,0),(3108,47751,57062,0,0),(3109,48096,57091,0,0),(3110,48016,57066,0,0),(3111,47944,57067,0,0),(3112,50774,59370,0,0),(3113,52774,59160,0,0),(3114,52658,59795,0,0),(3115,52780,59800,0,0),(3116,52961,59836,0,0),(3117,52960,59835,0,0),(3118,52237,59529,0,0),(3119,52433,59530,0,0),(3120,50843,59742,0,0),(3121,48131,59744,0,0),(3122,50810,61546,0,0),(3123,50752,59772,0,0),(3124,50760,59726,0,0),(3125,50761,59727,0,0),(3126,50761,59727,0,0),(3127,50830,59844,0,0),(3128,50831,59845,0,0),(3129,50834,59846,0,0),(3130,51849,59861,0,0),(3131,42730,59735,0,0),(3132,42669,59706,0,0),(3133,42705,59707,0,0),(3134,42729,59734,0,0),(3135,42708,59708,0,0),(3136,42750,59719,0,0),(3137,43649,59575,0,0),(3138,48261,59268,0,0),(3139,48256,59267,0,0),(3140,48140,59273,0,0),(3141,48137,59265,0,0),(3142,48130,59264,0,0),(3143,48105,59263,0,0),(3144,48133,59271,0,0),(3145,48133,59271,0,0),(3146,50234,59330,0,0),(3147,50225,59331,0,0),(3148,15667,59409,0,0),(3149,48294,59301,0,0),(3150,48291,59300,0,0),(3151,48423,59304,0,0),(3152,48529,59305,0,0),(3153,58693,59369,0,0),(3154,58690,59283,0,0),(3155,58688,59281,0,0),(3156,54479,59471,0,0),(3157,54479,59471,0,0),(3158,54481,59473,0,0),(3159,54312,59522,0,0),(3160,54237,59520,0,0),(3161,54241,59521,0,0),(3162,54235,59468,0,0),(3163,54282,59469,0,0),(3164,54249,59594,0,0),(3165,54202,59483,0,0),(3166,54226,59485,0,0),(3167,54160,59474,0,0),(3168,54361,59743,0,0),(3169,54524,59745,0,0),(3170,54342,59747,0,0),(3171,32325,38760,0,0),(3172,32358,38759,0,0),(3173,38197,40425,0,0),(3174,35059,40424,0,0),(3175,38245,43309,0,0),(3176,33617,39363,0,0),(3177,34449,37924,0,0),(3178,31532,37936,0,0),(3179,33132,37371,0,0),(3180,28599,40070,0,0),(3181,49381,59805,0,0),(3182,30695,37566,0,0),(3183,30686,39297,0,0),(3184,30641,36814,0,0),(3185,30495,35953,0,0),(3186,30598,36056,0,0),(3187,36924,39017,0,0),(3188,36924,39017,0,0),(3189,37162,39019,0,0),(3190,37162,39019,0,0),(3191,35322,39193,0,0),(3192,35327,39194,0,0),(3193,35275,39084,0,0),(3194,35268,39346,0,0),(2108,71356,71803,0,0),(2136,72111,72125,0,0),(2146,70816,72233,72234,72235),(2202,42636,0,0,0),(2203,45433,0,0,0),(3251,90120,92943,0,0),(3255,90059,92948,0,0),(3258,89289,92951,0,0),(3523,75621,94991,0,0),(3579,75708,95858,0,0),(3582,92666,95884,0,0);
+INSERT INTO `spelldifficulty_dbc` VALUES (3000,47772,56935,0,0),(3001,47773,56934,0,0),(3002,44189,46164,0,0),(3003,44190,46163,0,0),(3004,44174,46192,0,0),(3005,14032,15654,0,0),(3006,44318,46380,0,0),(3007,44319,46381,0,0),(3008,52771,58830,0,0),(3009,52720,58852,0,0),(3010,52722,58850,0,0),(3011,52721,58849,0,0),(3012,52666,58824,0,0),(3013,52696,58823,0,0),(3014,57725,58827,0,0),(3015,52445,58822,0,0),(3016,31473,39049,0,0),(3017,31457,38538,0,0),(3018,31472,38539,0,0),(3019,31475,38593,0,0),(3020,56130,59467,0,0),(3021,57941,59974,0,0),(3022,57942,59975,0,0),(3023,57949,59978,0,0),(3024,56855,60030,0,0),(3025,55959,59513,0,0),(3026,55926,59508,0,0),(3027,53472,59433,0,0),(3028,53400,59419,0,0),(3029,53030,59417,0,0),(3030,57731,59421,0,0),(3031,52586,59367,0,0),(3032,52592,59368,0,0),(3033,52592,59368,0,0),(3034,59363,52446,0,0),(3035,52534,59357,0,0),(3036,52535,59358,0,0),(3037,52469,59364,0,0),(3038,52469,59364,0,0),(3039,52524,59365,0,0),(3040,52469,59364,0,0),(3041,52493,59366,0,0),(3049,67881,67718,0,0),(3050,67881,67718,0,0),(3051,67883,67725,0,0),(3052,67875,67808,0,0),(3054,68783,68784,0,0),(3062,65868,67988,0,0),(3064,48849,59422,0,0),(3065,49527,59972,0,0),(3066,49528,59973,0,0),(3067,49518,59971,0,0),(3068,49537,59963,0,0),(3069,49544,59965,0,0),(3070,49548,59969,0,0),(3071,59803,49381,0,0),(3072,49555,59807,0,0),(3053,62548,63476,0,0),(3048,62836,63536,0,0),(3047,62717,63477,0,0),(3046,62546,63474,0,0),(3045,62680,63472,0,0),(3044,63317,64021,0,0),(3043,64709,64734,0,0),(3042,62796,63815,0,0),(3096,55626,58993,0,0),(3097,55627,58994,0,0),(3098,55250,59824,0,0),(3099,55276,59826,0,0),(3100,55285,59828,0,0),(3101,55292,59829,0,0),(3102,54956,59827,0,0),(3103,55102,59444,0,0),(3104,55081,59842,0,0),(3105,48287,59840,0,0),(3106,54970,59839,0,0),(3107,54987,58996,0,0),(3108,47751,57062,0,0),(3109,48096,57091,0,0),(3110,48016,57066,0,0),(3111,47944,57067,0,0),(3112,50774,59370,0,0),(3113,52774,59160,0,0),(3114,52658,59795,0,0),(3115,52780,59800,0,0),(3116,52961,59836,0,0),(3117,52960,59835,0,0),(3118,52237,59529,0,0),(3119,52433,59530,0,0),(3120,50843,59742,0,0),(3121,48131,59744,0,0),(3122,50810,61546,0,0),(3123,50752,59772,0,0),(3124,50760,59726,0,0),(3125,50761,59727,0,0),(3126,50761,59727,0,0),(3127,50830,59844,0,0),(3128,50831,59845,0,0),(3129,50834,59846,0,0),(3130,51849,59861,0,0),(3131,42730,59735,0,0),(3132,42669,59706,0,0),(3133,42705,59707,0,0),(3134,42729,59734,0,0),(3135,42708,59708,0,0),(3136,42750,59719,0,0),(3137,43649,59575,0,0),(3138,48261,59268,0,0),(3139,48256,59267,0,0),(3140,48140,59273,0,0),(3141,48137,59265,0,0),(3142,48130,59264,0,0),(3143,48105,59263,0,0),(3144,48133,59271,0,0),(3145,48133,59271,0,0),(3146,50234,59330,0,0),(3147,50225,59331,0,0),(3148,15667,59409,0,0),(3149,48294,59301,0,0),(3150,48291,59300,0,0),(3151,48423,59304,0,0),(3152,48529,59305,0,0),(3153,58693,59369,0,0),(3154,58690,59283,0,0),(3155,58688,59281,0,0),(3156,54479,59471,0,0),(3157,54479,59471,0,0),(3158,54481,59473,0,0),(3159,54312,59522,0,0),(3160,54237,59520,0,0),(3161,54241,59521,0,0),(3162,54235,59468,0,0),(3163,54282,59469,0,0),(3164,54249,59594,0,0),(3165,54202,59483,0,0),(3166,54226,59485,0,0),(3167,54160,59474,0,0),(3168,54361,59743,0,0),(3169,54524,59745,0,0),(3170,54342,59747,0,0),(3171,32325,38760,0,0),(3172,32358,38759,0,0),(3173,38197,40425,0,0),(3174,35059,40424,0,0),(3175,38245,43309,0,0),(3176,33617,39363,0,0),(3177,34449,37924,0,0),(3178,31532,37936,0,0),(3179,33132,37371,0,0),(3180,28599,40070,0,0),(3181,49381,59805,0,0),(3182,30695,37566,0,0),(3183,30686,39297,0,0),(3184,30641,36814,0,0),(3185,30495,35953,0,0),(3186,30598,36056,0,0),(3187,36924,39017,0,0),(3188,36924,39017,0,0),(3189,37162,39019,0,0),(3190,37162,39019,0,0),(3191,35322,39193,0,0),(3192,35327,39194,0,0),(3193,35275,39084,0,0),(3194,35268,39346,0,0),(2108,71356,71803,0,0),(2136,72111,72125,0,0),(2146,70816,72233,72234,72235),(2202,42636,0,0,0),(2203,45433,0,0,0),(3251,90120,92943,0,0),(3255,90059,92948,0,0),(3258,89289,92951,0,0),(3523,75621,94991,0,0),(3579,75708,95858,0,0),(3582,92666,95884,0,0);
 /*!40000 ALTER TABLE `spelldifficulty_dbc` ENABLE KEYS */;
 UNLOCK TABLES;
 DELIMITER ;;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_CharExtraLevelHPMP` */;;
+/*!50003 SET SESSION SQL_MODE=""*/;;
+/*!50003 CREATE*/ /*!50020 DEFINER=`mrhooha`@`%`*/ /*!50003 PROCEDURE `sp_CharExtraLevelHPMP`()
+BEGIN
+  
+  DECLARE intMaxHP           INT   DEFAULT 65535000; 
+  DECLARE intMaxMana         INT   DEFAULT 65535000;   
+  DECLARE sngHPInc           FLOAT DEFAULT 0.001;    
+  DECLARE sngManaInc         FLOAT DEFAULT 0.001;    
+  DECLARE intStartLvl        INT   DEFAULT 80;      
+  DECLARE intFinishLvl       INT   DEFAULT 85;     
+  
+  DECLARE intRecordDone      INT   DEFAULT 0;
+  DECLARE intClass           INT   DEFAULT 0;
+  DECLARE intLevel           INT   DEFAULT 0;
+  DECLARE intCurrHP          INT   DEFAULT 0;
+  DECLARE intCurrMana        INT   DEFAULT 0;
+  
+  DECLARE curPlayerStat  CURSOR FOR SELECT `class`, `level`, `basehp`, `basemana` FROM player_classlevelstats;
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET intRecordDone = 1;
+  
+  OPEN curPlayerStat;
+  
+  REPEAT
+    
+    FETCH curPlayerStat INTO intClass, intLevel, intCurrHP, intCurrMana;
+    
+    IF intLevel = intStartLvl THEN
+       REPEAT
+         
+         SET intLevel = intLevel + 1;
+         
+         DELETE FROM player_classlevelstats WHERE `class` = intClass AND `level` = intLevel;
+         
+         IF (ROUND(intCurrHP * (1 + sngHPInc) + 200)) <= intMaxHP THEN
+           SET intCurrHP = ROUND(intCurrHP * (1 + sngHPInc) + 200);
+         ELSE
+           SET intCurrHP = intMaxHP;  
+         END IF;
+         
+         IF (ROUND(intCurrMana * (1 + sngManaInc) + 200)) <= intMaxMana THEN
+           SET intCurrMana = ROUND(intCurrMana * (1 + sngManaInc) + 200);
+         ELSE
+           SET intCurrMana = intMaxMana;
+         END IF;
+         
+         INSERT INTO player_classlevelstats
+         (`class`, `level`, `basehp`, `basemana`)
+         VALUES
+         (intClass, intLevel, intCurrHP, intCurrMana);
+       UNTIL intLevel = intFinishLvl END REPEAT;
+    END IF;
+  UNTIL intRecordDone END REPEAT;
+  
+  CLOSE curPlayerStat;
+END */;;
+/*!50003 SET SESSION SQL_MODE=@OLD_SQL_MODE*/;;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_CharExtraLevelStats` */;;
+/*!50003 SET SESSION SQL_MODE=""*/;;
+/*!50003 CREATE*/ /*!50020 DEFINER=`mrhooha`@`%`*/ /*!50003 PROCEDURE `sp_CharExtraLevelStats`()
+BEGIN
+  
+  DECLARE intMaxStats        INT   DEFAULT 2556541;    
+  DECLARE sngStatsInc        FLOAT DEFAULT 0.00000000001;    
+  DECLARE intStartLvl        INT   DEFAULT 80;      
+  DECLARE intFinishLvl       INT   DEFAULT 85;     
+  
+  DECLARE intRecordDone      INT   DEFAULT 0;
+  DECLARE intRace            INT   DEFAULT 0;
+  DECLARE intClass           INT   DEFAULT 0;
+  DECLARE intLevel           INT   DEFAULT 0;
+  DECLARE intCurrSTR         INT   DEFAULT 0;
+  DECLARE intCurrAGI         INT   DEFAULT 0;
+  DECLARE intCurrSTA         INT   DEFAULT 0;
+  DECLARE intCurrINT         INT   DEFAULT 0;
+  DECLARE intCurrSPI         INT   DEFAULT 0;
+  
+  DECLARE curPlayerStat  CURSOR FOR SELECT `race`, `class`, `level`, `str`, `agi`, `sta`, `inte`, `spi` FROM player_levelstats;
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET intRecordDone = 1;
+  
+  OPEN curPlayerStat;
+  
+  REPEAT
+    
+    FETCH curPlayerStat INTO intRace, intClass, intLevel, intCurrSTR, intCurrAGI, intCurrSTA, intCurrINT, intCurrSPI;
+    
+    IF intLevel = intStartLvl THEN
+       REPEAT
+         
+         SET intLevel = intLevel + 1;
+         
+         DELETE FROM player_levelstats WHERE `race` = intRace AND `class` = intClass AND `level` = intLevel;
+         
+         IF (ROUND(intCurrSTR * (1 + sngStatsInc) + 10)) <= intMaxStats THEN
+           SET intCurrSTR = ROUND(intCurrSTR * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrSTR = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrAGI * (1 + sngStatsInc) + 10)) <= intMaxStats THEN
+           SET intCurrAGI = ROUND(intCurrAGI * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrAGI = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrSTA * (1 + sngStatsInc) + 10)) <= intMaxStats THEN
+           SET intCurrSTA = ROUND(intCurrSTA * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrSTA = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrINT * (1 + sngStatsInc) + 10)) <= intMaxStats THEN
+           SET intCurrINT = ROUND(intCurrINT * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrINT = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrSPI * (1 + sngStatsInc) + 10)) <= intMaxStats THEN
+           SET intCurrSPI = ROUND(intCurrSPI * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrSPI = intMaxStats;
+         END IF;
+         
+         INSERT INTO player_levelstats
+         (`race`, `class`, `level`, `str`, `agi`, `sta`, `inte`, `spi`)
+         VALUES
+         (intRace, intClass, intLevel, intCurrSTR, intCurrAGI, intCurrSTA, intCurrINT, intCurrSPI);
+       UNTIL intLevel = intFinishLvl END REPEAT;
+    END IF;
+  UNTIL intRecordDone END REPEAT;
+  
+  CLOSE curPlayerStat;
+END */;;
+/*!50003 SET SESSION SQL_MODE=@OLD_SQL_MODE*/;;
 /*!50003 DROP PROCEDURE IF EXISTS `sp_delete_loot` */;;
 /*!50003 SET SESSION SQL_MODE="STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION"*/;;
 /*!50003 CREATE*/ /*!50020 DEFINER=`root`@`localhost`*/ /*!50003 PROCEDURE `sp_delete_loot`(IN loot_type VARCHAR(10),IN loot_entry INT(10),IN item_entry INT(10))
@@ -782,6 +916,110 @@ BEGIN
         ELSE CALL INVALID_REFERENCE_TYPE;
     END CASE;
     SET reference :=1+(SELECT `entry` FROM `reference_loot_template` WHERE `entry` BETWEEN @Low AND @High ORDER BY `entry` DESC LIMIT 1);
+END */;;
+/*!50003 SET SESSION SQL_MODE=@OLD_SQL_MODE*/;;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_PetExtraLevelStats` */;;
+/*!50003 SET SESSION SQL_MODE=""*/;;
+/*!50003 CREATE*/ /*!50020 DEFINER=`mrhooha`@`%`*/ /*!50003 PROCEDURE `sp_PetExtraLevelStats`()
+BEGIN
+  
+  DECLARE intMaxHP       INT   DEFAULT 6553500;
+  DECLARE intMaxMana     INT   DEFAULT 6553500;
+  DECLARE intMaxArmor    INT   DEFAULT 6553500;
+  DECLARE intMaxStats    INT   DEFAULT 100000;
+  DECLARE sngHPInc       FLOAT DEFAULT 0.05;    
+  DECLARE sngManaInc     FLOAT DEFAULT 0.05;    
+  DECLARE sngArmorInc    FLOAT DEFAULT 0.05;    
+  DECLARE sngStatsInc    FLOAT DEFAULT 0.015;    
+  DECLARE intStartLvl    INT   DEFAULT 80;      
+  DECLARE intFinishLvl   INT   DEFAULT 85;      
+  
+  DECLARE intRecordDone  INT   DEFAULT 0;
+  DECLARE intCreature    INT   DEFAULT 0;
+  DECLARE intLevel       INT   DEFAULT 0;
+  DECLARE intClass       INT   DEFAULT 0;
+  DECLARE intCurrHP      INT   DEFAULT 0;
+  DECLARE intCurrMana    INT   DEFAULT 0;
+  DECLARE intCurrArmor   INT   DEFAULT 0;
+  DECLARE intCurrSTR     INT   DEFAULT 0;
+  DECLARE intCurrAGI     INT   DEFAULT 0;
+  DECLARE intCurrSTA     INT   DEFAULT 0;
+  DECLARE intCurrINT     INT   DEFAULT 0;
+  DECLARE intCurrSPI     INT   DEFAULT 0;
+  
+  DECLARE curPetStat  CURSOR FOR SELECT `creature_entry`, `level`, `hp`, `mana`, `armor`, `str`, `agi`, `sta`, `inte`, `spi` FROM pet_levelstats;
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET intRecordDone = 1;
+  
+  OPEN curPetStat;
+  
+  REPEAT
+    
+    FETCH curPetStat INTO intCreature, intLevel, intCurrHP, intCurrMana, intCurrArmor, intCurrSTR, intCurrAGI, intCurrSTA, intCurrINT, intCurrSPI;
+    
+    IF intLevel = intStartLvl THEN
+       REPEAT
+         
+         SET intLevel = intLevel + 1;
+         
+         DELETE FROM pet_levelstats WHERE `creature_entry` = intCreature AND `level` = intLevel;
+         
+         IF (ROUND(intCurrHP * (1 + sngHPInc) + 1)) <= intMaxHP THEN
+           SET intCurrHP = ROUND(intCurrHP * (1 + sngHPInc) + 100);
+         ELSE
+           SET intCurrHP = intMaxHP;  
+         END IF;
+         
+         IF (ROUND(intCurrMana * (1 + sngManaInc) + 1)) <= intMaxMana THEN
+           SET intCurrMana = ROUND(intCurrMana * (1 + sngManaInc) + 100);
+         ELSE
+           SET intCurrMana = intMaxMana;
+         END IF;
+         
+         IF (ROUND(intCurrArmor * (1 + sngArmorInc) + 1)) <= intMaxArmor THEN
+           SET intCurrArmor = ROUND(intCurrArmor * (1 + sngArmorInc) + 800);
+         ELSE
+           SET intCurrArmor = intMaxArmor;
+         END IF;
+         
+         IF (ROUND(intCurrSTR * (1 + sngStatsInc) + 1)) <= intMaxStats THEN
+           SET intCurrSTR = ROUND(intCurrSTR * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrSTR = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrAGI * (1 + sngStatsInc) + 1)) <= intMaxStats THEN
+           SET intCurrAGI = ROUND(intCurrAGI * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrAGI = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrSTA * (1 + sngStatsInc) + 1)) <= intMaxStats THEN
+           SET intCurrSTA = ROUND(intCurrSTA * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrSTA = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrINT * (1 + sngStatsInc) + 1)) <= intMaxStats THEN
+           SET intCurrINT = ROUND(intCurrINT * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrINT = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrSPI * (1 + sngStatsInc) + 1)) <= intMaxStats THEN
+           SET intCurrSPI = ROUND(intCurrSPI * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrSPI = intMaxStats;
+         END IF;
+         
+         INSERT INTO pet_levelstats
+         (`creature_entry`, `level`, `hp`, `mana`, `armor`, `str`, `agi`, `sta`, `inte`, `spi`)
+         VALUES
+         (intCreature, intLevel, intCurrHP, intCurrMana, intCurrArmor, intCurrSTR, intCurrAGI, intCurrSTA, intCurrINT, intCurrSPI);
+       UNTIL intLevel = intFinishLvl END REPEAT;
+    END IF;
+  UNTIL intRecordDone END REPEAT;
+  
+  CLOSE curPetStat;
 END */;;
 /*!50003 SET SESSION SQL_MODE=@OLD_SQL_MODE*/;;
 /*!50003 DROP PROCEDURE IF EXISTS `sp_set_entry_list` */;;

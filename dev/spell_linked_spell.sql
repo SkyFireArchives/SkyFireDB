@@ -20,10 +20,144 @@ CREATE TABLE `spell_linked_spell` (
 
 LOCK TABLES `spell_linked_spell` WRITE;
 /*!40000 ALTER TABLE `spell_linked_spell` DISABLE KEYS */;
-INSERT INTO `spell_linked_spell` VALUES (31224,-1543,2,'Cloak of Shadows - Flare'),(15237,23455,0,'Holy Nova (rank1)'),(-19386,24131,0,'Wyvern Sting'),(47585,60069,2,'Dispersion (transform/regen)'),(47585,63230,2,'Dispersion (immunity)'),(17767,54501,2,'Consume Shadows - Rank 1'),(-5143,-36032,0,'Arcane Missiles Rank 1'),(53563,53651,2,'Beacon of Light'),(781,56446,0,'Disengage'),(57635,57636,0,'Disengage'),(60932,60934,0,'Disengage'),(61507,61508,0,'Disengage'),(49576,49560,0,'Death Grip'),(47897,47960,1,'Shadowflame Rank 1'),(33206,44416,2,'Pain Suppression (threat)'),(52415,52418,0,'Carrying Seaforium - Add'),(52610,62071,0,'Savage Roar'),(-52610,-62071,0,'Savage Roar'),(51209,55095,1,'Hungering cold - frost fever'),(50334,58923,2,'Berserk - modify target number aura'),(-5229,-51185,0,'King of the Jungle - remove with enrage'),(20594,65116,0,'Stoneform'),(49039,50397,2,'Lichborne - shapeshift'),(64382,64380,0,'Shattering Throw'),(-59907,7,0,'Lightwell Charges - Suicide'),(40214,40216,2,'Dragonmaw Illusion'),(40214,42016,2,'Dragonmaw Illusion'),(36574,36650,0,'Apply Phase Slip Vulnerability'),(-30410,44032,0,'Manticron Cube Mind Exhaustion'),(-33711,33686,0,'Murmur\'s Shockwave (Normal)'),(-38794,33686,0,'Murmur\'s Shockwave (Heroic)'),(33686,31705,0,'Murmur\'s Shockwave Jump'),(44008,45265,1,'Static Disruption Visual'),(43648,44007,1,'Storm Eye Safe Zone'),(44007,-43657,2,'Storm Eye Safe Zone Immune'),(43658,43653,0,'Electrical Arc Visual'),(43658,43654,0,'Electrical Arc Visual'),(43658,43655,0,'Electrical Arc Visual'),(43658,43656,0,'Electrical Arc Visual'),(43658,43659,0,'Electrical Arc Visual'),(39835,39968,1,'Needle Spine'),(-41376,41377,0,'Spite'),(41126,41131,1,'Flame Crash'),(-41914,41915,0,'Summon Parasitic Shadowfiend'),(-41917,41915,0,'Summon Parasitic Shadowfiend'),(39908,40017,1,'Eye Blast'),(40604,40616,1,'Fel Rage Aura'),(40616,41625,1,'Fel Rage Aura'),(41292,42017,2,'Aura of Suffering'),(44869,44866,1,'Spectral Blast Portal'),(44869,46019,1,'Spectral Blast Teleport'),(46019,46021,1,'Spectral Realm Aura'),(-46021,46020,0,'Teleport: Normal Realm'),(46020,44867,1,'Spectral Exhaustion'),(44867,-46019,2,'Spectral Exhaustion - Teleport: Spectral Realm'),(45661,45665,1,'Encapsulate'),(45347,-45348,1,'Remove Flame Touched'),(45348,-45347,1,'Remove Dark Touched'),(45248,45347,1,'Apply Dark Touched'),(45329,45347,1,'Apply Dark Touched'),(45256,45347,1,'Apply Dark Touched'),(45270,45347,1,'Apply Dark Touched'),(45342,45348,1,'Apply Flame Touched'),(46771,45348,1,'Apply Flame Touched'),(45271,45347,1,'Apply Dark Touched'),(45246,45348,1,'Apply Flame Touched'),(44869,-45018,1,'Remove Arcane Buffet'),(46019,-45018,1,'Remove Arcane Buffet'),(46242,46247,0,'Black Hole Visual (Birth)'),(46228,46235,0,'Black Hole Visual (Grown)'),(46228,-46247,0,'Black Hole Visual (Grown)'),(46262,46265,0,'Void Zone Visual'),(-55053,55601,0,'Deathbloom (H)'),(-29865,55594,0,'Deathbloom'),(54097,-54100,1,'Widow\'s Embrace - Frenzy (H)'),(28732,-28798,1,'Widow\'s Embrace - Frenzy'),(58666,58672,1,'Impale (Archavon)'),(60882,58672,1,'Impale (Archavon)'),(16857,60089,0,'Faerie Fire (Feral)'),(-54361,54343,0,'Void Shift (Normal) - Void Shifted'),(-59743,54343,0,'Void Shift (Heroic) - Void Shifted'),(-28169,28206,0,'Mutating Injection - Mutagen Explosion'),(-28169,28240,0,'Mutating Injection - Poison Cloud'),(28059,-28084,1,'Positive Charge - Negative Charge'),(-28059,-29659,0,'Positive Charge'),(28084,-28059,1,'Negative Charge - Positive Charge'),(-28084,-29660,0,'Negative Charge'),(39088,-39091,1,'Positive Charge - Negative Charge'),(-39088,-29659,0,'Positive Charge'),(39091,-39088,1,'Negative Charge - Positive Charge'),(-39091,-39092,0,'Negative Charge'),(33878,-33876,1,'Mangle - Remover'),(33876,-33878,1,'Mangle - Remover'),(-62475,-62399,0,'System Shutdown - Overload Circuit'),(-62475,-62375,0,'System Shutdown - Gathering Speed'),(-62475,62472,0,'System Shutdown'),(62427,62340,2,'Load into Catapult - Passenger Loaded'),(54643,-54643,2,'Wintergrasp Defender Teleport'),(54850,54851,1,'Emerge - Emerge Summon'),(-58600,44795,0,'No fly zone - Parachute'),(-30421,38637,0,'Netherspite\'s Perseverence'),(-30422,38638,0,'Netherspite\'s Serenity'),(-30423,38639,0,'Netherspite\'s Dominance'),(66680,66547,0,'Confess - Confess'),(66889,-66865,0,'Remove Vengeance'),(19263,67801,2,'Deterrence'),(66744,66747,0,'totem of the earthen ring'),(53099,53098,0,'trigger teleport to acherus (for quest 12757)'),(45524,55095,0,'Chains of Ice - Frost Fever'),(52410,-52418,0,'Carrying Seaforium - Remove'),(69378,72586,1,'Drums of the Forgotten Kings'),(69377,72590,1,'Runescroll of Fortitude'),(54861,-23335,0,'Drop Flag on Nitro Boost WSG'),(54861,-23333,0,'Drop Flag on Nitro Boost WSG'),(55004,-23335,0,'Drop Flag on Nitro Boost WSG'),(55004,-23333,0,'Drop Flag on Nitro Boost WSG'),(54861,-34976,0,'Drop Flag on Nitro Boost EOS'),(55004,-34976,0,'Drop Flag on Nitro Boost EOS'),(50141,50001,0,'Blood Oath to Blood Oath Aura'),(61263,61267,0,'Intravenous Healing Effect'),(61263,61268,0,'Intravenous Mana Regeneration Effect'),(66870,-66823,1,'Remove Paralytic Toxin when hit by Burning Bite'),(67621,-67618,1,'Remove Paralytic Toxin when hit by Burning Bite'),(67622,-67619,1,'Remove Paralytic Toxin when hit by Burning Bite'),(67623,-67620,1,'Remove Paralytic Toxin when hit by Burning Bite'),(-66683,68667,0,'Icehowl - Surge of Adrenaline'),(-67661,68667,0,'Icehowl - Surge of Adrenaline'),(58875,58876,0,'Spirit Walk'),(7744,72757,0,'Will of the Forsaken Cooldown Trigger (WOTF)'),(42292,72752,0,'Will of the Forsaken Cooldown Trigger'),(59752,72752,0,'Will of the Forsaken Cooldown Trigger');
+INSERT INTO `spell_linked_spell` VALUES (31224,-1543,2,'Cloak of Shadows - Flare'),(15237,23455,0,'Holy Nova (rank1)'),(-19386,24131,0,'Wyvern Sting'),(47585,60069,2,'Dispersion (transform/regen)'),(47585,63230,2,'Dispersion (immunity)'),(17767,54501,2,'Consume Shadows - Rank 1'),(-5143,-36032,0,'Arcane Missiles Rank 1'),(53563,53651,2,'Beacon of Light'),(781,56446,0,'Disengage'),(57635,57636,0,'Disengage'),(60932,60934,0,'Disengage'),(61507,61508,0,'Disengage'),(49576,49560,0,'Death Grip'),(47897,47960,1,'Shadowflame Rank 1'),(33206,44416,2,'Pain Suppression (threat)'),(52415,52418,0,'Carrying Seaforium - Add'),(52610,62071,0,'Savage Roar'),(-52610,-62071,0,'Savage Roar'),(51209,55095,1,'Hungering cold - frost fever'),(50334,58923,2,'Berserk - modify target number aura'),(-5229,-51185,0,'King of the Jungle - remove with enrage'),(20594,65116,0,'Stoneform'),(49039,50397,2,'Lichborne - shapeshift'),(64382,64380,0,'Shattering Throw'),(-59907,7,0,'Lightwell Charges - Suicide'),(40214,40216,2,'Dragonmaw Illusion'),(40214,42016,2,'Dragonmaw Illusion'),(36574,36650,0,'Apply Phase Slip Vulnerability'),(-30410,44032,0,'Manticron Cube Mind Exhaustion'),(-33711,33686,0,'Murmur\'s Shockwave (Normal)'),(-38794,33686,0,'Murmur\'s Shockwave (Heroic)'),(33686,31705,0,'Murmur\'s Shockwave Jump'),(44008,45265,1,'Static Disruption Visual'),(43648,44007,1,'Storm Eye Safe Zone'),(44007,-43657,2,'Storm Eye Safe Zone Immune'),(43658,43653,0,'Electrical Arc Visual'),(43658,43654,0,'Electrical Arc Visual'),(43658,43655,0,'Electrical Arc Visual'),(43658,43656,0,'Electrical Arc Visual'),(43658,43659,0,'Electrical Arc Visual'),(39835,39968,1,'Needle Spine'),(-41376,41377,0,'Spite'),(41126,41131,1,'Flame Crash'),(-41914,41915,0,'Summon Parasitic Shadowfiend'),(-41917,41915,0,'Summon Parasitic Shadowfiend'),(39908,40017,1,'Eye Blast'),(40604,40616,1,'Fel Rage Aura'),(40616,41625,1,'Fel Rage Aura'),(41292,42017,2,'Aura of Suffering'),(44869,44866,1,'Spectral Blast Portal'),(44869,46019,1,'Spectral Blast Teleport'),(46019,46021,1,'Spectral Realm Aura'),(-46021,46020,0,'Teleport: Normal Realm'),(46020,44867,1,'Spectral Exhaustion'),(44867,-46019,2,'Spectral Exhaustion - Teleport: Spectral Realm'),(45661,45665,1,'Encapsulate'),(45347,-45348,1,'Remove Flame Touched'),(45348,-45347,1,'Remove Dark Touched'),(45248,45347,1,'Apply Dark Touched'),(45329,45347,1,'Apply Dark Touched'),(45256,45347,1,'Apply Dark Touched'),(45270,45347,1,'Apply Dark Touched'),(45342,45348,1,'Apply Flame Touched'),(46771,45348,1,'Apply Flame Touched'),(45271,45347,1,'Apply Dark Touched'),(45246,45348,1,'Apply Flame Touched'),(44869,-45018,1,'Remove Arcane Buffet'),(46019,-45018,1,'Remove Arcane Buffet'),(46242,46247,0,'Black Hole Visual (Birth)'),(46228,46235,0,'Black Hole Visual (Grown)'),(46228,-46247,0,'Black Hole Visual (Grown)'),(46262,46265,0,'Void Zone Visual'),(-55053,55601,0,'Deathbloom (H)'),(-29865,55594,0,'Deathbloom'),(54097,-54100,1,'Widow\'s Embrace - Frenzy (H)'),(28732,-28798,1,'Widow\'s Embrace - Frenzy'),(58666,58672,1,'Impale (Archavon)'),(60882,58672,1,'Impale (Archavon)'),(16857,60089,0,'Faerie Fire (Feral)'),(-54361,54343,0,'Void Shift (Normal) - Void Shifted'),(-59743,54343,0,'Void Shift (Heroic) - Void Shifted'),(-28169,28206,0,'Mutating Injection - Mutagen Explosion'),(-28169,28240,0,'Mutating Injection - Poison Cloud'),(28059,-28084,1,'Positive Charge - Negative Charge'),(-28059,-29659,0,'Positive Charge'),(28084,-28059,1,'Negative Charge - Positive Charge'),(-28084,-29660,0,'Negative Charge'),(39088,-39091,1,'Positive Charge - Negative Charge'),(-39088,-29659,0,'Positive Charge'),(39091,-39088,1,'Negative Charge - Positive Charge'),(-39091,-39092,0,'Negative Charge'),(33878,-33876,1,'Mangle - Remover'),(33876,-33878,1,'Mangle - Remover'),(-62475,-62399,0,'System Shutdown - Overload Circuit'),(-62475,-62375,0,'System Shutdown - Gathering Speed'),(-62475,62472,0,'System Shutdown'),(62427,62340,2,'Load into Catapult - Passenger Loaded'),(54643,-54643,2,'Wintergrasp Defender Teleport'),(54850,54851,1,'Emerge - Emerge Summon'),(-58600,44795,0,'No fly zone - Parachute'),(-30421,38637,0,'Netherspite\'s Perseverence'),(-30422,38638,0,'Netherspite\'s Serenity'),(-30423,38639,0,'Netherspite\'s Dominance'),(66680,66547,0,'Confess - Confess'),(66889,-66865,0,'Remove Vengeance'),(19263,67801,2,'Deterrence'),(66744,66747,0,'totem of the earthen ring'),(53099,53098,0,'trigger teleport to acherus (for quest 12757)'),(45524,55095,0,'Chains of Ice - Frost Fever'),(52410,-52418,0,'Carrying Seaforium - Remove'),(69378,72586,1,'Drums of the Forgotten Kings'),(69377,72590,1,'Runescroll of Fortitude'),(54861,-23335,0,'Drop Flag on Nitro Boost WSG'),(54861,-23333,0,'Drop Flag on Nitro Boost WSG'),(55004,-23335,0,'Drop Flag on Nitro Boost WSG'),(55004,-23333,0,'Drop Flag on Nitro Boost WSG'),(54861,-34976,0,'Drop Flag on Nitro Boost EOS'),(55004,-34976,0,'Drop Flag on Nitro Boost EOS'),(50141,50001,0,'Blood Oath to Blood Oath Aura'),(61263,61267,0,'Intravenous Healing Effect'),(61263,61268,0,'Intravenous Mana Regeneration Effect'),(66870,-66823,1,'Remove Paralytic Toxin when hit by Burning Bite'),(67621,-67618,1,'Remove Paralytic Toxin when hit by Burning Bite'),(67622,-67619,1,'Remove Paralytic Toxin when hit by Burning Bite'),(67623,-67620,1,'Remove Paralytic Toxin when hit by Burning Bite'),(-66683,68667,0,'Icehowl - Surge of Adrenaline'),(-67661,68667,0,'Icehowl - Surge of Adrenaline'),(58875,58876,1,'Spirit Walk'),(7744,72757,0,'Will of the Forsaken Cooldown Trigger (WOTF)'),(42292,72752,0,'Will of the Forsaken Cooldown Trigger'),(59752,72752,0,'Will of the Forsaken Cooldown Trigger'),(-73023,69706,0,'Rotface: Mutated Infection Summon'),(-73022,69706,0,'Rotface: Mutated Infection Summon'),(-71224,69706,0,'Rotface: Mutated Infection Summon'),(-69674,69706,0,'Rotface: Mutated Infection Summon'),(-68839,68846,0,'Bronjahm: Corrupt Soul Summon'),(66548,66550,0,'Isle of Conquest (IN>OUT)'),(66549,66551,0,'Isle of Conquest (OUT>IN)'),(66551,-66548,2,'Isle of Conquest Teleport (OUT>IN) Debuff limit'),(66550,-66549,2,'Isle of Conquest Teleport (IN>OUT) Debuff limit');
 /*!40000 ALTER TABLE `spell_linked_spell` ENABLE KEYS */;
 UNLOCK TABLES;
 DELIMITER ;;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_CharExtraLevelHPMP` */;;
+/*!50003 SET SESSION SQL_MODE=""*/;;
+/*!50003 CREATE*/ /*!50020 DEFINER=`mrhooha`@`%`*/ /*!50003 PROCEDURE `sp_CharExtraLevelHPMP`()
+BEGIN
+  
+  DECLARE intMaxHP           INT   DEFAULT 65535000; 
+  DECLARE intMaxMana         INT   DEFAULT 65535000;   
+  DECLARE sngHPInc           FLOAT DEFAULT 0.001;    
+  DECLARE sngManaInc         FLOAT DEFAULT 0.001;    
+  DECLARE intStartLvl        INT   DEFAULT 80;      
+  DECLARE intFinishLvl       INT   DEFAULT 85;     
+  
+  DECLARE intRecordDone      INT   DEFAULT 0;
+  DECLARE intClass           INT   DEFAULT 0;
+  DECLARE intLevel           INT   DEFAULT 0;
+  DECLARE intCurrHP          INT   DEFAULT 0;
+  DECLARE intCurrMana        INT   DEFAULT 0;
+  
+  DECLARE curPlayerStat  CURSOR FOR SELECT `class`, `level`, `basehp`, `basemana` FROM player_classlevelstats;
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET intRecordDone = 1;
+  
+  OPEN curPlayerStat;
+  
+  REPEAT
+    
+    FETCH curPlayerStat INTO intClass, intLevel, intCurrHP, intCurrMana;
+    
+    IF intLevel = intStartLvl THEN
+       REPEAT
+         
+         SET intLevel = intLevel + 1;
+         
+         DELETE FROM player_classlevelstats WHERE `class` = intClass AND `level` = intLevel;
+         
+         IF (ROUND(intCurrHP * (1 + sngHPInc) + 200)) <= intMaxHP THEN
+           SET intCurrHP = ROUND(intCurrHP * (1 + sngHPInc) + 200);
+         ELSE
+           SET intCurrHP = intMaxHP;  
+         END IF;
+         
+         IF (ROUND(intCurrMana * (1 + sngManaInc) + 200)) <= intMaxMana THEN
+           SET intCurrMana = ROUND(intCurrMana * (1 + sngManaInc) + 200);
+         ELSE
+           SET intCurrMana = intMaxMana;
+         END IF;
+         
+         INSERT INTO player_classlevelstats
+         (`class`, `level`, `basehp`, `basemana`)
+         VALUES
+         (intClass, intLevel, intCurrHP, intCurrMana);
+       UNTIL intLevel = intFinishLvl END REPEAT;
+    END IF;
+  UNTIL intRecordDone END REPEAT;
+  
+  CLOSE curPlayerStat;
+END */;;
+/*!50003 SET SESSION SQL_MODE=@OLD_SQL_MODE*/;;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_CharExtraLevelStats` */;;
+/*!50003 SET SESSION SQL_MODE=""*/;;
+/*!50003 CREATE*/ /*!50020 DEFINER=`mrhooha`@`%`*/ /*!50003 PROCEDURE `sp_CharExtraLevelStats`()
+BEGIN
+  
+  DECLARE intMaxStats        INT   DEFAULT 2556541;    
+  DECLARE sngStatsInc        FLOAT DEFAULT 0.00000000001;    
+  DECLARE intStartLvl        INT   DEFAULT 80;      
+  DECLARE intFinishLvl       INT   DEFAULT 85;     
+  
+  DECLARE intRecordDone      INT   DEFAULT 0;
+  DECLARE intRace            INT   DEFAULT 0;
+  DECLARE intClass           INT   DEFAULT 0;
+  DECLARE intLevel           INT   DEFAULT 0;
+  DECLARE intCurrSTR         INT   DEFAULT 0;
+  DECLARE intCurrAGI         INT   DEFAULT 0;
+  DECLARE intCurrSTA         INT   DEFAULT 0;
+  DECLARE intCurrINT         INT   DEFAULT 0;
+  DECLARE intCurrSPI         INT   DEFAULT 0;
+  
+  DECLARE curPlayerStat  CURSOR FOR SELECT `race`, `class`, `level`, `str`, `agi`, `sta`, `inte`, `spi` FROM player_levelstats;
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET intRecordDone = 1;
+  
+  OPEN curPlayerStat;
+  
+  REPEAT
+    
+    FETCH curPlayerStat INTO intRace, intClass, intLevel, intCurrSTR, intCurrAGI, intCurrSTA, intCurrINT, intCurrSPI;
+    
+    IF intLevel = intStartLvl THEN
+       REPEAT
+         
+         SET intLevel = intLevel + 1;
+         
+         DELETE FROM player_levelstats WHERE `race` = intRace AND `class` = intClass AND `level` = intLevel;
+         
+         IF (ROUND(intCurrSTR * (1 + sngStatsInc) + 10)) <= intMaxStats THEN
+           SET intCurrSTR = ROUND(intCurrSTR * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrSTR = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrAGI * (1 + sngStatsInc) + 10)) <= intMaxStats THEN
+           SET intCurrAGI = ROUND(intCurrAGI * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrAGI = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrSTA * (1 + sngStatsInc) + 10)) <= intMaxStats THEN
+           SET intCurrSTA = ROUND(intCurrSTA * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrSTA = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrINT * (1 + sngStatsInc) + 10)) <= intMaxStats THEN
+           SET intCurrINT = ROUND(intCurrINT * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrINT = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrSPI * (1 + sngStatsInc) + 10)) <= intMaxStats THEN
+           SET intCurrSPI = ROUND(intCurrSPI * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrSPI = intMaxStats;
+         END IF;
+         
+         INSERT INTO player_levelstats
+         (`race`, `class`, `level`, `str`, `agi`, `sta`, `inte`, `spi`)
+         VALUES
+         (intRace, intClass, intLevel, intCurrSTR, intCurrAGI, intCurrSTA, intCurrINT, intCurrSPI);
+       UNTIL intLevel = intFinishLvl END REPEAT;
+    END IF;
+  UNTIL intRecordDone END REPEAT;
+  
+  CLOSE curPlayerStat;
+END */;;
+/*!50003 SET SESSION SQL_MODE=@OLD_SQL_MODE*/;;
 /*!50003 DROP PROCEDURE IF EXISTS `sp_delete_loot` */;;
 /*!50003 SET SESSION SQL_MODE="STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION"*/;;
 /*!50003 CREATE*/ /*!50020 DEFINER=`root`@`localhost`*/ /*!50003 PROCEDURE `sp_delete_loot`(IN loot_type VARCHAR(10),IN loot_entry INT(10),IN item_entry INT(10))
@@ -781,6 +915,110 @@ BEGIN
         ELSE CALL INVALID_REFERENCE_TYPE;
     END CASE;
     SET reference :=1+(SELECT `entry` FROM `reference_loot_template` WHERE `entry` BETWEEN @Low AND @High ORDER BY `entry` DESC LIMIT 1);
+END */;;
+/*!50003 SET SESSION SQL_MODE=@OLD_SQL_MODE*/;;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_PetExtraLevelStats` */;;
+/*!50003 SET SESSION SQL_MODE=""*/;;
+/*!50003 CREATE*/ /*!50020 DEFINER=`mrhooha`@`%`*/ /*!50003 PROCEDURE `sp_PetExtraLevelStats`()
+BEGIN
+  
+  DECLARE intMaxHP       INT   DEFAULT 6553500;
+  DECLARE intMaxMana     INT   DEFAULT 6553500;
+  DECLARE intMaxArmor    INT   DEFAULT 6553500;
+  DECLARE intMaxStats    INT   DEFAULT 100000;
+  DECLARE sngHPInc       FLOAT DEFAULT 0.05;    
+  DECLARE sngManaInc     FLOAT DEFAULT 0.05;    
+  DECLARE sngArmorInc    FLOAT DEFAULT 0.05;    
+  DECLARE sngStatsInc    FLOAT DEFAULT 0.015;    
+  DECLARE intStartLvl    INT   DEFAULT 80;      
+  DECLARE intFinishLvl   INT   DEFAULT 85;      
+  
+  DECLARE intRecordDone  INT   DEFAULT 0;
+  DECLARE intCreature    INT   DEFAULT 0;
+  DECLARE intLevel       INT   DEFAULT 0;
+  DECLARE intClass       INT   DEFAULT 0;
+  DECLARE intCurrHP      INT   DEFAULT 0;
+  DECLARE intCurrMana    INT   DEFAULT 0;
+  DECLARE intCurrArmor   INT   DEFAULT 0;
+  DECLARE intCurrSTR     INT   DEFAULT 0;
+  DECLARE intCurrAGI     INT   DEFAULT 0;
+  DECLARE intCurrSTA     INT   DEFAULT 0;
+  DECLARE intCurrINT     INT   DEFAULT 0;
+  DECLARE intCurrSPI     INT   DEFAULT 0;
+  
+  DECLARE curPetStat  CURSOR FOR SELECT `creature_entry`, `level`, `hp`, `mana`, `armor`, `str`, `agi`, `sta`, `inte`, `spi` FROM pet_levelstats;
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET intRecordDone = 1;
+  
+  OPEN curPetStat;
+  
+  REPEAT
+    
+    FETCH curPetStat INTO intCreature, intLevel, intCurrHP, intCurrMana, intCurrArmor, intCurrSTR, intCurrAGI, intCurrSTA, intCurrINT, intCurrSPI;
+    
+    IF intLevel = intStartLvl THEN
+       REPEAT
+         
+         SET intLevel = intLevel + 1;
+         
+         DELETE FROM pet_levelstats WHERE `creature_entry` = intCreature AND `level` = intLevel;
+         
+         IF (ROUND(intCurrHP * (1 + sngHPInc) + 1)) <= intMaxHP THEN
+           SET intCurrHP = ROUND(intCurrHP * (1 + sngHPInc) + 100);
+         ELSE
+           SET intCurrHP = intMaxHP;  
+         END IF;
+         
+         IF (ROUND(intCurrMana * (1 + sngManaInc) + 1)) <= intMaxMana THEN
+           SET intCurrMana = ROUND(intCurrMana * (1 + sngManaInc) + 100);
+         ELSE
+           SET intCurrMana = intMaxMana;
+         END IF;
+         
+         IF (ROUND(intCurrArmor * (1 + sngArmorInc) + 1)) <= intMaxArmor THEN
+           SET intCurrArmor = ROUND(intCurrArmor * (1 + sngArmorInc) + 800);
+         ELSE
+           SET intCurrArmor = intMaxArmor;
+         END IF;
+         
+         IF (ROUND(intCurrSTR * (1 + sngStatsInc) + 1)) <= intMaxStats THEN
+           SET intCurrSTR = ROUND(intCurrSTR * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrSTR = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrAGI * (1 + sngStatsInc) + 1)) <= intMaxStats THEN
+           SET intCurrAGI = ROUND(intCurrAGI * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrAGI = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrSTA * (1 + sngStatsInc) + 1)) <= intMaxStats THEN
+           SET intCurrSTA = ROUND(intCurrSTA * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrSTA = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrINT * (1 + sngStatsInc) + 1)) <= intMaxStats THEN
+           SET intCurrINT = ROUND(intCurrINT * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrINT = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrSPI * (1 + sngStatsInc) + 1)) <= intMaxStats THEN
+           SET intCurrSPI = ROUND(intCurrSPI * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrSPI = intMaxStats;
+         END IF;
+         
+         INSERT INTO pet_levelstats
+         (`creature_entry`, `level`, `hp`, `mana`, `armor`, `str`, `agi`, `sta`, `inte`, `spi`)
+         VALUES
+         (intCreature, intLevel, intCurrHP, intCurrMana, intCurrArmor, intCurrSTR, intCurrAGI, intCurrSTA, intCurrINT, intCurrSPI);
+       UNTIL intLevel = intFinishLvl END REPEAT;
+    END IF;
+  UNTIL intRecordDone END REPEAT;
+  
+  CLOSE curPetStat;
 END */;;
 /*!50003 SET SESSION SQL_MODE=@OLD_SQL_MODE*/;;
 /*!50003 DROP PROCEDURE IF EXISTS `sp_set_entry_list` */;;

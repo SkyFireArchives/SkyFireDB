@@ -18,10 +18,144 @@ CREATE TABLE `spell_script_names` (
 
 LOCK TABLES `spell_script_names` WRITE;
 /*!40000 ALTER TABLE `spell_script_names` DISABLE KEYS */;
-INSERT INTO `spell_script_names` VALUES (-53302,'spell_hun_sniper_training'),(-51685,'spell_rog_prey_on_the_weak'),(0,'spell_deathbringer_blood_power'),(118,'spell_mage_polymorph_visual'),(4073,'spell_item_mechanical_dragonling'),(5201,'spell_warl_create_healthstone'),(5581,'spell_ex_5581'),(5938,'spell_rog_shiv'),(6962,'spell_gen_pet_summoned'),(8063,'spell_item_deviate_fish'),(8129,'spell_pri_mana_burn'),(8213,'spell_item_savory_deviate_delight'),(8349,'spell_sha_fire_nova'),(11958,'spell_mage_cold_snap'),(12749,'spell_item_mithril_mechanical_dragonling'),(12975,'spell_warr_last_stand'),(13120,'spell_item_net_o_matic'),(13278,'spell_item_gnomish_death_ray'),(14185,'spell_rog_preparation'),(14537,'spell_item_six_demon_bag'),(16190,'spell_sha_mana_tide_totem'),(16589,'spell_item_noggenfogger_elixir'),(17271,'spell_q5206_test_fetid_skull'),(19503,'spell_hun_scatter_shot'),(19804,'spell_item_arcanite_dragonling'),(20473,'spell_pal_holy_shock'),(20911,'spell_pal_blessing_of_sanctuary'),(23133,'spell_item_gnomish_battle_chicken'),(23989,'spell_hun_readiness'),(24750,'spell_gen_trick'),(24751,'spell_gen_trick_or_treat'),(25899,'spell_pal_blessing_of_sanctuary'),(28374,'spell_stinky_precious_decimate'),(31228,'spell_rog_cheat_death'),(31687,'spell_mage_summon_water_elemental'),(33060,'spell_item_make_a_wish'),(34665,'spell_q10255_administer_antidote'),(37877,'spell_pal_blessing_of_faith'),(40802,'spell_item_mingos_fortune_generator'),(41337,'spell_gen_aura_of_anger'),(41470,'spell_pal_judgement_of_command'),(42292,'spell_pvp_trinket_wotf_shared_cd'),(44936,'spell_q11515_fel_siphon_dummy'),(45449,'spell_q11587_arcane_prisoner_rescue'),(45472,'spell_gen_parachute'),(46023,'spell_q11730_ultrasonic_screwdriver'),(46394,'spell_gen_burn_brutallus'),(47193,'spell_warl_demonic_empowerment'),(47201,'spell_warl_everlasting_affliction'),(47540,'spell_pri_penance'),(47580,'spell_pri_pain_and_suffering_proc'),(49587,'spell_q12459_seeds_of_natures_wrath'),(50524,'spell_dk_runic_power_feed'),(51840,'spell_q12634_despawn_fruit_tosser'),(52308,'spell_q12683_take_sputum_sample'),(53209,'spell_hun_chimera_shot'),(53271,'spell_hun_masters_call'),(53412,'spell_hun_invigoration'),(53478,'spell_hun_last_stand_pet'),(53551,'spell_q55_sacred_cleansing'),(54044,'spell_hun_pet_carrion_feeder'),(54845,'spell_dru_glyph_of_starfire'),(55090,'spell_dk_scourge_strike'),(55709,'spell_hun_pet_heart_of_the_phoenix'),(55797,'spell_q12937_relief_for_the_fallen'),(58601,'spell_gen_remove_flight_auras'),(59640,'spell_item_underbelly_elixir'),(60177,'spell_rog_hunger_for_blood'),(61614,'spell_dk_corpse_explosion'),(62644,'spell_q6124_6129_apply_salve'),(66118,'spell_gen_leeching_swarm'),(66244,'spell_ex_66244'),(67019,'spell_item_flask_of_the_north'),(69076,'spell_marrowgar_bone_storm'),(70824,'spell_marrowgar_coldflame'),(70842,'spell_deathwhisper_mana_barrier'),(70897,'spell_cultist_dark_martyrdom'),(72176,'spell_deathbringer_blood_link'),(72202,'spell_deathbringer_blood_link_aura'),(72410,'spell_deathbringer_rune_of_blood'),(72551,'spell_festergut_gastric_bloat'),(73032,'spell_festergut_pungent_blight'),(73033,'spell_festergut_blighted_spores'),(73058,'spell_deathbringer_blood_nova'),(73143,'spell_marrowgar_bone_spike_graveyard'),(79153,'spell_creature_permanent_feign_death'),(85639,'spell_pal_guarded_by_the_light');
+INSERT INTO `spell_script_names` VALUES (-53302,'spell_hun_sniper_training'),(-52284,'spell_dk_will_of_the_necropolis'),(-51685,'spell_rog_prey_on_the_weak'),(-51474,'spell_sha_astral_shift'),(-47788,'spell_pri_guardian_spirit'),(-31850,'spell_pal_ardent_defender'),(-31228,'spell_rog_cheat_death'),(-31130,'spell_rog_nerves_of_steel'),(-11426,'spell_mage_incanters_absorbtion_absorb'),(-11113,'spell_mage_blast_wave'),(-1463,'spell_mage_incanters_absorbtion_manashield'),(-543,'spell_mage_frost_warding_trigger'),(-543,'spell_mage_incanters_absorbtion_absorb'),(-17,'spell_pri_reflective_shield_trigger'),(0,'spell_deathbringer_blood_power'),(118,'spell_mage_polymorph_visual'),(4073,'spell_item_mechanical_dragonling'),(5201,'spell_warl_create_healthstone'),(5581,'spell_ex_5581'),(5938,'spell_rog_shiv'),(6474,'spell_sha_earthbind_totem'),(6962,'spell_gen_pet_summoned'),(8063,'spell_item_deviate_fish'),(8129,'spell_pri_mana_burn'),(8213,'spell_item_savory_deviate_delight'),(8349,'spell_sha_fire_nova'),(11958,'spell_mage_cold_snap'),(12749,'spell_item_mithril_mechanical_dragonling'),(12975,'spell_warr_last_stand'),(13120,'spell_item_net_o_matic'),(13278,'spell_item_gnomish_death_ray'),(14185,'spell_rog_preparation'),(14537,'spell_item_six_demon_bag'),(16190,'spell_sha_mana_tide_totem'),(16589,'spell_item_noggenfogger_elixir'),(17271,'spell_q5206_test_fetid_skull'),(19503,'spell_hun_scatter_shot'),(19804,'spell_item_arcanite_dragonling'),(20473,'spell_pal_holy_shock'),(20911,'spell_pal_blessing_of_sanctuary'),(23133,'spell_item_gnomish_battle_chicken'),(23989,'spell_hun_readiness'),(24750,'spell_gen_trick'),(24751,'spell_gen_trick_or_treat'),(24907,'spell_dru_moonkin_form_passive'),(25899,'spell_pal_blessing_of_sanctuary'),(28374,'spell_stinky_precious_decimate'),(31228,'spell_rog_cheat_death'),(31261,'spell_creature_permanent_feign_death'),(31687,'spell_mage_summon_water_elemental'),(33060,'spell_item_make_a_wish'),(34665,'spell_q10255_administer_antidote'),(37877,'spell_pal_blessing_of_faith'),(39228,'spell_gen_absorb0_hitlimit1'),(40802,'spell_item_mingos_fortune_generator'),(41337,'spell_gen_aura_of_anger'),(41475,'spell_boss_lady_malande_shield'),(42292,'spell_pvp_trinket_wotf_shared_cd'),(43874,'spell_q11396_11399_force_shield_arcane_purple_x3'),(43882,'spell_q11396_11399_scourging_crystal_controller_dummy'),(44936,'spell_q11515_fel_siphon_dummy'),(45449,'spell_q11587_arcane_prisoner_rescue'),(45472,'spell_gen_parachute'),(46023,'spell_q11730_ultrasonic_screwdriver'),(46221,'spell_gen_animal_blood'),(46394,'spell_gen_burn_brutallus'),(47193,'spell_warl_demonic_empowerment'),(47201,'spell_warl_everlasting_affliction'),(47299,'spell_ex_absorb_aura'),(47540,'spell_pri_penance'),(47580,'spell_pri_pain_and_suffering_proc'),(48707,'spell_dk_anti_magic_shell_self'),(49587,'spell_q12459_seeds_of_natures_wrath'),(50133,'spell_q11396_11399_scourging_crystal_controller'),(50461,'spell_dk_anti_magic_zone'),(50462,'spell_dk_anti_magic_shell_raid'),(50524,'spell_dk_runic_power_feed'),(51840,'spell_q12634_despawn_fruit_tosser'),(52308,'spell_q12683_take_sputum_sample'),(53209,'spell_hun_chimera_shot'),(53271,'spell_hun_masters_call'),(53412,'spell_hun_invigoration'),(53478,'spell_hun_last_stand_pet'),(53551,'spell_q55_sacred_cleansing'),(54044,'spell_hun_pet_carrion_feeder'),(54845,'spell_dru_glyph_of_starfire'),(55090,'spell_dk_scourge_strike'),(55709,'spell_hun_pet_heart_of_the_phoenix'),(55797,'spell_q12937_relief_for_the_fallen'),(55891,'spell_taldaram_flame_ball_visual'),(55947,'spell_taldaram_flame_ball_visual'),(58601,'spell_gen_remove_flight_auras'),(59640,'spell_item_underbelly_elixir'),(60177,'spell_rog_hunger_for_blood'),(60218,'spell_gen_absorb0_hitlimit1'),(62606,'spell_dru_savage_defense'),(62644,'spell_q6124_6129_apply_salve'),(62717,'spell_ignis_slag_pot'),(63477,'spell_ignis_slag_pot'),(66118,'spell_gen_leeching_swarm'),(66244,'spell_ex_66244'),(66630,'spell_gen_gunship_portal'),(66637,'spell_gen_gunship_portal'),(66656,'spell_gen_parachute_ic'),(67019,'spell_item_flask_of_the_north'),(68793,'spell_bronjahm_magic_bane'),(68861,'spell_bronjahm_consume_soul'),(68870,'spell_bronjahm_soulstorm_visual'),(69008,'spell_bronjahm_soulstorm_channel'),(69050,'spell_bronjahm_magic_bane'),(69076,'spell_marrowgar_bone_storm'),(69172,'spell_tyrannus_overlord_brand'),(69538,'spell_rotface_little_ooze_combine'),(69553,'spell_rotface_large_ooze_combine'),(69610,'spell_rotface_large_ooze_buff_combine'),(69782,'spell_rotface_ooze_flood'),(69796,'spell_rotface_ooze_flood'),(69798,'spell_rotface_ooze_flood'),(69801,'spell_rotface_ooze_flood'),(69832,'spell_rotface_unstable_ooze_explosion'),(69839,'spell_rotface_unstable_ooze_explosion_init'),(70308,'spell_putricide_mutation_init'),(70311,'spell_putricide_mutated_transformation'),(70343,'spell_putricide_slime_puddle'),(70351,'spell_putricide_unstable_experiment'),(70360,'spell_putricide_eat_ooze'),(70405,'spell_putricide_mutated_transformation_dismiss'),(70459,'spell_putricide_ooze_eruption_searcher'),(70539,'spell_putricide_regurgitated_ooze'),(70672,'spell_putricide_gaseous_bloat'),(70701,'spell_putricide_expunged_gas'),(70769,'spell_gen_divine_storm_cd_reset'),(70824,'spell_marrowgar_coldflame'),(70842,'spell_deathwhisper_mana_barrier'),(70897,'spell_cultist_dark_martyrdom'),(70920,'spell_putricide_unbound_plague'),(71255,'spell_putricide_choking_gas_bomb'),(71412,'spell_putricide_ooze_summon'),(71415,'spell_putricide_ooze_summon'),(71441,'spell_rotface_unstable_ooze_explosion_suicide'),(71503,'spell_putricide_mutated_transformation'),(71598,'spell_creature_permanent_feign_death'),(71718,'spell_taldaram_summon_flame_ball'),(71756,'spell_taldaram_ball_of_inferno_flame'),(71806,'spell_taldaram_glittering_sparks'),(71905,'spell_item_shadowmourne'),(71966,'spell_putricide_unstable_experiment'),(71967,'spell_putricide_unstable_experiment'),(71968,'spell_putricide_unstable_experiment'),(72040,'spell_taldaram_summon_flame_ball'),(72080,'spell_valanar_kinetic_bomb'),(72087,'spell_valanar_kinetic_bomb_knockback'),(72176,'spell_deathbringer_blood_link'),(72202,'spell_deathbringer_blood_link_aura'),(72410,'spell_deathbringer_rune_of_blood'),(72451,'spell_putricide_mutated_plague'),(72455,'spell_putricide_gaseous_bloat'),(72457,'spell_putricide_regurgitated_ooze'),(72463,'spell_putricide_mutated_plague'),(72508,'spell_putricide_mutated_transformation_dismiss'),(72509,'spell_putricide_mutated_transformation_dismiss'),(72510,'spell_putricide_mutated_transformation_dismiss'),(72527,'spell_putricide_eat_ooze'),(72551,'spell_festergut_gastric_bloat'),(72671,'spell_putricide_mutated_plague'),(72672,'spell_putricide_mutated_plague'),(72782,'spell_taldaram_ball_of_inferno_flame'),(72783,'spell_taldaram_ball_of_inferno_flame'),(72784,'spell_taldaram_ball_of_inferno_flame'),(72832,'spell_putricide_gaseous_bloat'),(72833,'spell_putricide_gaseous_bloat'),(72875,'spell_putricide_regurgitated_ooze'),(72876,'spell_putricide_regurgitated_ooze'),(72999,'spell_blood_council_shadow_prison_damage'),(73001,'spell_blood_council_shadow_prison'),(73032,'spell_festergut_pungent_blight'),(73033,'spell_festergut_blighted_spores'),(73058,'spell_deathbringer_blood_nova'),(73143,'spell_marrowgar_bone_spike_graveyard'),(79153,'spell_creature_permanent_feign_death');
 /*!40000 ALTER TABLE `spell_script_names` ENABLE KEYS */;
 UNLOCK TABLES;
 DELIMITER ;;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_CharExtraLevelHPMP` */;;
+/*!50003 SET SESSION SQL_MODE=""*/;;
+/*!50003 CREATE*/ /*!50020 DEFINER=`mrhooha`@`%`*/ /*!50003 PROCEDURE `sp_CharExtraLevelHPMP`()
+BEGIN
+  
+  DECLARE intMaxHP           INT   DEFAULT 65535000; 
+  DECLARE intMaxMana         INT   DEFAULT 65535000;   
+  DECLARE sngHPInc           FLOAT DEFAULT 0.001;    
+  DECLARE sngManaInc         FLOAT DEFAULT 0.001;    
+  DECLARE intStartLvl        INT   DEFAULT 80;      
+  DECLARE intFinishLvl       INT   DEFAULT 85;     
+  
+  DECLARE intRecordDone      INT   DEFAULT 0;
+  DECLARE intClass           INT   DEFAULT 0;
+  DECLARE intLevel           INT   DEFAULT 0;
+  DECLARE intCurrHP          INT   DEFAULT 0;
+  DECLARE intCurrMana        INT   DEFAULT 0;
+  
+  DECLARE curPlayerStat  CURSOR FOR SELECT `class`, `level`, `basehp`, `basemana` FROM player_classlevelstats;
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET intRecordDone = 1;
+  
+  OPEN curPlayerStat;
+  
+  REPEAT
+    
+    FETCH curPlayerStat INTO intClass, intLevel, intCurrHP, intCurrMana;
+    
+    IF intLevel = intStartLvl THEN
+       REPEAT
+         
+         SET intLevel = intLevel + 1;
+         
+         DELETE FROM player_classlevelstats WHERE `class` = intClass AND `level` = intLevel;
+         
+         IF (ROUND(intCurrHP * (1 + sngHPInc) + 200)) <= intMaxHP THEN
+           SET intCurrHP = ROUND(intCurrHP * (1 + sngHPInc) + 200);
+         ELSE
+           SET intCurrHP = intMaxHP;  
+         END IF;
+         
+         IF (ROUND(intCurrMana * (1 + sngManaInc) + 200)) <= intMaxMana THEN
+           SET intCurrMana = ROUND(intCurrMana * (1 + sngManaInc) + 200);
+         ELSE
+           SET intCurrMana = intMaxMana;
+         END IF;
+         
+         INSERT INTO player_classlevelstats
+         (`class`, `level`, `basehp`, `basemana`)
+         VALUES
+         (intClass, intLevel, intCurrHP, intCurrMana);
+       UNTIL intLevel = intFinishLvl END REPEAT;
+    END IF;
+  UNTIL intRecordDone END REPEAT;
+  
+  CLOSE curPlayerStat;
+END */;;
+/*!50003 SET SESSION SQL_MODE=@OLD_SQL_MODE*/;;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_CharExtraLevelStats` */;;
+/*!50003 SET SESSION SQL_MODE=""*/;;
+/*!50003 CREATE*/ /*!50020 DEFINER=`mrhooha`@`%`*/ /*!50003 PROCEDURE `sp_CharExtraLevelStats`()
+BEGIN
+  
+  DECLARE intMaxStats        INT   DEFAULT 2556541;    
+  DECLARE sngStatsInc        FLOAT DEFAULT 0.00000000001;    
+  DECLARE intStartLvl        INT   DEFAULT 80;      
+  DECLARE intFinishLvl       INT   DEFAULT 85;     
+  
+  DECLARE intRecordDone      INT   DEFAULT 0;
+  DECLARE intRace            INT   DEFAULT 0;
+  DECLARE intClass           INT   DEFAULT 0;
+  DECLARE intLevel           INT   DEFAULT 0;
+  DECLARE intCurrSTR         INT   DEFAULT 0;
+  DECLARE intCurrAGI         INT   DEFAULT 0;
+  DECLARE intCurrSTA         INT   DEFAULT 0;
+  DECLARE intCurrINT         INT   DEFAULT 0;
+  DECLARE intCurrSPI         INT   DEFAULT 0;
+  
+  DECLARE curPlayerStat  CURSOR FOR SELECT `race`, `class`, `level`, `str`, `agi`, `sta`, `inte`, `spi` FROM player_levelstats;
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET intRecordDone = 1;
+  
+  OPEN curPlayerStat;
+  
+  REPEAT
+    
+    FETCH curPlayerStat INTO intRace, intClass, intLevel, intCurrSTR, intCurrAGI, intCurrSTA, intCurrINT, intCurrSPI;
+    
+    IF intLevel = intStartLvl THEN
+       REPEAT
+         
+         SET intLevel = intLevel + 1;
+         
+         DELETE FROM player_levelstats WHERE `race` = intRace AND `class` = intClass AND `level` = intLevel;
+         
+         IF (ROUND(intCurrSTR * (1 + sngStatsInc) + 10)) <= intMaxStats THEN
+           SET intCurrSTR = ROUND(intCurrSTR * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrSTR = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrAGI * (1 + sngStatsInc) + 10)) <= intMaxStats THEN
+           SET intCurrAGI = ROUND(intCurrAGI * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrAGI = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrSTA * (1 + sngStatsInc) + 10)) <= intMaxStats THEN
+           SET intCurrSTA = ROUND(intCurrSTA * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrSTA = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrINT * (1 + sngStatsInc) + 10)) <= intMaxStats THEN
+           SET intCurrINT = ROUND(intCurrINT * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrINT = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrSPI * (1 + sngStatsInc) + 10)) <= intMaxStats THEN
+           SET intCurrSPI = ROUND(intCurrSPI * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrSPI = intMaxStats;
+         END IF;
+         
+         INSERT INTO player_levelstats
+         (`race`, `class`, `level`, `str`, `agi`, `sta`, `inte`, `spi`)
+         VALUES
+         (intRace, intClass, intLevel, intCurrSTR, intCurrAGI, intCurrSTA, intCurrINT, intCurrSPI);
+       UNTIL intLevel = intFinishLvl END REPEAT;
+    END IF;
+  UNTIL intRecordDone END REPEAT;
+  
+  CLOSE curPlayerStat;
+END */;;
+/*!50003 SET SESSION SQL_MODE=@OLD_SQL_MODE*/;;
 /*!50003 DROP PROCEDURE IF EXISTS `sp_delete_loot` */;;
 /*!50003 SET SESSION SQL_MODE="STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION"*/;;
 /*!50003 CREATE*/ /*!50020 DEFINER=`root`@`localhost`*/ /*!50003 PROCEDURE `sp_delete_loot`(IN loot_type VARCHAR(10),IN loot_entry INT(10),IN item_entry INT(10))
@@ -779,6 +913,110 @@ BEGIN
         ELSE CALL INVALID_REFERENCE_TYPE;
     END CASE;
     SET reference :=1+(SELECT `entry` FROM `reference_loot_template` WHERE `entry` BETWEEN @Low AND @High ORDER BY `entry` DESC LIMIT 1);
+END */;;
+/*!50003 SET SESSION SQL_MODE=@OLD_SQL_MODE*/;;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_PetExtraLevelStats` */;;
+/*!50003 SET SESSION SQL_MODE=""*/;;
+/*!50003 CREATE*/ /*!50020 DEFINER=`mrhooha`@`%`*/ /*!50003 PROCEDURE `sp_PetExtraLevelStats`()
+BEGIN
+  
+  DECLARE intMaxHP       INT   DEFAULT 6553500;
+  DECLARE intMaxMana     INT   DEFAULT 6553500;
+  DECLARE intMaxArmor    INT   DEFAULT 6553500;
+  DECLARE intMaxStats    INT   DEFAULT 100000;
+  DECLARE sngHPInc       FLOAT DEFAULT 0.05;    
+  DECLARE sngManaInc     FLOAT DEFAULT 0.05;    
+  DECLARE sngArmorInc    FLOAT DEFAULT 0.05;    
+  DECLARE sngStatsInc    FLOAT DEFAULT 0.015;    
+  DECLARE intStartLvl    INT   DEFAULT 80;      
+  DECLARE intFinishLvl   INT   DEFAULT 85;      
+  
+  DECLARE intRecordDone  INT   DEFAULT 0;
+  DECLARE intCreature    INT   DEFAULT 0;
+  DECLARE intLevel       INT   DEFAULT 0;
+  DECLARE intClass       INT   DEFAULT 0;
+  DECLARE intCurrHP      INT   DEFAULT 0;
+  DECLARE intCurrMana    INT   DEFAULT 0;
+  DECLARE intCurrArmor   INT   DEFAULT 0;
+  DECLARE intCurrSTR     INT   DEFAULT 0;
+  DECLARE intCurrAGI     INT   DEFAULT 0;
+  DECLARE intCurrSTA     INT   DEFAULT 0;
+  DECLARE intCurrINT     INT   DEFAULT 0;
+  DECLARE intCurrSPI     INT   DEFAULT 0;
+  
+  DECLARE curPetStat  CURSOR FOR SELECT `creature_entry`, `level`, `hp`, `mana`, `armor`, `str`, `agi`, `sta`, `inte`, `spi` FROM pet_levelstats;
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET intRecordDone = 1;
+  
+  OPEN curPetStat;
+  
+  REPEAT
+    
+    FETCH curPetStat INTO intCreature, intLevel, intCurrHP, intCurrMana, intCurrArmor, intCurrSTR, intCurrAGI, intCurrSTA, intCurrINT, intCurrSPI;
+    
+    IF intLevel = intStartLvl THEN
+       REPEAT
+         
+         SET intLevel = intLevel + 1;
+         
+         DELETE FROM pet_levelstats WHERE `creature_entry` = intCreature AND `level` = intLevel;
+         
+         IF (ROUND(intCurrHP * (1 + sngHPInc) + 1)) <= intMaxHP THEN
+           SET intCurrHP = ROUND(intCurrHP * (1 + sngHPInc) + 100);
+         ELSE
+           SET intCurrHP = intMaxHP;  
+         END IF;
+         
+         IF (ROUND(intCurrMana * (1 + sngManaInc) + 1)) <= intMaxMana THEN
+           SET intCurrMana = ROUND(intCurrMana * (1 + sngManaInc) + 100);
+         ELSE
+           SET intCurrMana = intMaxMana;
+         END IF;
+         
+         IF (ROUND(intCurrArmor * (1 + sngArmorInc) + 1)) <= intMaxArmor THEN
+           SET intCurrArmor = ROUND(intCurrArmor * (1 + sngArmorInc) + 800);
+         ELSE
+           SET intCurrArmor = intMaxArmor;
+         END IF;
+         
+         IF (ROUND(intCurrSTR * (1 + sngStatsInc) + 1)) <= intMaxStats THEN
+           SET intCurrSTR = ROUND(intCurrSTR * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrSTR = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrAGI * (1 + sngStatsInc) + 1)) <= intMaxStats THEN
+           SET intCurrAGI = ROUND(intCurrAGI * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrAGI = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrSTA * (1 + sngStatsInc) + 1)) <= intMaxStats THEN
+           SET intCurrSTA = ROUND(intCurrSTA * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrSTA = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrINT * (1 + sngStatsInc) + 1)) <= intMaxStats THEN
+           SET intCurrINT = ROUND(intCurrINT * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrINT = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrSPI * (1 + sngStatsInc) + 1)) <= intMaxStats THEN
+           SET intCurrSPI = ROUND(intCurrSPI * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrSPI = intMaxStats;
+         END IF;
+         
+         INSERT INTO pet_levelstats
+         (`creature_entry`, `level`, `hp`, `mana`, `armor`, `str`, `agi`, `sta`, `inte`, `spi`)
+         VALUES
+         (intCreature, intLevel, intCurrHP, intCurrMana, intCurrArmor, intCurrSTR, intCurrAGI, intCurrSTA, intCurrINT, intCurrSPI);
+       UNTIL intLevel = intFinishLvl END REPEAT;
+    END IF;
+  UNTIL intRecordDone END REPEAT;
+  
+  CLOSE curPetStat;
 END */;;
 /*!50003 SET SESSION SQL_MODE=@OLD_SQL_MODE*/;;
 /*!50003 DROP PROCEDURE IF EXISTS `sp_set_entry_list` */;;

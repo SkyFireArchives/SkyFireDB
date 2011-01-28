@@ -23,9 +23,144 @@ CREATE TABLE `gameobject_loot_template` (
 
 LOCK TABLES `gameobject_loot_template` WRITE;
 /*!40000 ALTER TABLE `gameobject_loot_template` DISABLE KEYS */;
+INSERT INTO `gameobject_loot_template` VALUES (1618,2447,100,1,0,1,3),(1617,765,100,1,0,1,3),(1617,5056,-0.2,1,0,1,1),(181166,22710,100,1,0,1,2),(1619,2449,100,1,0,1,3),(1620,785,100,1,0,1,3),(1620,2452,20,1,0,1,2),(1620,5056,-1.6,1,0,1,1),(1621,2450,100,1,0,1,3),(1621,2452,41,1,0,1,2),(1621,5056,-1.3,1,0,1,1),(2045,3820,100,1,0,1,3),(1622,2453,100,1,0,1,3),(1628,3369,100,1,0,1,3),(1623,3355,100,1,0,1,3),(1624,3356,100,1,0,1,3),(2041,3357,100,1,0,1,3),(2042,3818,100,1,0,1,3),(2046,3821,100,1,0,1,3),(2043,3358,100,1,0,1,3),(2044,3819,100,1,0,1,3),(2866,4625,100,1,0,1,3),(142140,8831,100,1,0,1,3),(142140,8153,9,1,0,1,1),(142140,19726,0.2,1,0,1,1),(142141,8836,100,1,0,1,3),(142141,11514,-1.1,1,0,1,3),(142142,8838,100,1,0,1,3),(142143,8839,100,1,0,1,3),(142143,24401,11,1,0,1,3),(142144,8845,100,1,0,1,1),(142145,8846,100,1,0,1,3),(176583,13464,100,1,0,1,3),(176584,13463,100,1,0,1,3),(176586,13465,100,1,0,1,3),(176587,13466,100,1,0,1,3),(176588,13467,100,1,0,1,3),(176589,13468,100,1,0,1,3),(181270,22785,100,1,0,1,3),(181270,22575,15,1,0,1,2),(181270,22795,10,1,0,1,3),(181270,24401,5,1,0,1,1),(181270,22794,3,1,0,1,1),(181270,35229,-0.4,1,0,1,1),(181271,22786,100,1,0,1,3),(181271,22575,15,1,0,1,2),(181271,24401,4,1,0,1,1),(181271,22794,3,1,0,1,1),(181271,35229,-0.5,1,0,1,1),(181275,22787,100,1,0,1,3),(181275,22575,16,1,0,1,2),(181275,24401,25,1,0,1,1),(181275,22794,1.9,1,0,1,1),(181276,22787,100,1,0,1,2),(181276,22794,3,1,0,1,1),(181276,35229,-0.2,1,0,1,1),(181277,22789,100,1,0,1,3),(181277,22575,15,1,0,1,2),(181277,22794,3,1,0,1,1),(181277,35229,-0.8,1,0,1,1),(181278,22790,100,1,0,1,3),(181278,22575,30,1,0,1,3),(181278,22794,9,1,0,1,1),(181279,22791,100,1,0,1,3),(181279,22576,15,1,0,1,3),(181279,22794,1,1,0,1,1),(181279,35229,4,1,0,1,1),(185881,32468,100,1,0,1,3),(185881,22576,15,1,0,1,3),(185881,22794,2,1,0,1,1),(185881,32506,-1.5,1,0,1,1),(181280,22792,100,1,0,1,3),(181280,22794,2,1,0,1,1),(181280,35229,1,1,0,1,1),(181281,22793,100,1,0,1,2),(181281,22575,15,1,0,1,2),(181281,22794,3,1,0,1,1),(181281,35229,-1.6,1,0,1,1),(189973,36901,100,1,0,2,3),(189973,37921,36,1,0,1,3),(189973,37704,31,1,0,1,3),(189973,36908,8,1,0,1,1),(191303,39970,100,1,0,2,3),(191303,37704,30,1,0,1,3),(191303,36908,8,1,0,1,1),(190169,36904,100,1,0,2,3),(190169,37921,36,1,0,1,3),(190169,37704,32,1,0,1,3),(190169,36908,8,1,0,1,1),(190170,36907,100,1,0,2,3),(190170,37921,39,1,0,1,3),(190170,37704,36,1,0,1,3),(190170,36908,9,1,0,1,1),(190173,36904,17,1,0,1,3),(190173,36901,58,1,0,1,3),(190173,36907,17,1,0,1,3),(190173,2450,5,1,0,2,3),(190173,2453,5,1,0,2,3),(190173,785,2,1,0,2,3),(191019,36903,100,1,0,2,3),(191019,37704,33,1,0,1,3),(191019,36908,8,1,0,1,1),(190171,36905,100,1,0,2,3),(190171,37704,33,1,0,1,3),(190171,36908,8,1,0,1,1),(190172,36906,100,1,0,2,3),(190172,37704,32,1,0,1,3),(190172,36908,8,1,0,1,1),(190176,37921,37,1,0,1,3),(190176,37704,32,1,0,1,3),(190176,36908,28,1,0,1,2),(202747,52983,100,1,0,2,4),(202747,52329,37,1,0,1,3),(202747,63122,10,1,0,1,1),(202748,52984,100,1,0,2,5),(202748,52329,36,1,0,1,4),(202748,63122,10,1,0,1,1),(202749,52985,100,1,0,2,5),(202749,52329,36,1,0,1,4),(202749,63122,10,1,0,1,1),(202750,52986,100,1,0,2,4),(202750,52329,33,1,0,1,4),(202750,63122,10,1,0,1,1),(202752,52988,100,1,0,2,4),(202752,52329,38,1,0,1,4),(202752,63122,10,1,0,1,1),(202751,52988,100,1,0,2,5),(202751,52329,38,1,0,1,3),(202751,63122,10,1,0,1,1),(1734,1529,3,1,0,1,1),(1734,3864,3,1,0,1,1),(1734,2776,100,1,0,2,4),(1735,7909,1,1,0,1,1),(1735,1705,3,1,0,1,1),(1735,3864,3,1,0,1,1),(1735,1529,4,1,0,1,1),(1735,2838,100,1,0,2,5),(1735,2772,100,1,0,2,4),(1733,1210,3,1,0,1,1),(1733,1705,3,1,0,1,1),(1733,1206,5,1,0,1,1),(1733,2775,100,1,0,2,4),(1732,1529,1,1,0,1,1),(1732,1210,3,1,0,1,1),(1732,1705,3,1,0,1,1),(1732,1206,4,1,0,1,1),(1732,2836,84,1,0,1,6),(1732,2771,100,1,0,2,4),(1731,818,3,1,0,1,1),(1731,1210,3,1,0,1,1),(1731,774,3,1,0,1,1),(1731,2835,82,1,0,1,6),(1731,2770,100,1,0,2,4),(1734,1705,3,1,0,1,1),(2040,3858,100,1,0,2,4),(2040,7912,81,1,0,1,8),(2040,7909,3,1,0,1,1),(2040,3864,3,1,0,1,1),(2040,7910,3,1,0,1,1),(2040,9262,3,1,0,1,1),(123310,3858,100,1,0,2,4),(123310,7912,87,1,0,1,8),(123310,7910,3,1,0,1,1),(123310,3864,1,1,0,1,1),(2047,7911,100,1,0,2,4),(2047,7909,4,1,0,1,1),(2047,3864,3,1,0,1,1),(2047,7910,3,1,0,1,1),(123309,7911,100,1,0,2,4),(123309,3864,5,1,0,1,1),(123309,7910,5,1,0,1,1),(123309,7909,3,1,0,1,1),(324,10620,100,1,0,2,3),(324,12365,100,1,0,2,5),(324,12363,9,1,0,1,1),(324,7910,3,1,0,1,1),(324,9262,3,1,0,1,1),(324,12800,2,1,0,1,1),(324,12361,2,1,0,1,1),(324,12364,2,1,0,1,1),(324,12799,2,1,0,1,1),(175404,7911,100,1,0,4,5),(175404,12365,100,1,0,4,7),(175404,12363,13,1,0,1,1),(175404,12799,4,1,0,1,1),(175404,7910,4,1,0,1,1),(175404,12800,3,1,0,1,1),(175404,12361,3,1,0,1,1),(175404,12364,3,1,0,1,1),(123848,7911,100,1,0,2,3),(123848,12365,100,1,0,2,5),(123848,12363,7,1,0,1,1),(123848,7910,3,1,0,1,1),(123848,9262,3,1,0,1,1),(123848,12364,2,1,0,1,1),(123848,12800,2,1,0,1,1),(123848,12361,2,1,0,1,1),(123848,12799,1,1,0,1,1),(177388,12365,100,1,0,4,7),(177388,7911,100,1,0,4,5),(177388,7910,10,1,0,1,1),(177388,12361,9,1,0,1,1),(177388,12363,6,1,0,1,1),(177388,12800,5,1,0,1,1),(177388,12364,3,1,0,1,1),(177388,12799,1,1,0,1,1),(165658,11370,100,1,0,2,4),(165658,9262,2,1,0,1,1),(165658,11382,1,1,0,1,1),(165658,11754,1,1,0,1,1),(181555,23424,100,1,0,2,4),(181555,22573,30,1,0,1,2),(181555,22574,30,1,0,1,2),(181555,23427,6,1,0,1,1),(181555,23117,1,1,0,1,1),(181555,23077,1,1,0,1,1),(181555,23079,1,1,0,1,1),(181555,23112,1,1,0,1,1),(181555,21929,1,1,0,1,1),(181555,23107,1,1,0,1,1),(181556,23425,100,1,0,2,4),(181556,22573,34,1,0,1,1),(181556,23117,34,1,0,4,8),(181556,35229,1,1,0,1,1),(181556,21929,1,1,0,1,2),(181556,23107,1,1,0,1,1),(181556,23077,1,1,0,1,1),(181556,23079,1,1,0,1,1),(181556,23112,1,1,0,1,1),(181556,23440,1,1,0,1,1),(181569,23425,100,1,0,5,7),(181569,22573,81,1,0,4,8),(181569,23427,55,1,0,2,3),(181569,23117,2,1,0,1,1),(181569,23077,2,1,0,1,1),(181569,23079,2,1,0,1,1),(181569,23112,2,1,0,1,1),(181569,21929,2,1,0,1,1),(181569,23107,2,1,0,1,1),(181569,35229,1,1,0,1,4),(181569,23437,1,1,0,1,1),(181569,23439,1,1,0,1,1),(181569,23440,1,1,0,1,1),(181569,23441,1,1,0,1,1),(181569,23438,1,1,0,1,1),(181569,23436,1,1,0,1,1),(185877,23427,6,1,0,1,1),(185877,32464,100,1,0,2,4),(185877,22573,10,1,0,2,6),(185877,22574,10,1,0,2,6),(185877,21929,2,1,0,1,1),(185877,23077,2,1,0,1,1),(185877,23117,1,1,0,1,1),(185877,23112,1,1,0,1,1),(185877,32506,1,1,0,1,1),(185877,23079,1,1,0,1,1),(185877,23107,1,1,0,1,1),(185877,23439,1,1,0,1,1),(185877,23436,1,1,0,1,1),(185877,23438,1,1,0,1,1),(181555,21292,1,1,0,1,1),(181557,23426,100,1,0,2,5),(181557,22573,100,1,0,2,5),(181557,22574,100,1,0,2,4),(181557,23427,33,1,0,1,3),(181557,23117,7,1,0,1,1),(181557,23077,7,1,0,1,1),(181557,23112,7,1,0,1,1),(181557,21292,7,1,0,1,1),(181557,23107,7,1,0,1,1),(181557,23079,6,1,0,1,1),(181557,23440,3,1,0,1,1),(181557,23439,3,1,0,1,1),(181557,23441,2,1,0,1,1),(181557,23438,2,1,0,1,1),(181557,23437,2,1,0,1,1),(181557,23436,2,1,0,1,1),(181557,35229,2,1,0,4,5),(181556,23427,34,1,0,1,1),(189978,36909,100,1,0,2,4),(189978,37701,31,1,0,1,2),(189978,37705,31,1,0,1,2),(189978,36917,1,1,0,1,1),(189978,36932,1,1,0,1,1),(189978,36926,1,1,0,1,1),(189978,36929,1,1,0,1,1),(189978,36920,1,1,0,1,1),(189978,36923,1,1,0,1,1),(189978,36933,1,1,0,1,1),(189978,36918,1,1,0,1,1),(189978,36927,1,1,0,1,1),(189979,36909,100,1,0,5,7),(189979,37701,68,1,0,1,2),(189979,37705,68,1,0,1,2),(189979,36929,2,1,0,1,1),(189979,36926,2,1,0,1,1),(189979,36917,2,1,0,1,1),(189979,36932,1,1,0,1,1),(189979,36920,1,1,0,1,1),(189979,36923,1,1,0,1,1),(189979,36930,1,1,0,1,1),(189979,36924,1,1,0,1,1),(189979,36921,1,1,0,1,1),(189979,36933,1,1,0,1,1),(189979,36918,1,1,0,1,1),(189979,36927,1,1,0,1,1),(181557,21929,7,1,0,1,1),(189980,26912,100,1,0,2,4),(189980,37701,46,1,0,1,2),(189980,37703,46,1,0,1,2),(189980,36917,1,1,0,1,1),(189980,36923,1,1,0,1,1),(189980,36932,1,1,0,1,1),(189980,36929,1,1,0,1,1),(189980,36926,1,1,0,1,1),(189980,36920,1,1,0,1,1),(189980,36921,1,1,0,1,1),(189981,26912,100,1,0,5,7),(189981,37701,50,1,0,2,8),(189981,37703,50,1,0,8,8),(189981,36917,9,1,0,1,1),(189981,36932,9,1,0,1,1),(189981,36929,9,1,0,1,1),(189981,36923,9,1,0,1,1),(189981,36926,8,1,0,1,1),(189981,36920,8,1,0,1,1),(189981,36930,1,1,0,1,1),(189981,36921,1,1,0,1,1),(189981,36918,1,1,0,1,1),(189981,36924,1,1,0,1,1),(189981,36927,1,1,0,1,1),(189981,36933,1,1,0,1,1),(195036,26912,100,1,0,1,1),(195036,35627,89,1,0,2,4),(195036,35624,79,1,0,2,4),(195036,36921,51,1,0,1,5),(195036,36930,49,1,0,1,6),(195036,36923,34,1,0,4,9),(195036,36924,32,1,0,1,6),(195036,36927,30,1,0,1,5),(195036,36933,27,1,0,1,7),(195036,36932,27,1,0,4,13),(195036,36918,22,1,0,1,6),(195036,36929,19,1,0,4,10),(195036,36926,17,1,0,4,12),(195036,36917,16,1,0,4,12),(195036,36920,13,1,0,4,10),(202739,53038,100,1,0,5,7),(202739,52327,20,1,0,3,4),(202739,52328,2,1,0,1,2),(202739,52179,1,1,0,1,1),(202739,52181,1,1,0,1,1),(202739,52180,1,1,0,1,1),(202739,52177,1,1,0,1,1),(202739,52182,1,1,0,1,1),(202739,52178,1,1,0,1,1),(202736,53038,100,1,0,2,4),(202736,52327,10,1,0,1,2),(202736,52328,2,1,0,1,2),(202736,52179,1,1,0,1,1),(202736,52180,1,1,0,1,1),(202736,52181,1,1,0,1,1),(202736,52178,1,1,0,1,1),(202736,52177,1,1,0,1,1),(202736,52182,1,1,0,1,1),(191133,36910,100,1,0,2,4),(191133,37700,51,1,0,3,6),(191133,37702,50,1,0,3,6),(191133,37705,50,1,0,3,6),(191133,37701,49,1,0,3,6),(191133,36923,9,1,0,1,1),(191133,36932,9,1,0,1,1),(191133,36929,9,1,0,1,1),(191133,36917,8,1,0,1,1),(191133,36920,8,1,0,1,1),(191133,36927,8,1,0,1,1),(191133,36921,2,1,0,1,1),(191133,36930,2,1,0,1,1),(191133,36924,2,1,0,1,1),(191133,36933,2,1,0,1,1),(191133,36918,2,1,0,1,1),(191133,36926,8,1,0,1,1),(202738,52185,100,1,0,2,4),(202738,52327,10,1,0,1,2),(202738,52325,10,1,0,1,2),(202738,52326,10,1,0,1,2),(202738,52328,2,1,0,1,2),(202738,52177,1,1,0,1,1),(202738,52179,1,1,0,1,1),(202738,52182,1,1,0,1,1),(202738,52180,1,1,0,1,1),(202738,52178,1,1,0,1,1),(202738,52181,1,1,0,1,1),(202741,52185,100,1,0,5,7),(202741,52327,20,1,0,1,2),(202741,52326,20,1,0,1,2),(202741,52325,19,1,0,1,2),(202741,52328,2,1,0,1,2),(202741,52177,1,1,0,1,1),(202741,52179,1,1,0,1,1),(202741,52182,1,1,0,1,1),(202741,52180,1,1,0,1,1),(202741,52178,1,1,0,1,1),(202741,52181,1,1,0,1,1),(202737,52183,100,1,0,2,4),(202737,52325,10,1,0,1,2),(202737,52328,2,1,0,1,2),(202737,52177,1,1,0,1,1),(202737,52179,1,1,0,1,1),(202737,52182,1,1,0,1,1),(202737,51180,1,1,0,1,1),(202737,52178,1,1,0,1,1),(202737,52181,1,1,0,1,1),(202740,52183,100,1,0,5,7),(202740,52325,20,1,0,2,3),(202740,52328,3,1,0,1,2),(202740,52177,1,1,0,1,1),(202740,52179,1,1,0,1,1),(202740,52182,1,1,0,1,1),(202740,52180,1,1,0,1,1),(202740,52178,1,1,0,1,1),(202740,52181,1,1,0,1,1),(185033,30890,-100,1,0,1,1);
 /*!40000 ALTER TABLE `gameobject_loot_template` ENABLE KEYS */;
 UNLOCK TABLES;
 DELIMITER ;;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_CharExtraLevelHPMP` */;;
+/*!50003 SET SESSION SQL_MODE=""*/;;
+/*!50003 CREATE*/ /*!50020 DEFINER=`mrhooha`@`%`*/ /*!50003 PROCEDURE `sp_CharExtraLevelHPMP`()
+BEGIN
+  
+  DECLARE intMaxHP           INT   DEFAULT 65535000; 
+  DECLARE intMaxMana         INT   DEFAULT 65535000;   
+  DECLARE sngHPInc           FLOAT DEFAULT 0.001;    
+  DECLARE sngManaInc         FLOAT DEFAULT 0.001;    
+  DECLARE intStartLvl        INT   DEFAULT 80;      
+  DECLARE intFinishLvl       INT   DEFAULT 85;     
+  
+  DECLARE intRecordDone      INT   DEFAULT 0;
+  DECLARE intClass           INT   DEFAULT 0;
+  DECLARE intLevel           INT   DEFAULT 0;
+  DECLARE intCurrHP          INT   DEFAULT 0;
+  DECLARE intCurrMana        INT   DEFAULT 0;
+  
+  DECLARE curPlayerStat  CURSOR FOR SELECT `class`, `level`, `basehp`, `basemana` FROM player_classlevelstats;
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET intRecordDone = 1;
+  
+  OPEN curPlayerStat;
+  
+  REPEAT
+    
+    FETCH curPlayerStat INTO intClass, intLevel, intCurrHP, intCurrMana;
+    
+    IF intLevel = intStartLvl THEN
+       REPEAT
+         
+         SET intLevel = intLevel + 1;
+         
+         DELETE FROM player_classlevelstats WHERE `class` = intClass AND `level` = intLevel;
+         
+         IF (ROUND(intCurrHP * (1 + sngHPInc) + 200)) <= intMaxHP THEN
+           SET intCurrHP = ROUND(intCurrHP * (1 + sngHPInc) + 200);
+         ELSE
+           SET intCurrHP = intMaxHP;  
+         END IF;
+         
+         IF (ROUND(intCurrMana * (1 + sngManaInc) + 200)) <= intMaxMana THEN
+           SET intCurrMana = ROUND(intCurrMana * (1 + sngManaInc) + 200);
+         ELSE
+           SET intCurrMana = intMaxMana;
+         END IF;
+         
+         INSERT INTO player_classlevelstats
+         (`class`, `level`, `basehp`, `basemana`)
+         VALUES
+         (intClass, intLevel, intCurrHP, intCurrMana);
+       UNTIL intLevel = intFinishLvl END REPEAT;
+    END IF;
+  UNTIL intRecordDone END REPEAT;
+  
+  CLOSE curPlayerStat;
+END */;;
+/*!50003 SET SESSION SQL_MODE=@OLD_SQL_MODE*/;;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_CharExtraLevelStats` */;;
+/*!50003 SET SESSION SQL_MODE=""*/;;
+/*!50003 CREATE*/ /*!50020 DEFINER=`mrhooha`@`%`*/ /*!50003 PROCEDURE `sp_CharExtraLevelStats`()
+BEGIN
+  
+  DECLARE intMaxStats        INT   DEFAULT 2556541;    
+  DECLARE sngStatsInc        FLOAT DEFAULT 0.00000000001;    
+  DECLARE intStartLvl        INT   DEFAULT 80;      
+  DECLARE intFinishLvl       INT   DEFAULT 85;     
+  
+  DECLARE intRecordDone      INT   DEFAULT 0;
+  DECLARE intRace            INT   DEFAULT 0;
+  DECLARE intClass           INT   DEFAULT 0;
+  DECLARE intLevel           INT   DEFAULT 0;
+  DECLARE intCurrSTR         INT   DEFAULT 0;
+  DECLARE intCurrAGI         INT   DEFAULT 0;
+  DECLARE intCurrSTA         INT   DEFAULT 0;
+  DECLARE intCurrINT         INT   DEFAULT 0;
+  DECLARE intCurrSPI         INT   DEFAULT 0;
+  
+  DECLARE curPlayerStat  CURSOR FOR SELECT `race`, `class`, `level`, `str`, `agi`, `sta`, `inte`, `spi` FROM player_levelstats;
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET intRecordDone = 1;
+  
+  OPEN curPlayerStat;
+  
+  REPEAT
+    
+    FETCH curPlayerStat INTO intRace, intClass, intLevel, intCurrSTR, intCurrAGI, intCurrSTA, intCurrINT, intCurrSPI;
+    
+    IF intLevel = intStartLvl THEN
+       REPEAT
+         
+         SET intLevel = intLevel + 1;
+         
+         DELETE FROM player_levelstats WHERE `race` = intRace AND `class` = intClass AND `level` = intLevel;
+         
+         IF (ROUND(intCurrSTR * (1 + sngStatsInc) + 10)) <= intMaxStats THEN
+           SET intCurrSTR = ROUND(intCurrSTR * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrSTR = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrAGI * (1 + sngStatsInc) + 10)) <= intMaxStats THEN
+           SET intCurrAGI = ROUND(intCurrAGI * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrAGI = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrSTA * (1 + sngStatsInc) + 10)) <= intMaxStats THEN
+           SET intCurrSTA = ROUND(intCurrSTA * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrSTA = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrINT * (1 + sngStatsInc) + 10)) <= intMaxStats THEN
+           SET intCurrINT = ROUND(intCurrINT * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrINT = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrSPI * (1 + sngStatsInc) + 10)) <= intMaxStats THEN
+           SET intCurrSPI = ROUND(intCurrSPI * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrSPI = intMaxStats;
+         END IF;
+         
+         INSERT INTO player_levelstats
+         (`race`, `class`, `level`, `str`, `agi`, `sta`, `inte`, `spi`)
+         VALUES
+         (intRace, intClass, intLevel, intCurrSTR, intCurrAGI, intCurrSTA, intCurrINT, intCurrSPI);
+       UNTIL intLevel = intFinishLvl END REPEAT;
+    END IF;
+  UNTIL intRecordDone END REPEAT;
+  
+  CLOSE curPlayerStat;
+END */;;
+/*!50003 SET SESSION SQL_MODE=@OLD_SQL_MODE*/;;
 /*!50003 DROP PROCEDURE IF EXISTS `sp_delete_loot` */;;
 /*!50003 SET SESSION SQL_MODE="STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION"*/;;
 /*!50003 CREATE*/ /*!50020 DEFINER=`root`@`localhost`*/ /*!50003 PROCEDURE `sp_delete_loot`(IN loot_type VARCHAR(10),IN loot_entry INT(10),IN item_entry INT(10))
@@ -783,6 +918,110 @@ BEGIN
         ELSE CALL INVALID_REFERENCE_TYPE;
     END CASE;
     SET reference :=1+(SELECT `entry` FROM `reference_loot_template` WHERE `entry` BETWEEN @Low AND @High ORDER BY `entry` DESC LIMIT 1);
+END */;;
+/*!50003 SET SESSION SQL_MODE=@OLD_SQL_MODE*/;;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_PetExtraLevelStats` */;;
+/*!50003 SET SESSION SQL_MODE=""*/;;
+/*!50003 CREATE*/ /*!50020 DEFINER=`mrhooha`@`%`*/ /*!50003 PROCEDURE `sp_PetExtraLevelStats`()
+BEGIN
+  
+  DECLARE intMaxHP       INT   DEFAULT 6553500;
+  DECLARE intMaxMana     INT   DEFAULT 6553500;
+  DECLARE intMaxArmor    INT   DEFAULT 6553500;
+  DECLARE intMaxStats    INT   DEFAULT 100000;
+  DECLARE sngHPInc       FLOAT DEFAULT 0.05;    
+  DECLARE sngManaInc     FLOAT DEFAULT 0.05;    
+  DECLARE sngArmorInc    FLOAT DEFAULT 0.05;    
+  DECLARE sngStatsInc    FLOAT DEFAULT 0.015;    
+  DECLARE intStartLvl    INT   DEFAULT 80;      
+  DECLARE intFinishLvl   INT   DEFAULT 85;      
+  
+  DECLARE intRecordDone  INT   DEFAULT 0;
+  DECLARE intCreature    INT   DEFAULT 0;
+  DECLARE intLevel       INT   DEFAULT 0;
+  DECLARE intClass       INT   DEFAULT 0;
+  DECLARE intCurrHP      INT   DEFAULT 0;
+  DECLARE intCurrMana    INT   DEFAULT 0;
+  DECLARE intCurrArmor   INT   DEFAULT 0;
+  DECLARE intCurrSTR     INT   DEFAULT 0;
+  DECLARE intCurrAGI     INT   DEFAULT 0;
+  DECLARE intCurrSTA     INT   DEFAULT 0;
+  DECLARE intCurrINT     INT   DEFAULT 0;
+  DECLARE intCurrSPI     INT   DEFAULT 0;
+  
+  DECLARE curPetStat  CURSOR FOR SELECT `creature_entry`, `level`, `hp`, `mana`, `armor`, `str`, `agi`, `sta`, `inte`, `spi` FROM pet_levelstats;
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET intRecordDone = 1;
+  
+  OPEN curPetStat;
+  
+  REPEAT
+    
+    FETCH curPetStat INTO intCreature, intLevel, intCurrHP, intCurrMana, intCurrArmor, intCurrSTR, intCurrAGI, intCurrSTA, intCurrINT, intCurrSPI;
+    
+    IF intLevel = intStartLvl THEN
+       REPEAT
+         
+         SET intLevel = intLevel + 1;
+         
+         DELETE FROM pet_levelstats WHERE `creature_entry` = intCreature AND `level` = intLevel;
+         
+         IF (ROUND(intCurrHP * (1 + sngHPInc) + 1)) <= intMaxHP THEN
+           SET intCurrHP = ROUND(intCurrHP * (1 + sngHPInc) + 100);
+         ELSE
+           SET intCurrHP = intMaxHP;  
+         END IF;
+         
+         IF (ROUND(intCurrMana * (1 + sngManaInc) + 1)) <= intMaxMana THEN
+           SET intCurrMana = ROUND(intCurrMana * (1 + sngManaInc) + 100);
+         ELSE
+           SET intCurrMana = intMaxMana;
+         END IF;
+         
+         IF (ROUND(intCurrArmor * (1 + sngArmorInc) + 1)) <= intMaxArmor THEN
+           SET intCurrArmor = ROUND(intCurrArmor * (1 + sngArmorInc) + 800);
+         ELSE
+           SET intCurrArmor = intMaxArmor;
+         END IF;
+         
+         IF (ROUND(intCurrSTR * (1 + sngStatsInc) + 1)) <= intMaxStats THEN
+           SET intCurrSTR = ROUND(intCurrSTR * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrSTR = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrAGI * (1 + sngStatsInc) + 1)) <= intMaxStats THEN
+           SET intCurrAGI = ROUND(intCurrAGI * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrAGI = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrSTA * (1 + sngStatsInc) + 1)) <= intMaxStats THEN
+           SET intCurrSTA = ROUND(intCurrSTA * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrSTA = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrINT * (1 + sngStatsInc) + 1)) <= intMaxStats THEN
+           SET intCurrINT = ROUND(intCurrINT * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrINT = intMaxStats;
+         END IF;
+         
+         IF (ROUND(intCurrSPI * (1 + sngStatsInc) + 1)) <= intMaxStats THEN
+           SET intCurrSPI = ROUND(intCurrSPI * (1 + sngStatsInc) + 10);
+         ELSE
+           SET intCurrSPI = intMaxStats;
+         END IF;
+         
+         INSERT INTO pet_levelstats
+         (`creature_entry`, `level`, `hp`, `mana`, `armor`, `str`, `agi`, `sta`, `inte`, `spi`)
+         VALUES
+         (intCreature, intLevel, intCurrHP, intCurrMana, intCurrArmor, intCurrSTR, intCurrAGI, intCurrSTA, intCurrINT, intCurrSPI);
+       UNTIL intLevel = intFinishLvl END REPEAT;
+    END IF;
+  UNTIL intRecordDone END REPEAT;
+  
+  CLOSE curPetStat;
 END */;;
 /*!50003 SET SESSION SQL_MODE=@OLD_SQL_MODE*/;;
 /*!50003 DROP PROCEDURE IF EXISTS `sp_set_entry_list` */;;
