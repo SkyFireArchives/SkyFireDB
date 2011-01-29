@@ -25,8 +25,8 @@ SET /p world_db= World Database:
 
 SET dumppath=.\dump\
 SET mysqlpath=.\mysql\
-SET devsql=.\dev\
-SET changsql=.\update_packs
+SET devsql=..\MainDB\dev\
+SET changsql=..\update_packs
 
 :Begin
 CLS

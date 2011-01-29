@@ -20,8 +20,8 @@ wdb="wow_world"
 ############################################################################
 server="localhost"
 port="3306"
-devpath="dev"
-uppath="update_packs"
+devpath="../MainDB/dev"
+uppath="../MainDB/update_packs"
 bkpath="dump"
 
 ############################################################################
