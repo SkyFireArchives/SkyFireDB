@@ -144,7 +144,7 @@ UPDATE `quest_template` SET `OfferRewardText`='You\'re a quick learner, $N. Retu
 -- Immolation
 UPDATE `quest_template` SET `OfferRewardText`='I see you have already mastered Immolation! I look forward to instructing you in the future. Do not forget to return for further lessons as you grow in power.', `ReqSpellCast1`=348 WHERE `entry`=26914;
 -- The Deepest Cut
-UPDATE `quest_template` SET `OfferRewardText`='You\'ve caught on quickly, $N, and a quick mind will serve you well. Return to me as you grow in power and I will show you new techniques.',  WHERE `entry`=26915;
+UPDATE `quest_template` SET `OfferRewardText`='You\'ve caught on quickly, $N, and a quick mind will serve you well. Return to me as you grow in power and I will show you new techniques.'  WHERE `entry`=26915;
 -- Mastering the Arcane
 UPDATE `quest_template` SET `OfferRewardText`='Have you mastered the use of Arcane Missiles already? You are a quick study in the arcane arts and you have a promising future ahead. Don\'t forget to return to me for training as you grow in power.', `ReqSpellCast1`=5143 WHERE `entry`=26916;
 -- The Hunter's Path
@@ -190,7 +190,7 @@ UPDATE `quest_template` SET `NextQuestInChain`=`NextQuestID` WHERE `entry`=26390
 UPDATE `quest_template` SET `OfferRewardText`='Well, it says here that you\'ve been awarded Acting Deputy Status with the Stormwind Marshals. Congratulations.', `RequestItemsText`='You have word from McBride? Northshire is a garden compared to Elwynn Forest, but I wonder what Marshal McBride has to report.' WHERE `entry`=54;
 
 -- Rest and Relaxation
-UPDATE `quest_template` SET `OfferRewardText`='Rest and relaxation for the tired and cold -- that\'s our motto! Please, take a seat by the fire and rest your weary bones.' WHERE `entry`=2158
+UPDATE `quest_template` SET `OfferRewardText`='Rest and relaxation for the tired and cold -- that\'s our motto! Please, take a seat by the fire and rest your weary bones.' WHERE `entry`=2158;
 
 -- Fear No Evil
 -- some information still is missing here.
