@@ -16,13 +16,12 @@ ECHO.
 ECHO    Please enter your MySQL Info...
 ECHO.
 SET /p host= MySQL Server Address (e.g. localhost):
-SET /p port= MySQL Server Port (3306 Default):  
 ECHO.
 SET /p user= MySQL Username: 
 SET /p pass= MySQL Password: 
 ECHO.
 SET /p world_db= World Database: 
-
+SET port=3306
 SET dumppath=.\dump\
 SET mysqlpath=.\mysql\
 SET devsql=..\MainDB\dev\

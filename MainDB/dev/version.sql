@@ -20,7 +20,7 @@ CREATE TABLE `version` (
 
 LOCK TABLES `version` WRITE;
 /*!40000 ALTER TABLE `version` DISABLE KEYS */;
-INSERT INTO `version` VALUES ('SkyFire/TrinityCore Rev: 0 Release Hash: Archive (Win32,little-endian)',0,'SkyFireDB 403.01_28_2011 Rev 1','SkyFireDB 403.01_28_2011 Rev 1',0);
+INSERT INTO `version` VALUES ('SkyFireEMU Rev: 226 Release Hash: fec3161d496c (Win32,little-endian)',0,'SkyFireDB 403.02_02_2011 Rev 3','SkyFireDB 403.02_02_2011 Rev 2',0);
 /*!40000 ALTER TABLE `version` ENABLE KEYS */;
 UNLOCK TABLES;
 DELIMITER ;;
