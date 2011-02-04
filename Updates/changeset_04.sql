@@ -160,7 +160,7 @@ UPDATE creature_template SET npcflag=51 WHERE subname LIKE '%Priest Trainer%' AN
 UPDATE creature_template SET npcflag=51 WHERE subname LIKE '%Druid Trainer%' AND entry in (SELECT id FROM creature_questrelation);
 UPDATE creature_template SET npcflag=51 WHERE subname LIKE '%Warlock Trainer%' AND entry in (SELECT id FROM creature_questrelation);
 
--- Profession Trainer NPC FLAG FIX (80)
+-- Profession Trainer NPC FLAG FIX (81)
 UPDATE creature_template SET npcflag=81 WHERE subname LIKE '%Alchemy Trainer%';
 UPDATE creature_template SET npcflag=81 WHERE subname LIKE '%Blacksmithing Trainer%';
 UPDATE creature_template SET npcflag=81 WHERE subname LIKE '%Enchanting Trainer%';
@@ -178,7 +178,7 @@ UPDATE creature_template SET npcflag=81 WHERE subname LIKE '%First Aid Trainer%'
 UPDATE creature_template SET npcflag=81 WHERE subname LIKE '%Fishing Trainer%';
 UPDATE creature_template SET npcflag=81 WHERE subname LIKE '%Riding Trainer%';
 
--- Proffesion Trainer NPC FLAG FIX (82)
+-- Proffesion Trainer NPC FLAG FIX (83)
 UPDATE creature_template SET npcflag=83 WHERE subname LIKE '%Alchemy Trainer%' AND entry in (SELECT id FROM creature_questrelation);
 UPDATE creature_template SET npcflag=83 WHERE subname LIKE '%Blacksmithing Trainer%' AND entry in (SELECT id FROM creature_questrelation);
 UPDATE creature_template SET npcflag=83 WHERE subname LIKE '%Enchanting Trainer%' AND entry in (SELECT id FROM creature_questrelation);
