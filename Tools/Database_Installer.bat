@@ -115,22 +115,79 @@ GOTO begin
 
 :changeset
 CLS
-ECHO   Please Write down number of changeset (not the number of rev!!!)
-ECHO   Or type in "a" to import all changesets
+ECHO   Here is a list of changesets.!!!)
+ECHO.   
+ECHO   changeset 1 = 1
+ECHO   changeset 2 = 2
+ECHO   changeset 3 = 3
+ECHO   changeset 4 = 4
+ECHO   changeset 5 = 5
 ECHO.
+ECHO   Or type in "A" to import all changesets
+ECHO.
+ECHO   Return to main menu = B
 ECHO.
 set /p ch=      Number: 
 ECHO.
 IF %ch%==a GOTO changesetall
-ECHO      Importing...
-IF NOT EXIST "%changsql%\changeset_%ch%.sql" GOTO error2
+IF %ch%==A GOTO changesetall
+IF %ch%==1 GOTO changeset1
+IF %ch%==2 GOTO changeset2
+IF %ch%==3 GOTO changeset3
+IF %ch%==4 GOTO changeset4
+IF %ch%==5 GOTO changeset5
+IF %ch%==b GOTO begin
+IF %ch%==B GOTO begin
+
+:changeset1
+CLS
 ECHO.
-%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\changeset_%ch%.sql
+ECHO import: Changeset 1
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\changeset_01.sql
+ECHO Changeset 1 imported sucesfully!
 ECHO.
-ECHO      File changeset_%ch%.sql imported sucesfully!
+PAUSE   
+GOTO changeset
+
+:changeset2
+CLS
 ECHO.
-PAUSE
-GOTO begin
+ECHO import: Changeset 2
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\changeset_02.sql
+ECHO Changeset 2 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset3
+CLS
+ECHO.
+ECHO import: Changeset 3
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\changeset_03.sql
+ECHO Changeset 3 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset4
+CLS
+ECHO.
+ECHO import: Changeset 4
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\changeset_04.sql
+ECHO Changeset 4 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset5
+CLS
+ECHO.
+ECHO import: Changeset 5
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\changeset_05.sql
+ECHO Changeset 5 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
 
 :changesetall
 CLS
