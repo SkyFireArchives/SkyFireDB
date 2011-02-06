@@ -138,6 +138,7 @@ IF %ch%==4 GOTO changeset4
 IF %ch%==5 GOTO changeset5
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
+IF %ch%=="" GOTO changeset
 
 :changeset1
 CLS

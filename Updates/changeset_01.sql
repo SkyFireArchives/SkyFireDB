@@ -15,7 +15,7 @@ UPDATE creature_template SET npcflag=3 WHERE entry=3145;
 
 -- QUEST: Galgar's Cactus Apple Surprise [FIX]
 UPDATE gameobject_template SET data1=171938 WHERE entry=171938;
-INSERT INTO gameobject_loot_template (entry, item, ChanceOrQuestChance) VALUES (171938, 11583, -100);
+REPLACE INTO gameobject_loot_template (entry, item, ChanceOrQuestChance) VALUES (171938, 11583, -100);
 
 -- Master Gadrin (http://www.wowhead.com/npc=3188) FIX
 UPDATE creature_template SET npcflag=3 WHERE entry=3188;
