@@ -137,7 +137,7 @@ IF %ch%==2 GOTO changeset2
 IF %ch%==3 GOTO changeset3
 IF %ch%==4 GOTO changeset4
 IF %ch%==5 GOTO changeset5
-IF %ch%==5 GOTO changeset6
+IF %ch%==6 GOTO changeset6
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
