@@ -76,6 +76,8 @@ FOR %%C IN (%devsql%\*.sql) DO (
 	ECHO Successfully imported %%~nxC
 )
 ECHO Done.
+ECHO Your current database is now SkyFireDB 403.02_13_2011 Rev 8
+ECHO Changeset 8. You don't need to apply any updates.
 ECHO.
 ECHO.
 ECHO.
