@@ -21,7 +21,7 @@ wdb="wow_world"
 server="localhost"
 port="3306"
 devpath="../MainDB/dev"
-uppath="../../Updates"
+uppath="../Updates"
 bkpath="dump"
 
 ############################################################################
