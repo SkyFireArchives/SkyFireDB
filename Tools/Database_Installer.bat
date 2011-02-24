@@ -117,7 +117,7 @@ GOTO begin
 CLS
 ECHO   Here is a list of locals.!!!)
 ECHO.   
-ECHO   Spanish        = S  "No Data Yet"
+ECHO   Spanish        = S
 ECHO   German         = G  "No Data Yet"
 ECHO   Russian        = R  "No Data Yet"
 ECHO   Italian        = I  "No Data Yet"
