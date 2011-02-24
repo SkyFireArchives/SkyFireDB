@@ -26,13 +26,20 @@ SET dumppath=.\dump\
 SET mysqlpath=.\mysql\
 SET devsql=..\MainDB\dev\
 SET changsql=..\Updates
+SET local_sp=\MainDB\locals\Spanish\
+SET local_gr=\MainDB\locals\German\
+SET local_ru=\MainDB\locals\Russian\
+SER local_it=\MainDB\locals\Italian\
 
 :Begin
 CLS
 SET v=""
 ECHO.
 ECHO.
-ECHO    I - Import World Database, NOTE! Whole db will be overwritten!
+ECHO    I - Import World Database, "English" NOTE! Whole db will be overwritten!
+ECHO.
+ECHO    L - Apply Locals, "You need to install the database and updates first."
+ECHO.
 ECHO    W - Backup World Database.
 ECHO    C - Backup Character Database.
 ECHO    U - Import Changeset.
@@ -45,6 +52,8 @@ SET /p v= 		Enter a char:
 IF %v%==* GOTO error
 IF %v%==i GOTO import
 IF %v%==I GOTO import
+IF %v%==l GOTO locals
+IF %v%==L GOTO locals
 IF %v%==w GOTO dumpworld
 IF %v%==W GOTO dumpworld
 IF %v%==c GOTO dumpchar
@@ -104,6 +113,70 @@ ECHO  Finished ... %world_db% exported to %dumppath% folder...
 PAUSE
 GOTO begin
 
+:locals
+CLS
+ECHO   Here is a list of locals.!!!)
+ECHO.   
+ECHO   Spanish        = S  "No Data Yet"
+ECHO   German         = G  "No Data Yet"
+ECHO   Russian        = R  "No Data Yet"
+ECHO   Italian        = I  "No Data Yet"
+ECHO.
+ECHO   Return to main menu = B
+ECHO.
+set /p ch=      Number: 
+ECHO.
+IF %ch%==s GOTO install_sp
+IF %ch%==S GOTO install_sp
+IF %ch%==g GOTO install_gr
+IF %ch%==G GOTO install_gr
+IF %ch%==r GOTO install_ru
+IF %ch%==R GOTO install_ru
+IF %ch%==i GOTO install_it
+IF %ch%==I GOTO install_it
+IF %ch%==b GOTO begin
+IF %ch%==B GOTO begin
+IF %ch%=="" GOTO locals
+
+:install_sp
+ECHO Importing Spanish Data now...
+ECHO.
+FOR %%C IN (%local_sp%\*.sql) DO (
+	ECHO Importing: %%~nxC1
+	%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < "%%~fC"
+	ECHO Spanish Locals Successfully imported %%~nxC1
+)
+ECHO Done.
+
+:install_gr
+ECHO Importing German Data now...
+ECHO.
+FOR %%C IN (%local_sp%\*.sql) DO (
+	ECHO Importing: %%~nxC1
+	%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < "%%~fC"
+	ECHO German Locals Successfully imported %%~nxC1
+)
+ECHO Done.
+
+:install_ru
+ECHO Importing Russian Data now...
+ECHO.
+FOR %%C IN (%local_sp%\*.sql) DO (
+	ECHO Importing: %%~nxC1
+	%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < "%%~fC"
+	ECHO Russian Locals Successfully imported %%~nxC1
+)
+ECHO Done.
+
+:install_it
+ECHO Importing Italian Data now...
+ECHO.
+FOR %%C IN (%local_sp%\*.sql) DO (
+	ECHO Importing: %%~nxC1
+	%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < "%%~fC"
+	ECHO Italian Locals Successfully imported %%~nxC1
+)
+ECHO Done.
 :dumpchar
 CLS
 SET sqlname=char-%DATE:~0,3% - %DATE:~4,2%-%DATE:~7,2%-%DATE:~10,4%--%TIME:~0,2%-%TIME:~3,2%
