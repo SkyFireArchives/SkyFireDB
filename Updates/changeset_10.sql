@@ -21,8 +21,9 @@ INSERT INTO gameobject_loot_template (entry,item,ChanceOrQuestChance) VALUES
 -- Solanian's Belongings
 DELETE FROM gameobject_loot_template WHERE entry=180512 AND item=20472;
 INSERT INTO gameobject_loot_template (entry,item) VALUES ('180512','20472');
+DELETE FROM gameobject WHERE id=180512;
 INSERT INTO gameobject (guid, id, map, position_x, position_y, position_z, orientation, rotation2, rotation3, spawntimesecs, state) VALUES (null,'180512','530','10228.6','-6347.75', '30.8399', '4.69897', '0.711836','-0.702346','1','1');
-UPDATE gameobject SET animprogress = -100 WHERE id = 180512;
+UPDATE gameobject SET animprogress = 100 WHERE id = 180512;
 UPDATE gameobject_loot_template SET ChanceOrQuestChance = -100 WHERE entry = 180512;
 -- Thirst Unending
 UPDATE quest_template SET ReqSpellCast1 = 28730 WHERE entry = 8346;
