@@ -45,30 +45,30 @@ INSERT INTO playercreateinfo_spell_custom (race, class, Spell, Note, Active) VAL
 INSERT INTO playercreateinfo_spell_custom (race, class, Spell, Note, Active) VALUES (22, 4, 674, 'Dual Wield', 1); -- Worgen
 
 -- (Rogue)
-INSERT INTO playercreateinfo_spell (race, class, Spell, Note, Active) VALUES (1, 4, 674, 'Dual Wield'); -- Human
-INSERT INTO playercreateinfo_spell (race, class, Spell, Note, Active) VALUES (2, 4, 674, 'Dual Wield'); -- Orc
-INSERT INTO playercreateinfo_spell (race, class, Spell, Note, Active) VALUES (3, 4, 674, 'Dual Wield'); -- Dwarf
-INSERT INTO playercreateinfo_spell (race, class, Spell, Note, Active) VALUES (4, 4, 674, 'Dual Wield'); -- Night Elf
-INSERT INTO playercreateinfo_spell (race, class, Spell, Note, Active) VALUES (5, 4, 674, 'Dual Wield'); -- Undead
-INSERT INTO playercreateinfo_spell (race, class, Spell, Note, Active) VALUES (7, 4, 674, 'Dual Wield'); -- Gnome
-INSERT INTO playercreateinfo_spell (race, class, Spell, Note, Active) VALUES (8, 4, 674, 'Dual Wield'); -- Troll
-INSERT INTO playercreateinfo_spell (race, class, Spell, Note, Active) VALUES (9, 4, 674, 'Dual Wield'); -- Goblin
-INSERT INTO playercreateinfo_spell (race, class, Spell, Note, Active) VALUES (10, 4, 674, 'Dual Wield'); -- Blood Elf
-INSERT INTO playercreateinfo_spell (race, class, Spell, Note, Active) VALUES (22, 4, 674, 'Dual Wield'); -- Worgen
+INSERT INTO playercreateinfo_spell (race, class, Spell, Note) VALUES (1, 4, 674, 'Dual Wield'); -- Human
+INSERT INTO playercreateinfo_spell (race, class, Spell, Note) VALUES (2, 4, 674, 'Dual Wield'); -- Orc
+INSERT INTO playercreateinfo_spell (race, class, Spell, Note) VALUES (3, 4, 674, 'Dual Wield'); -- Dwarf
+INSERT INTO playercreateinfo_spell (race, class, Spell, Note) VALUES (4, 4, 674, 'Dual Wield'); -- Night Elf
+INSERT INTO playercreateinfo_spell (race, class, Spell, Note) VALUES (5, 4, 674, 'Dual Wield'); -- Undead
+INSERT INTO playercreateinfo_spell (race, class, Spell, Note) VALUES (7, 4, 674, 'Dual Wield'); -- Gnome
+INSERT INTO playercreateinfo_spell (race, class, Spell, Note) VALUES (8, 4, 674, 'Dual Wield'); -- Troll
+INSERT INTO playercreateinfo_spell (race, class, Spell, Note) VALUES (9, 4, 674, 'Dual Wield'); -- Goblin
+INSERT INTO playercreateinfo_spell (race, class, Spell, Note) VALUES (10, 4, 674, 'Dual Wield'); -- Blood Elf
+INSERT INTO playercreateinfo_spell (race, class, Spell, Note) VALUES (22, 4, 674, 'Dual Wield'); -- Worgen
 
 -- (Death Knights)
-INSERT INTO playercreateinfo_spell (race, class, Spell, Note, Active) VALUES (1, 6, 674, 'Dual Wield'); -- Human
-INSERT INTO playercreateinfo_spell (race, class, Spell, Note, Active) VALUES (2, 6, 674, 'Dual Wield'); -- Orc
-INSERT INTO playercreateinfo_spell (race, class, Spell, Note, Active) VALUES (3, 6, 674, 'Dual Wield'); -- Dwarf
-INSERT INTO playercreateinfo_spell (race, class, Spell, Note, Active) VALUES (4, 6, 674, 'Dual Wield'); -- Night Elf
-INSERT INTO playercreateinfo_spell (race, class, Spell, Note, Active) VALUES (5, 6, 674, 'Dual Wield'); -- Undead
-INSERT INTO playercreateinfo_spell (race, class, Spell, Note, Active) VALUES (7, 6, 674, 'Dual Wield'); -- Gnome
-INSERT INTO playercreateinfo_spell (race, class, Spell, Note, Active) VALUES (6, 6, 674, 'Dual Wield'); -- Tauren
-INSERT INTO playercreateinfo_spell (race, class, Spell, Note, Active) VALUES (8, 6, 674, 'Dual Wield'); -- Troll
-INSERT INTO playercreateinfo_spell (race, class, Spell, Note, Active) VALUES (9, 6, 674, 'Dual Wield'); -- Goblin
-INSERT INTO playercreateinfo_spell (race, class, Spell, Note, Active) VALUES (10, 6, 674, 'Dual Wield'); -- Blood Elf
-INSERT INTO playercreateinfo_spell (race, class, Spell, Note, Active) VALUES (11, 6, 674, 'Dual Wield'); -- Draenei
-INSERT INTO playercreateinfo_spell (race, class, Spell, Note, Active) VALUES (22, 6, 674, 'Dual Wield'); -- Worgen
+INSERT INTO playercreateinfo_spell (race, class, Spell, Note) VALUES (1, 6, 674, 'Dual Wield'); -- Human
+INSERT INTO playercreateinfo_spell (race, class, Spell, Note) VALUES (2, 6, 674, 'Dual Wield'); -- Orc
+INSERT INTO playercreateinfo_spell (race, class, Spell, Note) VALUES (3, 6, 674, 'Dual Wield'); -- Dwarf
+INSERT INTO playercreateinfo_spell (race, class, Spell, Note) VALUES (4, 6, 674, 'Dual Wield'); -- Night Elf
+INSERT INTO playercreateinfo_spell (race, class, Spell, Note) VALUES (5, 6, 674, 'Dual Wield'); -- Undead
+INSERT INTO playercreateinfo_spell (race, class, Spell, Note) VALUES (7, 6, 674, 'Dual Wield'); -- Gnome
+INSERT INTO playercreateinfo_spell (race, class, Spell, Note) VALUES (6, 6, 674, 'Dual Wield'); -- Tauren
+INSERT INTO playercreateinfo_spell (race, class, Spell, Note) VALUES (8, 6, 674, 'Dual Wield'); -- Troll
+INSERT INTO playercreateinfo_spell (race, class, Spell, Note) VALUES (9, 6, 674, 'Dual Wield'); -- Goblin
+INSERT INTO playercreateinfo_spell (race, class, Spell, Note) VALUES (10, 6, 674, 'Dual Wield'); -- Blood Elf
+INSERT INTO playercreateinfo_spell (race, class, Spell, Note) VALUES (11, 6, 674, 'Dual Wield'); -- Draenei
+INSERT INTO playercreateinfo_spell (race, class, Spell, Note) VALUES (22, 6, 674, 'Dual Wield'); -- Worgen
 
 -- (Death Knights)
 INSERT INTO playercreateinfo_spell_custom (race, class, Spell, Note, Active) VALUES (1, 6, 674, 'Dual Wield', 1); -- Human
