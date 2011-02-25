@@ -70,7 +70,7 @@ INSERT INTO playercreateinfo_spell (race, class, Spell, Note, Active) VALUES (10
 INSERT INTO playercreateinfo_spell (race, class, Spell, Note, Active) VALUES (11, 6, 674, 'Dual Wield'); -- Draenei
 INSERT INTO playercreateinfo_spell (race, class, Spell, Note, Active) VALUES (22, 6, 674, 'Dual Wield'); -- Worgen
 
-(Death Knights)
+-- (Death Knights)
 INSERT INTO playercreateinfo_spell_custom (race, class, Spell, Note, Active) VALUES (1, 6, 674, 'Dual Wield', 1); -- Human
 INSERT INTO playercreateinfo_spell_custom (race, class, Spell, Note, Active) VALUES (2, 6, 674, 'Dual Wield', 1); -- Orc
 INSERT INTO playercreateinfo_spell_custom (race, class, Spell, Note, Active) VALUES (3, 6, 674, 'Dual Wield', 1); -- Dwarf
