@@ -26,6 +26,7 @@ SET dumppath=.\dump\
 SET mysqlpath=.\mysql\
 SET devsql=..\MainDB\dev\
 SET changsql=..\Updates
+SET sql_a=..\Updates406
 SET local_sp=\MainDB\locals\Spanish\
 SET local_gr=\MainDB\locals\German\
 SET local_ru=\MainDB\locals\Russian\
@@ -36,10 +37,14 @@ CLS
 SET v=""
 ECHO.
 ECHO.
-ECHO    I - Import World Database, "English" NOTE! Whole db will be overwritten!
+ECHO    1 - Install 4.0.3 World Database and all updates, NOTE! Whole db will be overwritten!
+ECHO.
+ECHO    2 - Install 4.0.6a World Database and all updates, NOTE! Whole db will be overwritten!
 ECHO.
 ECHO    L - Apply Locals, "You need to install the database and updates first."
 ECHO.
+ECHO    A - Apply 4.0.6a changes, "You need to install the 4.0.3 database and updates first."
+ECHO.   
 ECHO    W - Backup World Database.
 ECHO    C - Backup Character Database.
 ECHO    U - Import Changeset.
@@ -50,10 +55,12 @@ ECHO    X - Exit this tool
 ECHO.
 SET /p v= 		Enter a char: 
 IF %v%==* GOTO error
-IF %v%==i GOTO import
-IF %v%==I GOTO import
+IF %v%==1 GOTO import403
+IF %v%==2 GOTO import406a
 IF %v%==l GOTO locals
 IF %v%==L GOTO locals
+IF %v%==a GOTO 406sets
+IF %v%==A GOTO 406sets
 IF %v%==w GOTO dumpworld
 IF %v%==W GOTO dumpworld
 IF %v%==c GOTO dumpchar
@@ -67,7 +74,7 @@ IF %v%==X GOTO exit
 IF %v%=="" GOTO exit
 GOTO error
 
-:import
+:import403
 CLS
 ECHO First Lets Create database (or overwrite old) !!
 ECHO.
@@ -84,10 +91,55 @@ FOR %%C IN (%devsql%\*.sql) DO (
 	%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < "%%~fC"
 	ECHO Successfully imported %%~nxC
 )
-ECHO Done.
 ECHO.
-ECHO Your current database is now SkyFireDB 403_02_13_2011 Rev 8.
-ECHO Changeset 8 You don't need to apply any updates.
+ECHO import: Changesets
+for %%C in (%changsql%\*.sql) do (
+	ECHO import: %%~nxC
+	%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < "%%~fC"
+)
+ECHO Changesets imported sucesfully!
+ECHO.
+ECHO Your current 4.0.3 database is complete.
+ECHO You don't need to apply any updates.
+ECHO.
+ECHO.
+ECHO.
+ECHO.
+PAUSE
+GOTO Begin
+
+:import406a
+CLS
+ECHO First Lets Create database (or overwrite old) !!
+ECHO.
+ECHO DROP database IF EXISTS `%world_db%`; > %devsql%\databaseclean.sql
+ECHO CREATE database IF NOT EXISTS `%world_db%`; >> %devsql%\databaseclean.sql
+	%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% < %devsql%\databaseclean.sql
+@DEL %devsql%\databaseclean.sql
+
+ECHO Lets make a clean database.
+ECHO Importing Data now...
+ECHO.
+FOR %%C IN (%devsql%\*.sql) DO (
+	ECHO Importing: %%~nxC
+	%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < "%%~fC"
+	ECHO Successfully imported %%~nxC
+)
+ECHO.
+ECHO import: Changesets
+for %%C in (%changsql%\*.sql) do (
+	ECHO import: %%~nxC
+	%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < "%%~fC"
+)
+
+for %%C in (%sql_a%\*.sql) do (
+	ECHO import: %%~nxC
+	%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < "%%~fC"
+)
+ECHO Changesets imported sucesfully!
+ECHO.
+ECHO Your current 4.0.6a database is complete.
+ECHO You don't need to apply any updates.
 ECHO.
 ECHO.
 ECHO.
@@ -339,6 +391,47 @@ ECHO.
 PAUSE   
 GOTO begin
 
+:406sets
+CLS
+ECHO   Here is a list of changesets.!!!)
+ECHO.   
+ECHO   changeset 1 = 1
+ECHO.
+ECHO   Or type in "A" to import all 4.0.6a changesets
+ECHO.
+ECHO   Return to main menu = B
+ECHO.
+set /p ch=      Number: 
+ECHO.
+IF %ch%==a GOTO changeset_406_all
+IF %ch%==A GOTO changeset_406_all
+IF %ch%==1 GOTO changeset_406_1
+IF %ch%==b GOTO begin
+IF %ch%==B GOTO begin
+IF %ch%=="" GOTO 406sets
+
+:changeset_406_1
+CLS
+ECHO.
+ECHO import: 4.0.6a Changeset 1
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %sql_a%\406_changeset_01.sql
+ECHO 4.0.6a Changeset 1 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO 406sets
+
+:changeset_406_all
+CLS
+ECHO.
+ECHO import: 4.0.6a Changesets
+for %%C in (%sql_a%\*.sql) do (
+	ECHO import: %%~nxC
+	%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < "%%~fC"
+)
+ECHO 4.0.6a Changesets imported sucesfully!
+ECHO.
+PAUSE   
+GOTO begin
 
 :error
 ECHO	Please enter a correct character.
