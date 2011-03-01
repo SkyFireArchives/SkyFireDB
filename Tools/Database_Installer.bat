@@ -201,7 +201,8 @@ GOTO begin
 CLS
 ECHO   Here is a list of changesets.!!!)
 ECHO.   
-ECHO   changeset 1 = 1
+ECHO   changeset 11 = 11
+ECHO   changeset 12 = 12
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -221,7 +222,17 @@ CLS
 ECHO.
 ECHO import: Changeset 11
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\11_world_npc_trainer.sql
-ECHO Changeset 1 imported sucesfully!
+ECHO Changeset 11 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset12
+CLS
+ECHO.
+ECHO import: Changeset 12
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\12_world_item_template.sql
+ECHO Changeset 12 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
