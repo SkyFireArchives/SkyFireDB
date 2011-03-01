@@ -27,7 +27,7 @@ CREATE TABLE `conditions` (
 
 LOCK TABLES `conditions` WRITE;
 /*!40000 ALTER TABLE `conditions` DISABLE KEYS */;
-INSERT INTO `conditions` VALUES (13,0,26393,0,18,1,0,0,0,'','Elune\'s Blessing');
+INSERT INTO `conditions` VALUES (13,0,26393,0,18,1,0,0,0,'','Elune\'s Blessing'),(15,10667,0,0,7,202,350,0,0,'','Jeeves: Bank requires Engineering 350');
 /*!40000 ALTER TABLE `conditions` ENABLE KEYS */;
 UNLOCK TABLES;
 DELIMITER ;;
