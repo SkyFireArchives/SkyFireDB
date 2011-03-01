@@ -212,6 +212,7 @@ ECHO   changeset 18 = 18
 ECHO   changeset 19 = 19
 ECHO   changeset 20 = 20
 ECHO   changeset 21 = 21
+ECHO   changeset 22 = 22
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -232,6 +233,7 @@ IF %ch%==18 GOTO changeset18
 IF %ch%==19 GOTO changeset19
 IF %ch%==20 GOTO changeset20
 IF %ch%==21 GOTO changeset21
+IF %ch%==22 GOTO changeset22
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -342,6 +344,16 @@ ECHO.
 ECHO import: Changeset 21
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\21_world_spell_linked_spell.sql
 ECHO Changeset 21 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset22
+CLS
+ECHO.
+ECHO import: Changeset 22
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\22_world_creature_template.sql
+ECHO Changeset 22 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
