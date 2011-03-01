@@ -10,7 +10,7 @@ INSERT INTO gameobject_template
 -- Bear's Paw
 DELETE FROM gameobject_template WHERE entry=194100;
 INSERT INTO gameobject_template 
-(entry, type, displayId, name, flags, size, questItem1, data0, data1, WDBVerified) VALUES (194100, 3, 7816, 'Bear's Paw', 4, 1, 44850, 43, 194100, 13329);
+(entry, type, displayId, name, flags, size, questItem1, data0, data1, WDBVerified) VALUES (194100, 3, 7816, 'Bear\'s Paw', 4, 1, 44850, 43, 194100, 13329);
 -- Floating Greymist Debris
 DELETE FROM gameobject_template WHERE entry=195080;
 INSERT INTO gameobject_template 
