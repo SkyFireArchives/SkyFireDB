@@ -210,6 +210,7 @@ ECHO   changeset 16 = 16
 ECHO   changeset 17 = 17
 ECHO   changeset 18 = 18
 ECHO   changeset 19 = 19
+ECHO   changeset 20 = 20
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -228,6 +229,7 @@ IF %ch%==16 GOTO changeset16
 IF %ch%==17 GOTO changeset17
 IF %ch%==18 GOTO changeset18
 IF %ch%==19 GOTO changeset19
+IF %ch%==20 GOTO changeset20
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -318,6 +320,16 @@ ECHO.
 ECHO import: Changeset 19
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\19_world_creature.sql
 ECHO Changeset 19 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset20
+CLS
+ECHO.
+ECHO import: Changeset 20
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\20_world_npc_trainer.sql
+ECHO Changeset 20 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
