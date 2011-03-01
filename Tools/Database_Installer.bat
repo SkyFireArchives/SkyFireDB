@@ -211,16 +211,16 @@ set /p ch=      Number:
 ECHO.
 IF %ch%==a GOTO changesetall
 IF %ch%==A GOTO changesetall
-IF %ch%==1 GOTO changeset1
+IF %ch%==11 GOTO changeset11
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
 
-:changeset1
+:changeset11
 CLS
 ECHO.
-ECHO import: Changeset 1
-%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\changeset_01.sql
+ECHO import: Changeset 11
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\11_world_npc_trainer.sql
 ECHO Changeset 1 imported sucesfully!
 ECHO.
 PAUSE   
