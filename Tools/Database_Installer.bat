@@ -205,6 +205,7 @@ ECHO   changeset 11 = 11
 ECHO   changeset 12 = 12
 ECHO   changeset 13 = 13
 ECHO   changeset 14 = 14
+ECHO   changeset 15 = 15
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -218,6 +219,7 @@ IF %ch%==11 GOTO changeset11
 IF %ch%==12 GOTO changeset12
 IF %ch%==13 GOTO changeset13
 IF %ch%==14 GOTO changeset14
+IF %ch%==15 GOTO changeset15
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -258,6 +260,16 @@ ECHO.
 ECHO import: Changeset 14
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\14_world_creature_loot_template.sql
 ECHO Changeset 14 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset15
+CLS
+ECHO.
+ECHO import: Changeset 15
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\15_world_gameobject_template.sql
+ECHO Changeset 15 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
