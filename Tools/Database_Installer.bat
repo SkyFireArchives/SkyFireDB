@@ -220,6 +220,7 @@ ECHO   changeset 26 = 26
 ECHO   changeset 27 = 27
 ECHO   changeset 28 = 28
 ECHO   changeset 29 = 29
+ECHO   changeset 30 = 30
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -247,7 +248,7 @@ IF %ch%==25 GOTO changeset25
 IF %ch%==26 GOTO changeset26
 IF %ch%==27 GOTO changeset27
 IF %ch%==28 GOTO changeset28
-IF %ch%==29 GOTO changeset29
+IF %ch%==29 GOTO changeset30
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -438,6 +439,16 @@ ECHO.
 ECHO import: Changeset 29
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\29_world_gameobject_template.sql
 ECHO Changeset 29 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset30
+CLS
+ECHO.
+ECHO import: Changeset 30
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\30_world_creature_ai_scripts.sql
+ECHO Changeset 30 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
