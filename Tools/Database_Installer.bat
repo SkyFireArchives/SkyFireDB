@@ -225,6 +225,7 @@ ECHO   changeset 31 = 31
 ECHO   changeset 32 = 32
 ECHO   changeset 33 = 33
 ECHO   changeset 34 = 34
+ECHO   changeset 35 = 35
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -258,6 +259,7 @@ IF %ch%==31 GOTO changeset31
 IF %ch%==32 GOTO changeset32
 IF %ch%==33 GOTO changeset33
 IF %ch%==34 GOTO changeset34
+IF %ch%==35 GOTO changeset35
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -498,6 +500,16 @@ ECHO.
 ECHO import: Changeset 34
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\34_world_creature_ai_scripts.sql
 ECHO Changeset 34 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset35
+CLS
+ECHO.
+ECHO import: Changeset 35
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\35_world_creature_template.sql
+ECHO Changeset 35 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
