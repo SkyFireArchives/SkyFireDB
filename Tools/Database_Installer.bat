@@ -239,6 +239,9 @@ ECHO   changeset 45 = 45
 ECHO   changeset 46 = 46
 ECHO   changeset 47 = 47
 ECHO   changeset 48 = 48
+ECHO   changeset 49 = 49
+ECHO   changeset 50 = 50
+ECHO   changeset 51 = 51
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -286,6 +289,9 @@ IF %ch%==45 GOTO changeset45
 IF %ch%==46 GOTO changeset46
 IF %ch%==47 GOTO changeset47
 IF %ch%==48 GOTO changeset48
+IF %ch%==49 GOTO changeset49
+IF %ch%==50 GOTO changeset50
+IF %ch%==51 GOTO changeset51
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -666,6 +672,36 @@ ECHO.
 ECHO import: Changeset 48
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\48_world_creature.sql
 ECHO Changeset 48 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset49
+CLS
+ECHO.
+ECHO import: Changeset 49
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\49_world_gameobject_loot_template.sql
+ECHO Changeset 49 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset50
+CLS
+ECHO.
+ECHO import: Changeset 50
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\50_world_gameobject.sql
+ECHO Changeset 50 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset51
+CLS
+ECHO.
+ECHO import: Changeset 51
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\51_world_gameobject_template.sql
+ECHO Changeset 51 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
