@@ -272,6 +272,7 @@ IF %ch%==38 GOTO changeset38
 IF %ch%==39 GOTO changeset39
 IF %ch%==40 GOTO changeset40
 IF %ch%==41 GOTO changeset41
+IF %ch%==42 GOTO changeset42
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -582,6 +583,16 @@ ECHO.
 ECHO import: Changeset 41
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\41_world_npc_vendor.sql
 ECHO Changeset 41 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset42
+CLS
+ECHO.
+ECHO import: Changeset 42
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\42_world_npc_vendor.sql
+ECHO Changeset 42 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
