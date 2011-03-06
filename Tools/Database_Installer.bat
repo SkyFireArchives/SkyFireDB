@@ -246,6 +246,7 @@ ECHO   changeset 52 = 52
 ECHO   changeset 53 = 53
 ECHO   changeset 54 = 54
 ECHO   changeset 55 = 55
+ECHO   changeset 56 = 56
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -300,6 +301,7 @@ IF %ch%==52 GOTO changeset52
 IF %ch%==53 GOTO changeset53
 IF %ch%==54 GOTO changeset54
 IF %ch%==55 GOTO changeset55
+IF %ch%==56 GOTO changeset56
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -750,6 +752,16 @@ ECHO.
 ECHO import: Changeset 55
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\55_world_creature_template.sql
 ECHO Changeset 55 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset56
+CLS
+ECHO.
+ECHO import: Changeset 56
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\56_world_creature_template.sql
+ECHO Changeset 56 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
