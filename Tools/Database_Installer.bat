@@ -128,7 +128,7 @@ ECHO.
 ECHO   Spanish        = S
 ECHO   German         = G  "No Data Yet"
 ECHO   Russian        = R  "No Data Yet"
-ECHO   Italian        = I  "No Data Yet"
+ECHO   Italian        = I
 ECHO.
 ECHO   Return to main menu = B
 ECHO.
@@ -179,7 +179,7 @@ ECHO Done.
 :install_it
 ECHO Importing Italian Data now...
 ECHO.
-FOR %%C IN (%local_sp%\*.sql) DO (
+FOR %%C IN (%local_it%\*.sql) DO (
 	ECHO Importing: %%~nxC1
 	%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < "%%~fC"
 	ECHO Italian Locals Successfully imported %%~nxC1
