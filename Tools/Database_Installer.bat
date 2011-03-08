@@ -201,7 +201,7 @@ GOTO begin
 CLS
 ECHO   Here is a list of changesets.!!!)
 ECHO.   
-ECHO   changeset 93 = 93  Not Exist yet!
+ECHO   changeset 93 = 93
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -219,8 +219,8 @@ IF %ch%=="" GOTO changeset
 :changeset93
 CLS
 ECHO.
-ECHO import: Changeset 92
-%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\93_not_exist_yet.sql
+ECHO import: Changeset 93
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\93_world_gameobject_involvedrelation.sql
 ECHO Changeset 93 imported sucesfully!
 ECHO.
 PAUSE   
