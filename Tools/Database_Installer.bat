@@ -202,6 +202,7 @@ CLS
 ECHO   Here is a list of changesets.!!!)
 ECHO.   
 ECHO   changeset 93 = 93
+ECHO   changeset 94 = 94
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -212,6 +213,7 @@ ECHO.
 IF %ch%==a GOTO changesetall
 IF %ch%==A GOTO changesetall
 IF %ch%==93 GOTO changeset93
+IF %ch%==94 GOTO changeset94
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -222,6 +224,16 @@ ECHO.
 ECHO import: Changeset 93
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\93_world_gameobject_involvedrelation.sql
 ECHO Changeset 93 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset94
+CLS
+ECHO.
+ECHO import: Changeset 94
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\94_world_creature.sql
+ECHO Changeset 94 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
