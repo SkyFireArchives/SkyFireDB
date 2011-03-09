@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 104    บ
+ECHO          บ      SkyFireDB 406a Rev 105    บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -213,6 +213,7 @@ ECHO   changeset 101 = 101
 ECHO   changeset 102 = 102
 ECHO   changeset 103 = 103
 ECHO   changeset 104 = 104
+ECHO   changeset 105 = 105
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -234,6 +235,7 @@ IF %ch%==101 GOTO changeset101
 IF %ch%==102 GOTO changeset102
 IF %ch%==103 GOTO changeset103
 IF %ch%==104 GOTO changeset104
+IF %ch%==105 GOTO changeset105
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -354,6 +356,16 @@ ECHO.
 ECHO import: Changeset 104
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\104_world_npc_template.sql
 ECHO Changeset 104 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset105
+CLS
+ECHO.
+ECHO import: Changeset 105
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\105_world_gameobject_loot_template.sql
+ECHO Changeset 105 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
