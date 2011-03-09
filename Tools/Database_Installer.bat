@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 114    บ
+ECHO          บ      SkyFireDB 406a Rev 116    บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -224,6 +224,8 @@ ECHO   changeset 111 = 111
 ECHO   changeset 112 = 112
 ECHO   changeset 113 = 113
 ECHO   changeset 114 = 114
+ECHO   changeset 115 = 115
+ECHO   changeset 116 = 116
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -255,6 +257,8 @@ IF %ch%==111 GOTO changeset111
 IF %ch%==112 GOTO changeset112
 IF %ch%==113 GOTO changeset113
 IF %ch%==114 GOTO changeset114
+IF %ch%==115 GOTO changeset115
+IF %ch%==116 GOTO changeset116
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -475,6 +479,26 @@ ECHO.
 ECHO import: Changeset 114
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\114_world_creature.sql
 ECHO Changeset 114 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset115
+CLS
+ECHO.
+ECHO import: Changeset 115
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\115_world_creature_questrelation.sql
+ECHO Changeset 115 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset116
+CLS
+ECHO.
+ECHO import: Changeset 116
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\116_world_creature_involvedrelation.sql
+ECHO Changeset 116 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
