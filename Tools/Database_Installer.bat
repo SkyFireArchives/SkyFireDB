@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 110    บ
+ECHO          บ      SkyFireDB 406a Rev 111    บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -185,6 +185,7 @@ FOR %%C IN (%local_it%\*.sql) DO (
 	ECHO Italian Locals Successfully imported %%~nxC1
 )
 ECHO Done.
+
 :dumpchar
 CLS
 SET sqlname=char-%DATE:~0,3% - %DATE:~4,2%-%DATE:~7,2%-%DATE:~10,4%--%TIME:~0,2%-%TIME:~3,2%
@@ -219,6 +220,7 @@ ECHO   changeset 107 = 107
 ECHO   changeset 108 = 108
 ECHO   changeset 109 = 109
 ECHO   changeset 110 = 110
+ECHO   changeset 111 = 111
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -244,6 +246,9 @@ IF %ch%==105 GOTO changeset105
 IF %ch%==106 GOTO changeset106
 IF %ch%==107 GOTO changeset107
 IF %ch%==108 GOTO changeset108
+IF %ch%==109 GOTO changeset109
+IF %ch%==110 GOTO changeset110
+IF %ch%==111 GOTO changeset111
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -424,6 +429,16 @@ ECHO.
 ECHO import: Changeset 110
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\110_world_gameobject_template.sql
 ECHO Changeset 110 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset111
+CLS
+ECHO.
+ECHO import: Changeset 110
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\111_world_creature_template.sql
+ECHO Changeset 111 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
