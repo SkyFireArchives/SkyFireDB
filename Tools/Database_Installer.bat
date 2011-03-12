@@ -267,6 +267,7 @@ IF %ch%==117 GOTO changeset117
 IF %ch%==118 GOTO changeset118
 IF %ch%==119 GOTO changeset119
 IF %ch%==120 GOTO changeset120
+IF %ch%==121 GOTO changeset121
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -546,6 +547,16 @@ CLS
 ECHO.
 ECHO import: Changeset 120
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\120_world_gameobject_loot_template.sql
+ECHO Changeset 120 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset121
+CLS
+ECHO.
+ECHO import: Changeset 121
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\121_changeset_121.sql
 ECHO Changeset 120 imported sucesfully!
 ECHO.
 PAUSE   
