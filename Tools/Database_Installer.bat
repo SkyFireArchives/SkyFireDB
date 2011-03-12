@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 121    บ
+ECHO          บ      SkyFireDB 406a Rev 122    บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -221,7 +221,7 @@ IF %ch%=="" GOTO changeset
 CLS
 ECHO.
 ECHO import: Changeset 121
-%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\122_????.sql
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\122_world_playercreateinfo.sql
 ECHO Changeset 122 imported sucesfully!
 ECHO.
 PAUSE   
