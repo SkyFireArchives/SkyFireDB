@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 124    บ
+ECHO          บ      SkyFireDB 406a Rev 125    บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -247,6 +247,16 @@ ECHO.
 ECHO import: Changeset 124
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\124_world_npc_vendor.sql
 ECHO Changeset 124 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset125
+CLS
+ECHO.
+ECHO import: Changeset 125
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\125_world_creature_template.sql
+ECHO Changeset 125 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
