@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 126    บ
+ECHO          บ      SkyFireDB 406a Rev 127    บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -207,6 +207,7 @@ ECHO   changeset 123 = 123
 ECHO   changeset 124 = 124
 ECHO   changeset 125 = 125
 ECHO   changeset 126 = 126
+ECHO   changeset 127 = 127
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -221,6 +222,7 @@ IF %ch%==123 GOTO changeset123
 IF %ch%==124 GOTO changeset124
 IF %ch%==125 GOTO changeset125
 IF %ch%==126 GOTO changeset126
+IF %ch%==127 GOTO changeset127
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -271,6 +273,16 @@ ECHO.
 ECHO import: Changeset 126
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\126_world_item_template.sql
 ECHO Changeset 126 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset127
+CLS
+ECHO.
+ECHO import: Changeset 127
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\127_world_quest_template.sql
+ECHO Changeset 127 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
