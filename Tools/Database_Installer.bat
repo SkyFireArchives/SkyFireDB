@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 133    บ
+ECHO          บ      SkyFireDB 406a Rev 136    บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -214,6 +214,9 @@ ECHO   changeset 130 = 130
 ECHO   changeset 131 = 131
 ECHO   changeset 132 = 132
 ECHO   changeset 133 = 133
+ECHO   changeset 134 = 134
+ECHO   changeset 135 = 135
+ECHO   changeset 136 = 136
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -235,6 +238,9 @@ IF %ch%==130 GOTO changeset130
 IF %ch%==131 GOTO changeset131
 IF %ch%==132 GOTO changeset132
 IF %ch%==133 GOTO changeset133
+IF %ch%==134 GOTO changeset134
+IF %ch%==135 GOTO changeset135
+IF %ch%==136 GOTO changeset136
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -355,6 +361,36 @@ ECHO.
 ECHO import: Changeset 133
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\133_world_gameobject_template.sql
 ECHO Changeset 133 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset134
+CLS
+ECHO.
+ECHO import: Changeset 134
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\134_world_creature.sql
+ECHO Changeset 134 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset135
+CLS
+ECHO.
+ECHO import: Changeset 135
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\135_world_creature_template_addon.sql
+ECHO Changeset 135 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset136
+CLS
+ECHO.
+ECHO import: Changeset 136
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\136_world_gameobject.sql
+ECHO Changeset 136 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
