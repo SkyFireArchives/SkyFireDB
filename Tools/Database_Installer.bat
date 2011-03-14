@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 154    บ
+ECHO          บ      SkyFireDB 406a Rev 155    บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -281,6 +281,7 @@ IF %ch%==151 GOTO changeset151
 IF %ch%==152 GOTO changeset152
 IF %ch%==153 GOTO changeset153
 IF %ch%==154 GOTO changeset154
+IF %ch%==155 GOTO changeset155
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -605,11 +606,21 @@ ECHO.
 PAUSE   
 GOTO changeset
 
-:changeset154
+:changeset154 
 CLS
 ECHO.
 ECHO import: Changeset 154
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\154_world_creature_template.sql
+ECHO Changeset 154 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset155 
+CLS
+ECHO.
+ECHO import: Changeset 154
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\155_world_player_classlevelstats.sql
 ECHO Changeset 154 imported sucesfully!
 ECHO.
 PAUSE   
