@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 141    บ
+ECHO          บ      SkyFireDB 406a Rev 142    บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -222,6 +222,7 @@ ECHO   changeset 138 = 138
 ECHO   changeset 139 = 139
 ECHO   changeset 140 = 140
 ECHO   changeset 141 = 141
+ECHO   changeset 142 = 142
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -251,6 +252,7 @@ IF %ch%==138 GOTO changeset138
 IF %ch%==139 GOTO changeset139
 IF %ch%==140 GOTO changeset140
 IF %ch%==141 GOTO changeset141
+IF %ch%==142 GOTO changeset142
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -450,6 +452,16 @@ CLS
 ECHO.
 ECHO import: Changeset 141
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\141_world_creature_ai_scripts.sql
+ECHO Changeset 141 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset141
+CLS
+ECHO.
+ECHO import: Changeset 142
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\142_world_achievement_criteria_data.sql
 ECHO Changeset 141 imported sucesfully!
 ECHO.
 PAUSE   
