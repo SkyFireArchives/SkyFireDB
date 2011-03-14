@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 146    บ
+ECHO          บ      SkyFireDB 406a Rev 148    บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -155,6 +155,7 @@ FOR %%C IN (%local_sp%\*.sql) DO (
 	ECHO Spanish Locals Successfully imported %%~nxC1
 )
 ECHO Done.
+GOTO Begin
 
 :install_gr
 ECHO Importing German Data now...
@@ -165,6 +166,7 @@ FOR %%C IN (%local_sp%\*.sql) DO (
 	ECHO German Locals Successfully imported %%~nxC1
 )
 ECHO Done.
+GOTO Begin
 
 :install_ru
 ECHO Importing Russian Data now...
@@ -175,6 +177,7 @@ FOR %%C IN (%local_sp%\*.sql) DO (
 	ECHO Russian Locals Successfully imported %%~nxC1
 )
 ECHO Done.
+GOTO Begin
 
 :install_it
 ECHO Importing Italian Data now...
@@ -185,6 +188,7 @@ FOR %%C IN (%local_it%\*.sql) DO (
 	ECHO Italian Locals Successfully imported %%~nxC1
 )
 ECHO Done.
+GOTO Begin
 
 :dumpchar
 CLS
@@ -227,6 +231,8 @@ ECHO   changeset 143 = 143
 ECHO   changeset 144 = 144
 ECHO   changeset 145 = 145
 ECHO   changeset 146 = 146
+ECHO   changeset 147 = 147
+ECHO   changeset 148 = 148
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -261,6 +267,8 @@ IF %ch%==143 GOTO changeset143
 IF %ch%==144 GOTO changeset144
 IF %ch%==145 GOTO changeset145
 IF %ch%==146 GOTO changeset146
+IF %ch%==147 GOTO changeset148
+IF %ch%==148 GOTO changeset147
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -511,6 +519,26 @@ ECHO.
 ECHO import: Changeset 146
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\146_world_creature_addon.sql
 ECHO Changeset 146 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset147
+CLS
+ECHO.
+ECHO import: Changeset 147
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\147_world_creature.sql
+ECHO Changeset 147 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset148
+CLS
+ECHO.
+ECHO import: Changeset 148
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\148_world_creature_template.sql
+ECHO Changeset 148 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
