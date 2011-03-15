@@ -18,7 +18,7 @@ CREATE TABLE `gameobject_involvedrelation` (
 
 LOCK TABLES `gameobject_involvedrelation` WRITE;
 /*!40000 ALTER TABLE `gameobject_involvedrelation` DISABLE KEYS */;
-INSERT INTO `gameobject_involvedrelation` VALUES (181150,9161),(195600,14247),(196832,14428),(207291,28630);
+INSERT INTO `gameobject_involvedrelation` VALUES (2701,26039),(2702,26041),(138492,26049),(138492,26341),(138492,26909),(138492,26912),(181150,9161),(195600,14247),(196832,14428),(207291,28630);
 /*!40000 ALTER TABLE `gameobject_involvedrelation` ENABLE KEYS */;
 UNLOCK TABLES;
 DELIMITER ;;
