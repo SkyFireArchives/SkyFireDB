@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 168    บ
+ECHO          บ      SkyFireDB 406a Rev 169    บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -218,6 +218,7 @@ ECHO   changeset 165 = 165
 ECHO   changeset 166 = 166
 ECHO   changeset 167 = 167
 ECHO   changeset 168 = 168
+ECHO   changeset 169 = 169
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -239,6 +240,7 @@ IF %ch%==165 GOTO changeset165
 IF %ch%==166 GOTO changeset166
 IF %ch%==167 GOTO changeset167
 IF %ch%==168 GOTO changeset168
+IF %ch%==169 GOTO changeset169
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -357,8 +359,18 @@ GOTO changeset
 CLS
 ECHO.
 ECHO import: Changeset 168
-%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\167_world_quest_template.sql
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\168_world_quest_template.sql
 ECHO Changeset 168 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset169
+CLS
+ECHO.
+ECHO import: Changeset 169
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\169_world_waypoint_scripts.sql
+ECHO Changeset 169 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
