@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 161    บ
+ECHO          บ      SkyFireDB 406a Rev 163    บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -211,6 +211,8 @@ ECHO   changeset 158 = 158
 ECHO   changeset 159 = 159
 ECHO   changeset 160 = 160
 ECHO   changeset 161 = 161
+ECHO   changeset 162 = 162
+ECHO   changeset 163 = 163
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -225,6 +227,8 @@ IF %ch%==158 GOTO changeset158
 IF %ch%==159 GOTO changeset159
 IF %ch%==160 GOTO changeset160
 IF %ch%==161 GOTO changeset161
+IF %ch%==162 GOTO changeset162
+IF %ch%==163 GOTO changeset163
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -269,11 +273,31 @@ ECHO.
 PAUSE   
 GOTO changeset
 
-:changeset160
+:changeset161
 CLS
 ECHO.
 ECHO import: Changeset 161
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\161_world_player_classlevelstats.sql
+ECHO Changeset 161 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset162
+CLS
+ECHO.
+ECHO import: Changeset 162
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\162_character_update.sql
+ECHO Changeset 161 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset163
+CLS
+ECHO.
+ECHO import: Changeset 163
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\163_world_playercreateinfo_spell.sql
 ECHO Changeset 161 imported sucesfully!
 ECHO.
 PAUSE   
