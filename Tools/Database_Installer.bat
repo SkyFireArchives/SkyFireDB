@@ -22,6 +22,7 @@ SET /p user= MySQL Username:
 SET /p pass= MySQL Password: 
 ECHO.
 SET /p world_db= World Database: 
+SET /p char_db= Character Database:
 SET port=3306
 SET dumppath=.\dump\
 SET mysqlpath=.\mysql\
@@ -329,7 +330,7 @@ GOTO changeset
 CLS
 ECHO.
 ECHO import: Changeset 162
-%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\162_character_update.sql
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %char_db% < %changsql%\162_character_update.sql
 ECHO Changeset 162 imported sucesfully!
 ECHO.
 PAUSE   
