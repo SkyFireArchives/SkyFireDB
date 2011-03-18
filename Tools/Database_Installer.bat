@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 190    บ
+ECHO          บ      SkyFireDB 406a Rev 191    บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -207,7 +207,8 @@ GOTO begin
 CLS
 ECHO   Here is a list of changesets.!!!)
 ECHO.   
-ECHO   changeset 190 = 190 NO UPDATE YET!
+ECHO   changeset 190 = 190 
+ECHO   changeset 191 = 191
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -218,6 +219,7 @@ ECHO.
 IF %ch%==a GOTO changesetall
 IF %ch%==A GOTO changesetall
 IF %ch%==190 GOTO changeset190
+IF %ch%==191 GOTO changeset191
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -228,6 +230,16 @@ ECHO.
 ECHO import: Changeset 190
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\190_world_some_fixs.sql
 ECHO Changeset 190 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset191
+CLS
+ECHO.
+ECHO import: Changeset 191
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\191_world_additions.sql
+ECHO Changeset 191 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
