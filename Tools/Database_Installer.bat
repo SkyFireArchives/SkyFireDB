@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 191    บ
+ECHO          บ      SkyFireDB 406a Rev 192    บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -22,7 +22,6 @@ SET /p user= MySQL Username:
 SET /p pass= MySQL Password: 
 ECHO.
 SET /p world_db= World Database: 
-SET /p char_db= Character Database:
 SET port=3306
 SET dumppath=.\dump\
 SET mysqlpath=.\mysql\
@@ -209,6 +208,7 @@ ECHO   Here is a list of changesets.!!!)
 ECHO.   
 ECHO   changeset 190 = 190 
 ECHO   changeset 191 = 191
+ECHO   changeset 192 = 192
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -240,6 +240,16 @@ ECHO.
 ECHO import: Changeset 191
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\191_world_additions.sql
 ECHO Changeset 191 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset192
+CLS
+ECHO.
+ECHO import: Changeset 192
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\192_world_spell_script_names.sql
+ECHO Changeset 192 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
