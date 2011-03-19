@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 193    บ
+ECHO          บ      SkyFireDB 406a Rev 195    บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -210,6 +210,8 @@ ECHO   changeset 190 = 190
 ECHO   changeset 191 = 191
 ECHO   changeset 192 = 192
 ECHO   changeset 193 = 193
+ECHO   changeset 194 = 194
+ECHO   changeset 195 = 195
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -263,6 +265,26 @@ ECHO.
 ECHO import: Changeset 193
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\193_world_spell_proc_event.sql
 ECHO Changeset 193 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset194
+CLS
+ECHO.
+ECHO import: Changeset 194
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\194_playercreateinfo.sql
+ECHO Changeset 194 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset195
+CLS
+ECHO.
+ECHO import: Changeset 195
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\195_playercreateinfo_action.sql
+ECHO Changeset 196 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
