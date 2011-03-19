@@ -1,2 +1,2 @@
-Update creature_template Set npcflags = 3 Where npcflags = 2;
+Update creature_template Set npcflag = 3 Where npcflag = 2;
 
