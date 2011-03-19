@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 192    บ
+ECHO          บ      SkyFireDB 406a Rev 193    บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -209,6 +209,7 @@ ECHO.
 ECHO   changeset 190 = 190 
 ECHO   changeset 191 = 191
 ECHO   changeset 192 = 192
+ECHO   changeset 193 = 193
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -220,6 +221,8 @@ IF %ch%==a GOTO changesetall
 IF %ch%==A GOTO changesetall
 IF %ch%==190 GOTO changeset190
 IF %ch%==191 GOTO changeset191
+IF %ch%==192 GOTO changeset192
+IF %ch%==193 GOTO changeset193
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -250,6 +253,16 @@ ECHO.
 ECHO import: Changeset 192
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\192_world_spell_script_names.sql
 ECHO Changeset 192 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset193
+CLS
+ECHO.
+ECHO import: Changeset 193
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\193_world_spell_proc_event.sql
+ECHO Changeset 193 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
