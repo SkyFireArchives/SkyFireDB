@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 198    บ
+ECHO          บ      SkyFireDB 406a Rev 199    บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -215,6 +215,7 @@ ECHO   changeset 195 = 195
 ECHO   changeset 196 = 196
 ECHO   changeset 197 = 197
 ECHO   changeset 198 = 198
+ECHO   changeset 199 = 199
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -233,6 +234,7 @@ IF %ch%==195 GOTO changeset195
 IF %ch%==196 GOTO changeset196
 IF %ch%==197 GOTO changeset197
 IF %ch%==198 GOTO changeset198
+IF %ch%==199 GOTO changeset199
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -323,6 +325,16 @@ ECHO.
 ECHO import: Changeset 198
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\198_world_gameobject_loot_template.sql
 ECHO Changeset 198 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset199
+CLS
+ECHO.
+ECHO import: Changeset 199
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\199_world_creature_template.sql
+ECHO Changeset 199 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
