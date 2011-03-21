@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 199    บ
+ECHO          บ      SkyFireDB 406a Rev 200    บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -206,7 +206,7 @@ GOTO begin
 CLS
 ECHO   Here is a list of changesets.!!!)
 ECHO.   
-ECHO   changeset 200 = 200 No Data Yet
+ECHO   changeset 200 = 200
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -225,7 +225,7 @@ IF %ch%=="" GOTO changeset
 CLS
 ECHO.
 ECHO import: Changeset 200
-%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\200_some_file.sql
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\200_world_creature_template.sql
 ECHO Changeset 200 imported sucesfully!
 ECHO.
 PAUSE   
