@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 212    บ
+ECHO          บ      SkyFireDB 406a Rev 213    บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -219,6 +219,7 @@ ECHO   changeset 209 = 209
 ECHO   changeset 210 = 210
 ECHO   changeset 211 = 211
 ECHO   changeset 212 = 212
+ECHO   changeset 213 = 213
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -241,6 +242,7 @@ IF %ch%==209 GOTO changeset209
 IF %ch%==210 GOTO changeset210
 IF %ch%==211 GOTO changeset211
 IF %ch%==212 GOTO changeset212
+IF %ch%==213 GOTO changeset213
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -369,8 +371,18 @@ GOTO changeset
 CLS
 ECHO.
 ECHO import: Changeset 212
-%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\212_world_npc_player.sql
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\212_world_npc_vendor.sql
 ECHO Changeset 212 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset213
+CLS
+ECHO.
+ECHO import: Changeset 213
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\213_world_npc_vendor.sql
+ECHO Changeset 213 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
