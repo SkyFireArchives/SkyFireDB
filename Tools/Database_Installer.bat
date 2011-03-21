@@ -206,16 +206,7 @@ GOTO begin
 CLS
 ECHO   Here is a list of changesets.!!!)
 ECHO.   
-ECHO   changeset 190 = 190 
-ECHO   changeset 191 = 191
-ECHO   changeset 192 = 192
-ECHO   changeset 193 = 193
-ECHO   changeset 194 = 194
-ECHO   changeset 195 = 195
-ECHO   changeset 196 = 196
-ECHO   changeset 197 = 197
-ECHO   changeset 198 = 198
-ECHO   changeset 199 = 199
+ECHO   changeset 200 = 200 No Data Yet
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -225,116 +216,17 @@ set /p ch=      Number:
 ECHO.
 IF %ch%==a GOTO changesetall
 IF %ch%==A GOTO changesetall
-IF %ch%==190 GOTO changeset190
-IF %ch%==191 GOTO changeset191
-IF %ch%==192 GOTO changeset192
-IF %ch%==193 GOTO changeset193
-IF %ch%==194 GOTO changeset194
-IF %ch%==195 GOTO changeset195
-IF %ch%==196 GOTO changeset196
-IF %ch%==197 GOTO changeset197
-IF %ch%==198 GOTO changeset198
-IF %ch%==199 GOTO changeset199
+IF %ch%==200 GOTO changeset200
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
 
-:changeset190
+:changeset200
 CLS
 ECHO.
-ECHO import: Changeset 190
-%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\190_world_some_fixs.sql
-ECHO Changeset 190 imported sucesfully!
-ECHO.
-PAUSE   
-GOTO changeset
-
-:changeset191
-CLS
-ECHO.
-ECHO import: Changeset 191
-%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\191_world_additions.sql
-ECHO Changeset 191 imported sucesfully!
-ECHO.
-PAUSE   
-GOTO changeset
-
-:changeset192
-CLS
-ECHO.
-ECHO import: Changeset 192
-%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\192_world_spell_script_names.sql
-ECHO Changeset 192 imported sucesfully!
-ECHO.
-PAUSE   
-GOTO changeset
-
-:changeset193
-CLS
-ECHO.
-ECHO import: Changeset 193
-%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\193_world_spell_proc_event.sql
-ECHO Changeset 193 imported sucesfully!
-ECHO.
-PAUSE   
-GOTO changeset
-
-:changeset194
-CLS
-ECHO.
-ECHO import: Changeset 194
-%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\194_playercreateinfo.sql
-ECHO Changeset 194 imported sucesfully!
-ECHO.
-PAUSE   
-GOTO changeset
-
-:changeset195
-CLS
-ECHO.
-ECHO import: Changeset 195
-%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\195_playercreateinfo_action.sql
-ECHO Changeset 195 imported sucesfully!
-ECHO.
-PAUSE   
-GOTO changeset
-
-:changeset196
-CLS
-ECHO.
-ECHO import: Changeset 196
-%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\196_creature.sql
-ECHO Changeset 196 imported sucesfully!
-ECHO.
-PAUSE   
-GOTO changeset
-
-:changeset197
-CLS
-ECHO.
-ECHO import: Changeset 197
-%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\197_world_npc_vendor.sql
-ECHO Changeset 197 imported sucesfully!
-ECHO.
-PAUSE   
-GOTO changeset
-
-:changeset198
-CLS
-ECHO.
-ECHO import: Changeset 198
-%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\198_world_gameobject_loot_template.sql
-ECHO Changeset 198 imported sucesfully!
-ECHO.
-PAUSE   
-GOTO changeset
-
-:changeset199
-CLS
-ECHO.
-ECHO import: Changeset 199
-%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\199_world_creature_template.sql
-ECHO Changeset 199 imported sucesfully!
+ECHO import: Changeset 200
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\200_some_file.sql
+ECHO Changeset 200 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
