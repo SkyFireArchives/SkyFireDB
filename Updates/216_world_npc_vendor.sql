@@ -1,8 +1,7 @@
 -- Huju <Trade Supplies>
 
 DELETE FROM npc_vendor WHERE entry = 45093;
-INSERT INTO npc_vendor
-VALUES
+INSERT INTO npc_vendor VALUES
 (45093, 0, 2325, 0, 0, 0),
 (45093, 0, 5956, 0, 0, 0),
 (45093, 0, 6532, 0, 0, 0),
