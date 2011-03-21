@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 204    บ
+ECHO          บ      SkyFireDB 406a Rev 205    บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -211,6 +211,7 @@ ECHO   changeset 201 = 201
 ECHO   changeset 202 = 202
 ECHO   changeset 203 = 203
 ECHO   changeset 204 = 204
+ECHO   changeset 205 = 205
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -225,6 +226,7 @@ IF %ch%==201 GOTO changeset201
 IF %ch%==202 GOTO changeset202
 IF %ch%==203 GOTO changeset203
 IF %ch%==204 GOTO changeset204
+IF %ch%==205 GOTO changeset205
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -273,8 +275,18 @@ GOTO changeset
 CLS
 ECHO.
 ECHO import: Changeset 204
-%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\2034_world_quest_10935.sql
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\204_world_quest_10935.sql
 ECHO Changeset 204 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset205
+CLS
+ECHO.
+ECHO import: Changeset 205
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\205_world_gameobject_loot_template.sql
+ECHO Changeset 205 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
