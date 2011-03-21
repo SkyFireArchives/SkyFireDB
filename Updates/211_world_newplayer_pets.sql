@@ -1,0 +1,23 @@
+Insert INTO playercreateinfo_spell Values (10, 3, 883, 'Call Pet 1');
+Insert INTO playercreateinfo_spell Values (11, 3, 883, 'Call Pet 1');
+Insert INTO playercreateinfo_spell Values (3, 3, 883, 'Call Pet 1');
+Insert INTO playercreateinfo_spell Values (9, 3, 883, 'Call Pet 1');
+Insert INTO playercreateinfo_spell Values (1, 3, 883, 'Call Pet 1');
+Insert INTO playercreateinfo_spell Values (4, 3, 883, 'Call Pet 1');
+Insert INTO playercreateinfo_spell Values (2, 3, 883, 'Call Pet 1');
+Insert INTO playercreateinfo_spell Values (6, 3, 883, 'Call Pet 1');
+Insert INTO playercreateinfo_spell Values (8, 3, 883, 'Call Pet 1');
+Insert INTO playercreateinfo_spell Values (5, 3, 883, 'Call Pet 1');
+Insert INTO playercreateinfo_spell Values (22, 3, 883, 'Call Pet 1');
+
+Insert INTO playercreateinfo_spell Values (10, 3, 982, 'Revive Pet');
+Insert INTO playercreateinfo_spell Values (11, 3, 982, 'Revive Pet');
+Insert INTO playercreateinfo_spell Values (3, 3, 982, 'Revive Pet');
+Insert INTO playercreateinfo_spell Values (9, 3, 982, 'Revive Pet');
+Insert INTO playercreateinfo_spell Values (1, 3, 982, 'Revive Pet');
+Insert INTO playercreateinfo_spell Values (4, 3, 982, 'Revive Pet');
+Insert INTO playercreateinfo_spell Values (2, 3, 982, 'Revive Pet');
+Insert INTO playercreateinfo_spell Values (6, 3, 982, 'Revive Pet');
+Insert INTO playercreateinfo_spell Values (8, 3, 982, 'Revive Pet');
+Insert INTO playercreateinfo_spell Values (5, 3, 982, 'Revive Pet');
+Insert INTO playercreateinfo_spell Values (22, 3, 982, 'Revive Pet');
