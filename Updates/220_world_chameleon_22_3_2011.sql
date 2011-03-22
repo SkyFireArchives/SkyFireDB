@@ -1,5 +1,5 @@
 -- Shaman - Tranquil Mind Totem
-UPDATE creature_template SET spell1 = 87717 WHERE entry = 47069
+UPDATE creature_template SET spell1=87717 WHERE entry=47069;
 
 -- Shaman - Unleash Elements script
 DELETE FROM spell_script_names WHERE spell_id=73680 AND ScriptName='spell_sha_unleash_elements';
@@ -20,4 +20,4 @@ UPDATE spell_bonus_data SET direct_bonus='0.083', dot_bonus='0.083' WHERE entry=
 UPDATE spell_bonus_data SET direct_bonus='0.302' WHERE entry=331;
 -- Chain Heal
 UPDATE spell_bonus_data SET direct_bonus='0.35' WHERE entry=1064;
-UPDATE spell_bonus_data SET direct_bonus='0.604', comments=Shaman - Healing Surge' WHERE entry=8004;
+UPDATE spell_bonus_data SET direct_bonus='0.604', comments='Shaman - Healing Surge' WHERE entry=8004;
