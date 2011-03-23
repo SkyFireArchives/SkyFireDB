@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 236    บ
+ECHO          บ      SkyFireDB 406a Rev 238    บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -243,6 +243,8 @@ ECHO   changeset 233 = 233
 ECHO   changeset 234 = 234
 ECHO   changeset 235 = 235
 ECHO   changeset 236 = 236
+ECHO   changeset 237 = 237
+ECHO   changeset 238 = 238
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -289,6 +291,8 @@ IF %ch%==233 GOTO changeset233
 IF %ch%==234 GOTO changeset234
 IF %ch%==235 GOTO changeset235
 IF %ch%==236 GOTO changeset236
+IF %ch%==237 GOTO changeset237
+IF %ch%==238 GOTO changeset238
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -659,6 +663,26 @@ ECHO
 ECHO import: Changeset 236
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\236_world_creature_template.sql
 ECHO Changeset 236 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset237
+CLS
+ECHO
+ECHO import: Changeset 237
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\237_world_Ari_Kezan_Gameobject_Spawns.sql
+ECHO Changeset 237 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset238
+CLS
+ECHO
+ECHO import: Changeset 238
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\238_world_Ari_Kezan_NPC_Spawns.sql
+ECHO Changeset 238 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
