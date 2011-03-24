@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 240    บ
+ECHO          บ      SkyFireDB 406a Rev 241    บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -206,7 +206,7 @@ GOTO begin
 CLS
 ECHO   Here is a list of changesets.!!!)
 ECHO.   
-ECHO   changeset 241 = 241 No Data Yet!
+ECHO   changeset 241 = 241
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -225,7 +225,7 @@ IF %ch%=="" GOTO changeset
 CLS
 ECHO
 ECHO import: Changeset 241
-%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\241_no_data_yet.sql
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\241_spell_script_names.sql
 ECHO Changeset 240 imported sucesfully!
 ECHO.
 PAUSE   
