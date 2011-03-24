@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 251    บ
+ECHO          บ      SkyFireDB 406a Rev 252    บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -217,6 +217,7 @@ ECHO   changeset 248 = 248
 ECHO   changeset 249 = 249
 ECHO   changeset 250 = 250
 ECHO   changeset 251 = 251
+ECHO   changeset 252 = 252
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -237,6 +238,7 @@ IF %ch%==248 GOTO changeset248
 IF %ch%==249 GOTO changeset249
 IF %ch%==250 GOTO changeset250
 IF %ch%==251 GOTO changeset251
+IF %ch%==252 GOTO changeset252
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -347,6 +349,16 @@ ECHO
 ECHO import: Changeset 251
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\251_creature.sql
 ECHO Changeset 251 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset252
+CLS
+ECHO
+ECHO import: Changeset 252
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\252_waypoint_data.sql
+ECHO Changeset 252 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
