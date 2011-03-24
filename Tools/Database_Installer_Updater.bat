@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 243    บ
+ECHO          บ      SkyFireDB 406a Rev 248    บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -209,6 +209,11 @@ ECHO.
 ECHO   changeset 241 = 241
 ECHO   changeset 242 = 242
 ECHO   changeset 243 = 243
+ECHO   changeset 244 = 244
+ECHO   changeset 245 = 245
+ECHO   changeset 246 = 246
+ECHO   changeset 247 = 247
+ECHO   changeset 248 = 248
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -221,6 +226,11 @@ IF %ch%==A GOTO changesetall
 IF %ch%==241 GOTO changeset241
 IF %ch%==242 GOTO changeset242
 IF %ch%==243 GOTO changeset243
+IF %ch%==244 GOTO changeset244
+IF %ch%==245 GOTO changeset245
+IF %ch%==246 GOTO changeset246
+IF %ch%==247 GOTO changeset247
+IF %ch%==248 GOTO changeset248
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -251,6 +261,56 @@ ECHO
 ECHO import: Changeset 243
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\243_creature_addon.sql
 ECHO Changeset 243 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset244
+CLS
+ECHO
+ECHO import: Changeset 244
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\244_creature_involvedrelation.sql
+ECHO Changeset 244 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset245
+CLS
+ECHO
+ECHO import: Changeset 245
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\245_creature_questrelation.sql
+ECHO Changeset 245 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset246
+CLS
+ECHO
+ECHO import: Changeset 246
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\246_gameobject_involvedrelation.sql
+ECHO Changeset 246 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset247
+CLS
+ECHO
+ECHO import: Changeset 247
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\247_gameobject_questrelation.sql
+ECHO Changeset 247 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset248
+CLS
+ECHO
+ECHO import: Changeset 248
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\248_item_template.sql
+ECHO Changeset 248 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
