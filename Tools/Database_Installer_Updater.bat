@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 256    บ
+ECHO          บ      SkyFireDB 406a Rev 258    บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -222,6 +222,8 @@ ECHO   changeset 253 = 253
 ECHO   changeset 254 = 254
 ECHO   changeset 255 = 255
 ECHO   changeset 256 = 256
+ECHO   changeset 257 = 257
+ECHO   changeset 258 = 258
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -247,6 +249,8 @@ IF %ch%==253 GOTO changeset253
 IF %ch%==254 GOTO changeset254
 IF %ch%==255 GOTO changeset255
 IF %ch%==256 GOTO changeset256
+IF %ch%==257 GOTO changeset257
+IF %ch%==258 GOTO changeset258
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -407,6 +411,26 @@ ECHO
 ECHO import: Changeset 256
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\256_gameobject_template.sql
 ECHO Changeset 256 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset257
+CLS
+ECHO
+ECHO import: Changeset 257
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\257_gameobject_template.sql
+ECHO Changeset 257 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset258
+CLS
+ECHO
+ECHO import: Changeset 258
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\258_gameobject_loot_template.sql
+ECHO Changeset 258 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
