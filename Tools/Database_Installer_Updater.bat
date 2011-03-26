@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 268    บ
+ECHO          บ      SkyFireDB 406a Rev 269    บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -234,6 +234,7 @@ ECHO   changeset 265 = 265
 ECHO   changeset 266 = 266
 ECHO   changeset 267 = 267
 ECHO   changeset 268 = 268
+ECHO   changeset 269 = 269
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -271,6 +272,7 @@ IF %ch%==265 GOTO changeset265
 IF %ch%==266 GOTO changeset266
 IF %ch%==267 GOTO changeset267
 IF %ch%==268 GOTO changeset268
+IF %ch%==269 GOTO changeset269
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -551,6 +553,16 @@ ECHO
 ECHO import: Changeset 268
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\268_npc_vendor.sql
 ECHO Changeset 268 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset269
+CLS
+ECHO
+ECHO import: Changeset 269
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\269_creature_addon.sql
+ECHO Changeset 269 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
