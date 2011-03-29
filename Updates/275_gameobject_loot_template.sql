@@ -16,3 +16,5 @@ INSERT INTO `gameobject_loot_template` (`entry`, `item`, `ChanceOrQuestChance`) 
 
 DELETE FROM `gameobject_loot_template` WHERE `entry` = 190624;
 INSERT INTO `gameobject_loot_template` (`entry`, `item`, `ChanceOrQuestChance`) VALUES (190624, 38656, -100);
+
+-- Fix By TheHacker66
