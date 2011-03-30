@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 280    บ
+ECHO          บ      SkyFireDB 406a Rev 281    บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -207,6 +207,7 @@ CLS
 ECHO   Here is a list of changesets.!!!)
 ECHO.   
 ECHO   changeset 280 = 280
+ECHO   changeset 281 = 281
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -217,6 +218,7 @@ ECHO.
 IF %ch%==a GOTO changesetall
 IF %ch%==A GOTO changesetall
 IF %ch%==280 GOTO changeset280
+IF %ch%==281 GOTO changeset281
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -227,6 +229,16 @@ ECHO
 ECHO import: Changeset 280
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\280_misc_hotfixes.sql
 ECHO Changeset 280 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset281
+CLS
+ECHO
+ECHO import: Changeset 281
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\281_gameobject_questrelation.sql
+ECHO Changeset 281 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
