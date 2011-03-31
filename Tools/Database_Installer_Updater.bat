@@ -197,7 +197,7 @@ SET /p chardb=   Enter name of your character DB:
 ECHO.
 IF NOT EXIST "%dumppath%" MKDIR %dumppath%
 ECHO Dumping %sqlname%.sql to %dumppath%
-%mysqlpath%\mysqldump -u%user% -p%pass% --result-file="%dumppath%\%sqlname%.sql" %chardb%
+%mysqlpath%\mysqldump -u%user% -p%pass% --routines --skip-comments --result-file="%dumppath%\%sqlname%.sql" %chardb%
 ECHO Done.
 PAUSE
 GOTO begin
