@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 282    บ
+ECHO          บ      SkyFireDB 406a Rev 284    บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -209,6 +209,8 @@ ECHO.
 ECHO   changeset 280 = 280
 ECHO   changeset 281 = 281
 ECHO   changeset 282 = 282
+ECHO   changeset 283 = 283
+ECHO   changeset 284 = 284
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -221,6 +223,8 @@ IF %ch%==A GOTO changesetall
 IF %ch%==280 GOTO changeset280
 IF %ch%==281 GOTO changeset281
 IF %ch%==282 GOTO changeset282
+IF %ch%==283 GOTO changeset283
+IF %ch%==284 GOTO changeset284
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -245,12 +249,32 @@ ECHO.
 PAUSE   
 GOTO changeset
 
-:changeset281
+:changeset282
 CLS
 ECHO
 ECHO import: Changeset 282
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\282_creature_questrelation.sql
 ECHO Changeset 282 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset283
+CLS
+ECHO
+ECHO import: Changeset 283
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\283_skinning_loot_template.sql
+ECHO Changeset 283 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset284
+CLS
+ECHO
+ECHO import: Changeset 284
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\284_creature_template.sql
+ECHO Changeset 284 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
