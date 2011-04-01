@@ -219,6 +219,7 @@ ECHO   changeset 289 = 289
 ECHO   changeset 290 = 290
 ECHO   changeset 291 = 291
 ECHO   changeset 292 = 292
+ECHO   changeset 293 = 293
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -240,6 +241,8 @@ IF %ch%==288 GOTO changeset288
 IF %ch%==289 GOTO changeset289
 IF %ch%==290 GOTO changeset290
 IF %ch%==291 GOTO changeset291
+IF %ch%==292 GOTO changeset292
+IF %ch%==293 GOTO changeset293
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -370,6 +373,16 @@ ECHO
 ECHO import: Changeset 292
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\292_misc_updates.sql
 ECHO Changeset 292 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset293
+CLS
+ECHO
+ECHO import: Changeset 293
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\293_gameobject_template.sql
+ECHO Changeset 293 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
