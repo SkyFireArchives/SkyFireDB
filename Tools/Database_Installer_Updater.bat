@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 284    บ
+ECHO          บ      SkyFireDB 406a Rev 285    บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -211,6 +211,7 @@ ECHO   changeset 281 = 281
 ECHO   changeset 282 = 282
 ECHO   changeset 283 = 283
 ECHO   changeset 284 = 284
+ECHO   changeset 285 = 285
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -225,6 +226,7 @@ IF %ch%==281 GOTO changeset281
 IF %ch%==282 GOTO changeset282
 IF %ch%==283 GOTO changeset283
 IF %ch%==284 GOTO changeset284
+IF %ch%==285 GOTO changeset285
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -275,6 +277,16 @@ ECHO
 ECHO import: Changeset 284
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\284_creature_template.sql
 ECHO Changeset 284 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset285
+CLS
+ECHO
+ECHO import: Changeset 285
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\285_areatrigger_teleport.sql
+ECHO Changeset 285 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
