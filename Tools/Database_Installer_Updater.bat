@@ -214,6 +214,7 @@ ECHO   changeset 284 = 284
 ECHO   changeset 285 = 285
 ECHO   changeset 286 = 286
 ECHO   changeset 287 = 287
+ECHO   changeset 288 = 288
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -231,6 +232,7 @@ IF %ch%==284 GOTO changeset284
 IF %ch%==285 GOTO changeset285
 IF %ch%==286 GOTO changeset286
 IF %ch%==287 GOTO changeset287
+IF %ch%==288 GOTO changeset288
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -311,6 +313,16 @@ ECHO
 ECHO import: Changeset 287
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\287_skinning_loot_template.sql
 ECHO Changeset 287 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset288
+CLS
+ECHO
+ECHO import: Changeset 288
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\288_gameobject_loot_template.sql
+ECHO Changeset 288 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
