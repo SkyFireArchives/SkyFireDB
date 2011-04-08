@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 300    บ
+ECHO          บ      SkyFireDB 406a Rev 301    บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -207,6 +207,8 @@ CLS
 ECHO   Here is a list of changesets.!!!)
 ECHO.   
 ECHO   changeset 299 = 299
+ECHO   changeset 300 = 300
+ECHO   changeset 301 = 301
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -217,6 +219,8 @@ ECHO.
 IF %ch%==a GOTO changesetall
 IF %ch%==A GOTO changesetall
 IF %ch%==299 GOTO changeset299
+IF %ch%==300 GOTO changeset300
+IF %ch%==301 GOTO changeset301
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -237,6 +241,16 @@ ECHO
 ECHO import: Changeset 300
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\300_elwynn_forest_updates.sql
 ECHO Changeset 300 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset301
+CLS
+ECHO
+ECHO import: Changeset 301
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\301_Teldrassil Quests.sql
+ECHO Changeset 301 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
