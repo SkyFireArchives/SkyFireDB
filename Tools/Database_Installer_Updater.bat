@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 308    บ
+ECHO          บ      SkyFireDB 406a Rev 309    บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -216,6 +216,7 @@ ECHO   changeset 305 = 305
 ECHO   changeset 306 = 306
 ECHO   changeset 307 = 307
 ECHO   changeset 308 = 308
+ECHO   changeset 309 = 309
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -235,6 +236,7 @@ IF %ch%==305 GOTO changeset305
 IF %ch%==306 GOTO changeset306
 IF %ch%==307 GOTO changeset307
 IF %ch%==308 GOTO changeset308
+IF %ch%==309 GOTO changeset309
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -335,6 +337,16 @@ ECHO
 ECHO import: Changeset 308
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\308_gameobject_involvedrelation.sql
 ECHO Changeset 308 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset309
+CLS
+ECHO
+ECHO import: Changeset 309
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\309_npc_vendor.sql
+ECHO Changeset 309 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
