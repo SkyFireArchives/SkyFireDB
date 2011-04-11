@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 321    บ
+ECHO          บ      SkyFireDB 406a Rev 324    บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -229,6 +229,9 @@ ECHO   changeset 318 = 318
 ECHO   changeset 319 = 329
 ECHO   changeset 320 = 320
 ECHO   changeset 321 = 321
+ECHO   changeset 322 = 322
+ECHO   changeset 323 = 323
+ECHO   changeset 324 = 324
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -261,6 +264,9 @@ IF %ch%==318 GOTO changeset318
 IF %ch%==319 GOTO changeset319
 IF %ch%==320 GOTO changeset320
 IF %ch%==321 GOTO changeset321
+IF %ch%==322 GOTO changeset322
+IF %ch%==323 GOTO changeset323
+IF %ch%==324 GOTO changeset324
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -491,6 +497,36 @@ ECHO
 ECHO import: Changeset 321
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\321_creature_addon.sql
 ECHO Changeset 321 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset322
+CLS
+ECHO
+ECHO import: Changeset 322
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\322_creature.sql
+ECHO Changeset 322 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset323
+CLS
+ECHO
+ECHO import: Changeset 323
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\323_quest_template.sql
+ECHO Changeset 323 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset324
+CLS
+ECHO
+ECHO import: Changeset 324
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\324_creature_template.sql
+ECHO Changeset 324 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
