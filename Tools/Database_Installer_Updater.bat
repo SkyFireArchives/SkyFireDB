@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 313    บ
+ECHO          บ      SkyFireDB 406a Rev 314    บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -221,6 +221,7 @@ ECHO   changeset 310 = 310
 ECHO   changeset 311 = 311
 ECHO   changeset 312 = 312
 ECHO   changeset 313 = 313
+ECHO   changeset 314 = 314
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -245,6 +246,7 @@ IF %ch%==310 GOTO changeset310
 IF %ch%==311 GOTO changeset311
 IF %ch%==312 GOTO changeset312
 IF %ch%==313 GOTO changeset313
+IF %ch%==314 GOTO changeset314
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -398,6 +400,16 @@ ECHO Changeset 313 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset   
+
+:changeset314
+CLS
+ECHO
+ECHO import: Changeset 314
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\314_skinning.sql
+ECHO Changeset 314 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
 
 :changesetall
 CLS
