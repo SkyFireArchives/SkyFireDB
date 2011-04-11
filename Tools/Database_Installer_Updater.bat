@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 316    บ
+ECHO          บ      SkyFireDB 406a Rev 321    บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -224,6 +224,11 @@ ECHO   changeset 313 = 313
 ECHO   changeset 314 = 314
 ECHO   changeset 315 = 315
 ECHO   changeset 316 = 316
+ECHO   changeset 317 = 317
+ECHO   changeset 318 = 318
+ECHO   changeset 319 = 329
+ECHO   changeset 320 = 320
+ECHO   changeset 321 = 321
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -251,6 +256,11 @@ IF %ch%==313 GOTO changeset313
 IF %ch%==314 GOTO changeset314
 IF %ch%==315 GOTO changeset315
 IF %ch%==316 GOTO changeset316
+IF %ch%==317 GOTO changeset317
+IF %ch%==318 GOTO changeset318
+IF %ch%==319 GOTO changeset319
+IF %ch%==320 GOTO changeset320
+IF %ch%==321 GOTO changeset321
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -431,6 +441,56 @@ ECHO
 ECHO import: Changeset 316
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\316_gameobject_template.sql
 ECHO Changeset 316 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset317
+CLS
+ECHO
+ECHO import: Changeset 317
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\317_creature.sql
+ECHO Changeset 317 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset318
+CLS
+ECHO
+ECHO import: Changeset 318
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\318_creature_template.sql
+ECHO Changeset 318 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset319
+CLS
+ECHO
+ECHO import: Changeset 319
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\319_npc_vendor.sql
+ECHO Changeset 319 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset320
+CLS
+ECHO
+ECHO import: Changeset 320
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\320_creature_template_addon.sql
+ECHO Changeset 320 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset321
+CLS
+ECHO
+ECHO import: Changeset 321
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\321_creature_addon.sql
+ECHO Changeset 321 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
