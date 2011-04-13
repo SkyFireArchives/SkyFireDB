@@ -14,7 +14,7 @@ INSERT INTO npc_vendor VALUES
 
 -- Janice Winters <General Goods>
 
-DELETE FROM npc_vendor WHERE entry = 43750;
+DELETE FROM npc_vendor WHERE entry = 43748;
 INSERT INTO npc_vendor VALUES
 (43748, 0, 4497, 0, 0, 0),
 (43748, 0, 4499, 0, 0, 0),
