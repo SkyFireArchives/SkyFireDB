@@ -210,6 +210,6 @@ UPDATE quest_template SET RewRepFaction2=1105, RewRepValueId2=-6 WHERE entry=127
 -- Quest: Fresh out of the Grave
 -- Quest: The Shadow Grave
 UPDATE quest_template SET 
-QuestFlags=0 
+QuestFlags=0,
 RewOrReqMoney=0
 WHERE entry IN (24959, 28608);
