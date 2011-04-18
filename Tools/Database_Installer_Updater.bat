@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 329    บ
+ECHO          บ      SkyFireDB 406a Rev 330    บ
 ECHO          บ              for               บ
 ECHO          บ     SkyFireEMU 406a Rev 678    บ
 ECHO          บ        Installation Tool       บ
@@ -212,6 +212,7 @@ ECHO.
 ECHO   changeset 327 = 327
 ECHO   changeset 328 = 328
 ECHO   changeset 329 = 329
+ECHO   changeset 320 = 330
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -223,6 +224,8 @@ IF %ch%==a GOTO changesetall
 IF %ch%==A GOTO changesetall
 IF %ch%==327 GOTO changeset327
 IF %ch%==328 GOTO changeset328
+IF %ch%==329 GOTO changeset329
+IF %ch%==330 GOTO changeset330
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -253,6 +256,16 @@ ECHO
 ECHO import: Changeset 329
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\329_world_spell_bonus_data.sql
 ECHO Changeset 329 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset330
+CLS
+ECHO
+ECHO import: Changeset 330
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\330_world_player_classlevelstats.sql
+ECHO Changeset 330 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
