@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 330    บ
+ECHO          บ      SkyFireDB 406a Rev 336    บ
 ECHO          บ              for               บ
 ECHO          บ     SkyFireEMU 406a Rev 678    บ
 ECHO          บ        Installation Tool       บ
@@ -212,7 +212,13 @@ ECHO.
 ECHO   changeset 327 = 327
 ECHO   changeset 328 = 328
 ECHO   changeset 329 = 329
-ECHO   changeset 320 = 330
+ECHO   changeset 330 = 330
+ECHO   changeset 331 = 331
+ECHO   changeset 332 = 332
+ECHO   changeset 333 = 333
+ECHO   changeset 334 = 334
+ECHO   changeset 335 = 335
+ECHO   changeset 336 = 336
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -269,6 +275,66 @@ ECHO Changeset 330 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
+
+:changeset331
+CLS
+ECHO
+ECHO import: Changeset 331
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\331_PSM_updates.sql
+ECHO Changeset 331 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+:changeset332
+CLS
+ECHO
+ECHO import: Changeset 332
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\332_AI_eversongwoods.sql
+ECHO Changeset 332 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset333
+CLS
+ECHO
+ECHO import: Changeset 333
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\333_AI_ghostlands.sql
+ECHO Changeset 333 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset334
+CLS
+ECHO
+ECHO import: Changeset 334
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\334_AI_isle_of_queldanas.sql
+ECHO Changeset 334 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset335
+CLS
+ECHO
+ECHO import: Changeset 335
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\335_AI_keazan.sql
+ECHO Changeset 335 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset336
+CLS
+ECHO
+ECHO import: Changeset 336
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\336_AI_hrothgars_landing.sql
+ECHO Changeset 336 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
 
 :changesetall
 CLS
