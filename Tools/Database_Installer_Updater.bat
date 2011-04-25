@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 336    บ
+ECHO          บ      SkyFireDB 406a Rev 337    บ
 ECHO          บ              for               บ
 ECHO          บ     SkyFireEMU 406a Rev 678    บ
 ECHO          บ        Installation Tool       บ
@@ -219,6 +219,7 @@ ECHO   changeset 333 = 333
 ECHO   changeset 334 = 334
 ECHO   changeset 335 = 335
 ECHO   changeset 336 = 336
+ECHO   changeset 337 = 337
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -232,6 +233,13 @@ IF %ch%==327 GOTO changeset327
 IF %ch%==328 GOTO changeset328
 IF %ch%==329 GOTO changeset329
 IF %ch%==330 GOTO changeset330
+IF %ch%==331 GOTO changeset331
+IF %ch%==332 GOTO changeset332
+IF %ch%==333 GOTO changeset333
+IF %ch%==334 GOTO changeset334
+IF %ch%==335 GOTO changeset335
+IF %ch%==336 GOTO changeset336
+IF %ch%==337 GOTO changeset337
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -335,6 +343,15 @@ ECHO.
 PAUSE   
 GOTO changeset
 
+:changeset337
+CLS
+ECHO
+ECHO import: Changeset 337
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\337_world_npc_vedor.sql
+ECHO Changeset 337 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
 
 :changesetall
 CLS
