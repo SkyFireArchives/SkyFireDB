@@ -8,7 +8,7 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 339    บ
+ECHO          บ      SkyFireDB 406a Rev 340    บ
 ECHO          บ              for               บ
 ECHO          บ     SkyFireEMU 406a Rev 678    บ
 ECHO          บ        Installation Tool       บ
@@ -222,6 +222,7 @@ ECHO   changeset 336 = 336
 ECHO   changeset 337 = 337
 ECHO   changeset 338 = 338
 ECHO   changeset 339 = 339
+ECHO   changeset 340 = 340
 ECHO.
 ECHO   Or type in "A" to import all changesets
 ECHO.
@@ -244,6 +245,7 @@ IF %ch%==336 GOTO changeset336
 IF %ch%==337 GOTO changeset337
 IF %ch%==338 GOTO changeset338
 IF %ch%==339 GOTO changeset339
+IF %ch%==340 GOTO changeset340
 IF %ch%==b GOTO begin
 IF %ch%==B GOTO begin
 IF %ch%=="" GOTO changeset
@@ -373,6 +375,16 @@ ECHO
 ECHO import: Changeset 339
 %mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\339_world_creature_template.sql
 ECHO Changeset 339 imported sucesfully!
+ECHO.
+PAUSE   
+GOTO changeset
+
+:changeset340
+CLS
+ECHO
+ECHO import: Changeset 340
+%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < %changsql%\340_world_UPDATEPACK.sql
+ECHO Changeset 340 imported sucesfully!
 ECHO.
 PAUSE   
 GOTO changeset
