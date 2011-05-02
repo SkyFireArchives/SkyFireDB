@@ -8,9 +8,9 @@ ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
-ECHO          บ      SkyFireDB 406a Rev 340    บ
+ECHO          บ      SkyFireDB 406a Rev 341    บ
 ECHO          บ              for               บ
-ECHO          บ     SkyFireEMU 406a Rev 678    บ
+ECHO          บ     SkyFireEMU 406a Rev 1015+  บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
