@@ -18,7 +18,6 @@ DELETE FROM `npc_vendor` WHERE `entry`='47719';
 UPDATE `creature_template` SET `minlevel`='40' , `maxlevel`='40' , `faction_a`='84',`faction_h`='84',`npcflag`='131',`type`='7' ,`health_mod`='2.4' where `entry`='47719' ;
 INSERT INTO `npc_vendor` values (47719,5,3371,0,0,0);
 
-
 -- NPC: Alithia Fallowmere <Innkeeper>
 DELETE FROM `npc_vendor` WHERE `entry`='40898';
 UPDATE `creature_template` SET `npcflag`='65667' WHERE `entry`='40898';
@@ -243,16 +242,12 @@ INSERT INTO `creature` (`id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equip
 ('6491','1','1','1','0','6491','5633.3','-4767.9','778.051','1.47212','300','0','0','4120','0','0','0','0','0','0'),
 ('6491','1','1','1','0','6491','5094.36','-4740.24','847','2.36353','300','0','0','4120','0','0','0','0','0','0'),
 ('6491','1','1','1','5233','6491','4643.83','-4546.27','888.722','3.85718','5000','5','0','4120','0','0','0','0','0','0');
-
 UPDATE `creature_template` SET `speed_walk`='5', `speed_run`='5' WHERE (`entry`='51346');
-
-UPDATE creature_addon SET auras='0 0' WHERE mount='17719' AND bytes1='50331648' AND auras="95230 0";
+UPDATE `creature_addon` SET `auras`='0 0' WHERE mount='17719' AND bytes1='50331648' AND auras="95230 0";
 UPDATE `creature_addon` SET `auras`='95230 0' WHERE (`guid`='290376');
 UPDATE `creature_addon` SET `auras`='95230 0' WHERE (`guid`='272329');
 UPDATE `creature_addon` SET `auras`='95230 0' WHERE (`guid`='321655');
-
 UPDATE `creature_template_addon` SET `auras`='0 0' WHERE (`entry`='51346');
-
 DELETE FROM `creature` WHERE (`guid`='239885');
 DELETE FROM `creature` WHERE (`guid`='242658');
 DELETE FROM `creature` WHERE (`guid`='241395');
@@ -291,8 +286,6 @@ DELETE FROM `creature` WHERE (`guid`='239071');
 DELETE FROM `creature` WHERE (`guid`='239501');
 DELETE FROM `creature` WHERE (`guid`='239149');
 DELETE FROM `creature` WHERE (`guid`='241198');
-
-
 DELETE FROM `creature` WHERE (`guid`='241219');
 DELETE FROM `creature` WHERE (`guid`='240810');
 DELETE FROM `creature` WHERE (`guid`='240429');
@@ -466,7 +459,6 @@ REPLACE INTO `creature_formations` VALUES ('288927', '288394', '8', '270', '2');
 REPLACE INTO `creature_formations` VALUES ('271625', '271625', '0', '0', '2');
 REPLACE INTO `creature_formations` VALUES ('271625', '271041', '8', '90', '2');
 REPLACE INTO `creature_formations` VALUES ('271625', '271340', '8', '270', '2');
-
 
 REPLACE INTO `creature_addon` VALUES ('264549', '2645490', '17719', '50331648', '257', '0', '0 0');
 REPLACE INTO `creature_addon` VALUES ('290376', '2903760', '17719', '50331648', '257', '0', '95230 0');
@@ -2496,7 +2488,7 @@ insert into npc_vendor (`entry`,`item`) values
 (44183,4601),
 (44183,1708);
 -- Frankie Goodtimes <Food & Drink> --
-delete from `npc_vendor` where `entry` = 47388; -- Safety -- 
+delete from `npc_vendor` where `entry` = 47338; -- Safety -- 
 insert into npc_vendor (`entry`,`item`) values
 (47338,2732),
 (47338,44571),

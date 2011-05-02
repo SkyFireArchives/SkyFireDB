@@ -136,7 +136,7 @@ UPDATE creature_template SET Health_mod=2489820, Mana_mod=65170, minlevel=87, ma
 UPDATE creature_template SET Health_mod=893580, minlevel=87, maxlevel=87, faction_A=14, faction_H=14 WHERE entry=39665;
 
 -- Rom'ogg Bonecrusher / Heroic
-UPDATE creature_template SET Health_mod=4564670, minlevel=87, maxlevel=87, faction_A=14, faction_H=14 WHERE name=('Rom'ogg Bonecrusher (1)');
+UPDATE creature_template SET Health_mod=4564670, minlevel=87, maxlevel=87, faction_A=14, faction_H=14 WHERE name=('Rom\'ogg Bonecrusher (1)');
 
 -- Corla, Herald of Twilight / Non Heroic
 UPDATE creature_template SET Health_mod=893580, Mana_mod=208450, minlevel=87, maxlevel=87, faction_A=14, faction_H=14 WHERE name=('Corla, Herald of Twilight');
