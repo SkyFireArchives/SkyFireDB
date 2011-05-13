@@ -4,22 +4,6 @@ SkyFireEMU Support for 4.0.6a
 
 Copyright (C) ProjectSkyfire (http://www.projectskyfire.org)
 
-SkyFire Database is a World of Warcraft game databse. It is derived
-from many sources.
-
-For further information on the Skyfire project, please visit our
-project website at http://www.projectskyfire.org.
-
-SQL files to create the database can be found in the dev directory. Files
-to update your database from an older revision/version can be found in the
-updates directory.
-
-Use our installer to install on windows.
-A linux installer is in the works.
-
-Special thanks to these other fine projects.
-Without them there would be no Project Skyfire.
-
-MaNGOS 
-TrinityCore
-CactusEMU
+The database is moving over to the core repository.
+https://github.com/SkyFire/SkyFireEMU/
+This database will no longer be updated and may be deleted in the future.
