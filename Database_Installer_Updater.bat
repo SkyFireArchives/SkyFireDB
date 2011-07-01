@@ -9,7 +9,7 @@ ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ        Welcome to the DB       บ
 ECHO          บ              for               บ
-ECHO          บ     SkyFireEMU 406a Rev 1338+  บ
+ECHO          บ     SkyFireEMU 406a Rev 1833+  บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -107,7 +107,7 @@ ECHO Changesets imported sucesfully!
 ECHO.
 ECHO Your current 4.0.6a database is complete.
 ECHO Please check the SkyFire repository for any world updates "/sql/updates".
-ECHO This database is updated to SkyFireEMU 406a Rev 678
+ECHO This database is updated to SkyFireEMU 406a Rev 1833
 ECHO.
 ECHO.
 ECHO.
