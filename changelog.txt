@@ -1,0 +1,216 @@
+CTDB 0.7.0 for Client "4.0.6a" Release date: 10/7/11
+- +1000 creature spawns
+- +100 gameobject spawns
+- +17.752 gameobject_loot_template
+- Many quests fixes
+- Many creature equipaments
+- Some old EventAI replaces with SmartAI
+- Gilneas map 654 spawned by sniff
+- Redone some game_events missed
+- About +100 creature_template_addon
+- Missed waypoints
+- Fixed many factions ids
+- More work with the formula for creature_template (Read the permanent sticky in the forums)
+- creature_ai_texts sniffed
+- some npc_vendor
+
+CTDB 0.6.0 for Client "4.0.6a"
+- Redone Uldum +5 Quests
+- Gilneas redone
+- Gilneas map 634 some spawns
+- Too many creature mod_health fixes from exp 3
+- Start working on all Game Events
+- Event Darkmoon Faire (Terokkar Forest) done
+- Event Darkmoon Faire (Elwynn Forest) done
+- Event Darkmoon Faire (Mulgore) done
+- Event Brewfest done
+- Event Love is in the Air done
+- Event Lunar Festival done
+- Event Noblegarden done
+- Event Children's Week done
+- Event Hallow's End done
+- Event Pirates' Day done
+- Event Midsummer Fire Festival done
+- Event Pilgrim's Bounty done
+- Event Nights only Stormwind guards done
+- Event Day of the Dead
+- Added +2000 missing items in creature_loot_template linked to conditions
+- Elwyn Forest creatures waypoints
+- Delete obsolete quests
+- Delete old and underground spawns
+- Tanaris spawns
+- Uldaman fixes
+- Too many quests fixes including the ones in Gurubashi
+- Random fixes on all maps
+- Minor fixes taken from TDB/YTDB
+- Gameobjects/creatures Spawns
+- Creature_templates many flags fixes
+- Fixed many console errors
+
+Olds changelogs
+
+CTDB 0.5.0 for Client "4.0.6a" (First Stable State)
+General Fixes:
+- All creatures from exp 3 have now the correct hp (still working on it!)
+- 59.789 creature spanws
+- 6.923 gameobject spawns
+- 593 Waypoints and many Emotes
+- More fixes on the new formula (Exp/Health_mod/MinMaxLevel)
+- Creature_templates
+- Redone creature_addon
+- Item_templates
+- Game_teles
+- 325 new quests from wdb (even 4.1.x ones)
+- 455 npc_vendors
+- Fixed on spell_bonus_data (Tier8 for some class)
+- Fixed on spell_enchant_proc_data
+- Fixed "requeriments for this quest" npcflags
+- More conditions fixes (I dont want to delete nothing I prefer fix one by one)
+
+Fixes on the follow tables:
+- achievement_criteria_data
+- achievement_reward
+- areatrigger_tavern
+- areatrigger_teleport
+- creature_classlevelstats
+- creature_equip_template
+- creature_involvedrelation
+- creature_loot_template
+- creature_model_info
+- creature_onkill_reputation
+- creature_questrelation
+- creature_template_addon
+- db_script_string
+- disenchant_loot_template
+- exploration_basexp
+- game_tele
+- gameobject_involvedrelation
+- gameobject_loot_template
+- gameobject_questrelation
+- instance_encounters
+- item_enchantment_template
+- item_loot_template
+- npc_spellclick_spells
+- npc_vendor
+- pickpocketing_loot_template
+- player_levelstats
+- playercreateinfo_spell
+- pool_creature
+- pool_template
+- quest_end_scripts
+- quest_start_scripts
+- reputation_reward_rate
+- skinning_loot_template
+- spell_bonus_data
+- spell_enchant_proc_data
+- spell_group
+- spell_group_stack_rules
+- spell_linked_spell
+- spell_ranks
+- spell_script_names
+- spell_target_position
+- vehicle_accessory
+- waypoint_data
+
+Instances Redone (Still work in progress):
+- Shadowfangs Keep
+- Blackrock Caverns
+- Halls of Origination
+- The Oculus
+- Grim Batol
+- Deadmines
+- Shadowfang Keep
+- Zul'Aman
+- The Nexus
+- Zul'Gurub
+- Baradin Hold
+- Bastion of Twilight
+- Blackwing Descent
+- Lost City of the Tol'vir
+- The Stonecore
+- Throne of the Tides
+- Throne of the Four Winds
+- Vortex Pinnacle
+
+
+Zones worked on, include emotes and waypoints
+- The Barrems
+- Uldum
+- Westlands
+- Stormwind
+- Hyjal
+- Orgrimmar
+- Twilight Highlands
+- Tol Barad
+
+- Dalaran City
+- Winterspring
+- Tanaris (Flying creatures upper the sea)
+- Wintergrasp
+- Duskwoods
+- Icecrown
+- Fuselight
+- DK start zone redone (Quests, waypoints, emotes)
+
+Zones Work in progress
+- Ruins of Glineas
+- The Lost Isle
+- Vashj'ir
+
+CTDB 0.4.0 for Client "4.0.6a"
+- New Formula for Exp/Level/Creature_level_stats/Health/Mana (Still work in progress we need bug reports!)
+- creature_templates
+- gameobject_templates
+- creature_template_addon
+- conditions
+- quest_templates
+- Spawned ZulFarrack
+- Spawned Wailing Caverns
+- Spawned Scarlet Monastery 4
+- Spawned Shadowfang Keep (Normal Mode)
+- Spawned Onyxia Lair
+- Dalaran Waypoints, missing spawns and creature texts
+- Boreal Tundra Texts and Waypoints
+- Saron Re-Spawned
+- Fix 450 creature inmmunities
+- Cata 12+ Vehicle support
+- 6 Cata Mounts
+- Icecrown missing spawns and creature emotes redone
+- Remove too many duplicate doors from instances entrance
+- Many fixes on random maps
+- Fixed too many console errors related to creature_loot_template not referenced from loot and other ones
+- Waypoints
+- Processed 131 cache files (+45 4.1.0 not included for avoid console errors)
+
+CTDB 0.3.5 for Client "4.0.6a"
+- gameobject_templates
+- conditions
+- quests_template
+- Exp, Health_mod, Mana_mod, levels, factions fixes
+- Spawns on zones
+- Fix H Mode from many Creatures
+- creature_template_addon
+- waypoints
+- Redone all creatures mindmg, maxdmg based on the TC formula
+- Redone all creature_loot_template WotLK content based on CTDB/YTDB 3.3.5a much better than TDB
+- Fixed many npc_vendor items
+- Redone Spell_area table much more blizzlike
+- Smart AI
+
+CTDB 0.3.0 for Client "4.0.6a"
+- DBs "good changes" Merge
+- Creature_template
+- Gameobject_template
+- Creatures spawns
+- SmartAI
+- Waypoints
+- Gameobjects spawns
+- WDB
+- Game_teles
+- Quest_templates
+- Spells_learn
+- Spell bonus
+- Conditions
+- Hyjal Spawned
+- Uldum and 2 more maps Spawned
+- Gilneas 
