@@ -22,7 +22,7 @@ CREATE TABLE `instance` (
   KEY `resettime` (`resettime`),
   KEY `difficulty` (`difficulty`),
   KEY `newid` (`newid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='CTDB Instances';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='CTDB Instances';
 
 LOCK TABLES `instance` WRITE;
 /*!40000 ALTER TABLE `instance` DISABLE KEYS */;

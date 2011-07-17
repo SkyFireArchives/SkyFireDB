@@ -19,7 +19,7 @@ CREATE TABLE `achievement_dbc` (
   `count` int(10) unsigned NOT NULL DEFAULT '0',
   `refAchievement` int(10) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 LOCK TABLES `achievement_dbc` WRITE;
 /*!40000 ALTER TABLE `achievement_dbc` DISABLE KEYS */;

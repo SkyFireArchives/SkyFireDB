@@ -9,16 +9,23 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-DROP TABLE IF EXISTS `pool_quest_save`;
-CREATE TABLE `pool_quest_save` (
-  `pool_id` int(10) unsigned NOT NULL DEFAULT '0',
-  `quest_id` int(10) unsigned NOT NULL DEFAULT '0',
-  PRIMARY KEY (`pool_id`,`quest_id`)
+DROP TABLE IF EXISTS `spell_map`;
+CREATE TABLE `spell_map` (
+  `spell` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `map` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `quest_start` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `quest_start_active` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `quest_end` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `aura_spell` mediumint(8) NOT NULL DEFAULT '0',
+  `racemask` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `gender` tinyint(1) unsigned NOT NULL DEFAULT '2',
+  `autocast` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`spell`,`map`,`quest_start`,`quest_start_active`,`aura_spell`,`racemask`,`gender`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-LOCK TABLES `pool_quest_save` WRITE;
-/*!40000 ALTER TABLE `pool_quest_save` DISABLE KEYS */;
-/*!40000 ALTER TABLE `pool_quest_save` ENABLE KEYS */;
+LOCK TABLES `spell_map` WRITE;
+/*!40000 ALTER TABLE `spell_map` DISABLE KEYS */;
+/*!40000 ALTER TABLE `spell_map` ENABLE KEYS */;
 UNLOCK TABLES;
 DELIMITER ;;
 DELIMITER ;
