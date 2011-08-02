@@ -20,7 +20,7 @@ CREATE TABLE `version` (
 
 LOCK TABLES `version` WRITE;
 /*!40000 ALTER TABLE `version` DISABLE KEYS */;
-INSERT INTO `version` VALUES ('SkyFireEMU Rev: 0 Release Hash: Archive (Win32,little-endian)','0','CTDB_4.0.6a_0.8.0_24-7-2011','patch AI 406.01.20',0);
+INSERT INTO `version` VALUES ('SkyFireEMU Hash: Archive (Win32, Release (little-endian))','Archive','CTDB_SkyfireEMU_4.0.6a_0.8.0_31-7-2011','patch AI 406.01.20',0);
 /*!40000 ALTER TABLE `version` ENABLE KEYS */;
 UNLOCK TABLES;
 DELIMITER ;;
