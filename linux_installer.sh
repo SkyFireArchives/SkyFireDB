@@ -20,8 +20,8 @@ wdb="wow_world"
 ############################################################################
 server="localhost"
 port="3306"
-devpath="./Databases/world"
-uppath="./Databases/updates"
+devpath="./main_db/world"
+uppath="./world_updates"
 bkpath="dump"
 
 ############################################################################
