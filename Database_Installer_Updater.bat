@@ -7,9 +7,9 @@ CLS
 ECHO.
 ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
-ECHO          บ        Welcome to the DB       บ
+ECHO          บ    Welcome to the world DB     บ
 ECHO          บ              for               บ
-ECHO          บ     SkyFireEMU 406a Rev 1833+  บ
+ECHO          บ      SkyFireEMU 406a/420a      บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -23,14 +23,10 @@ SET /p user= MySQL Username:
 SET /p pass= MySQL Password: 
 ECHO.
 SET /p world_db= World Database:
-SET /p auth_db= Auth Database:
-SET /p character_db= Character Database: 
 SET port=3306
 SET dumppath=.\dump\
 SET mysqlpath=.\dep\mysql\
 SET devsql=.\main_db\world\
-SET auth=.\main_db\auth\
-SET character=.\main_db\character\
 SET changsql=.\world_updates
 SET local_sp=\main_db\locals\spanish\
 SET local_gr=\main_db\locals\german\
@@ -44,9 +40,6 @@ ECHO.
 ECHO.
 ECHO    1 - Install 4.0.6a World Database and all updates, NOTE! Whole db will be overwritten!
 ECHO.
-ECHO    5 - Install Auth DB, NOTE! Whole auth db will be overwritten! "New Install"
-ECHO.
-ECHO    9 - Install Character DB, NOTE! Whole character db will be overwritten! "New Install"
 ECHO,
 ECHO    L - Apply Locals, "You need to install the world database and updates first."
 ECHO.
@@ -61,8 +54,6 @@ ECHO.
 SET /p v= 		Enter a char: 
 IF %v%==* GOTO error
 IF %v%==1 GOTO importDB
-IF %v%==5 GOTO importAUTH
-IF %v%==9 GOTO importCHAR
 IF %v%==l GOTO locals
 IF %v%==L GOTO locals
 IF %v%==a GOTO 406sets
@@ -105,76 +96,14 @@ for %%C in (%changsql%\*.sql) do (
 )
 ECHO Changesets imported sucesfully!
 ECHO.
-ECHO Your current 4.0.6a database is complete.
+ECHO Your current 4.0.6a/4.2.0a database is complete.
 ECHO Please check the SkyFire repository for any world updates "/sql/updates".
-ECHO This database is updated to SkyFireEMU 406a Rev 1833
 ECHO.
 ECHO.
 ECHO.
 ECHO.
 PAUSE
 GOTO Begin
-
-:importAUTH
-CLS
-ECHO WARNING THIS WILL WIPE ANY ACCOUNTS YOU MAY HAVE.
-ECHO Type YES to procede.
-ECHO.
-ECHO   Return to main menu = B
-ECHO.
-set /p a1=      Yes or NO?: 
-ECHO.
-IF %a1%==YES GOTO importAUTH2
-IF %a1%==yes GOTO importAUTH2
-IF %a1%==NO GOTO begin
-IF %a1%==no GOTO begin
-IF %a1%==b GOTO begin
-IF %a1%==B GOTO begin
-IF %a1%==" " GOTO begin
-IF %a1%=="" GOTO begin
-:importAUTH2
-ECHO Lets make a AUTH clean database.
-ECHO Installing AUTH tables now...
-ECHO.
-FOR %%C IN (%auth%\*.sql) DO (
-	ECHO Importing: %%~nxC1
-	%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %auth_db% < "%%~fC"
-ECHO Your AUTH database install is complete.
-)
-ECHO Done.
-PAUSE
-GOTO Begin
-
-:importCHAR
-CLS
-ECHO WARNING THIS WILL WIPE ANY CHARACTERS YOU MAY HAVE.
-ECHO Type YES to procede.
-ECHO.
-ECHO   Return to main menu = B
-ECHO.
-set /p c1=      Yes or NO?: 
-ECHO.
-IF %c1%==YES GOTO importCHAR2
-IF %c1%==yes GOTO importCHAR2
-IF %c1%==NO GOTO begin
-IF %c1%==no GOTO begin
-IF %c1%==b GOTO begin
-IF %c1%==B GOTO begin
-IF %c1%==" " GOTO begin
-IF %c1%=="" GOTO begin
-:importCHAR2
-ECHO Lets make a CHARACTER clean database.
-ECHO Installing CHARACTER tables now...
-ECHO.
-FOR %%C IN (%char%\*.sql) DO (
-	ECHO Importing: %%~nxC1
-	%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %char_db% < "%%~fC"
-ECHO Your CHARACTER database install is complete.
-)
-ECHO Done.
-PAUSE
-GOTO Begin
-
 
 :dumpworld
 CLS
