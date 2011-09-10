@@ -7,9 +7,8 @@ DELETE FROM `item_enchantment_template` WHERE `entry` = '103';
 
 INSERT INTO disenchant_loot_template (entry, item, ChanceOrQuestChance, lootmode, groupid, mincountOrRef, maxcount)
 
-VALUES ('84', '34052', '100', '1', '0', '1', '1')
-UPDATE `item_template` SET `DisenchantID` = '84' WHERE `entry` = '50741
-';
+VALUES ('84', '34052', '100', '1', '0', '1', '1');
+UPDATE `item_template` SET `DisenchantID` = '84' WHERE `entry` = '50741';
 
 DELETE FROM `spell_group` WHERE `id` = '16';
 
