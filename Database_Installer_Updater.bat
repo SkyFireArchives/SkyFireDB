@@ -27,11 +27,8 @@ SET port=3306
 SET dumppath=.\dump\
 SET mysqlpath=.\dep\mysql\
 SET devsql=.\main_db\world\
+SET procsql=.\main_db\procs\
 SET changsql=.\world_updates
-SET local_sp=\main_db\locals\spanish\
-SET local_gr=\main_db\locals\german\
-SET local_ru=\main_db\locals\russian\
-SET local_it=\main_db\locals\italian\
 
 :Begin
 CLS
@@ -40,8 +37,6 @@ ECHO.
 ECHO.
 ECHO    1 - Install 4.0.6a World Database and all updates, NOTE! Whole db will be overwritten!
 ECHO.
-ECHO,
-ECHO    L - Apply Locals, "You need to install the world database and updates first."
 ECHO.
 ECHO    W - Backup World Database.
 ECHO    C - Backup Character Database.
@@ -54,8 +49,6 @@ ECHO.
 SET /p v= 		Enter a char: 
 IF %v%==* GOTO error
 IF %v%==1 GOTO importDB
-IF %v%==l GOTO locals
-IF %v%==L GOTO locals
 IF %v%==a GOTO 406sets
 IF %v%==A GOTO 406sets
 IF %v%==w GOTO dumpworld
@@ -81,6 +74,15 @@ ECHO CREATE database IF NOT EXISTS `%world_db%`; >> %devsql%\databaseclean.sql
 @DEL %devsql%\databaseclean.sql
 
 ECHO Lets make a clean database.
+ECHO.
+ECHO. Adding Stored Procedures
+for %%C in (%procsql%\*.sql) do (
+	ECHO import: %%~nxC
+	%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < "%%~fC"
+)
+ECHO Stored Procedures imported sucesfully!
+ECHO.
+ECHO Installing World Data
 ECHO Importing Data now...
 ECHO.
 FOR %%C IN (%devsql%\*.sql) DO (
@@ -115,82 +117,13 @@ setlocal enabledelayedexpansion
 FOR %%C IN (%devsql%\*.sql) DO (
 	SET /A Count2+=1
 	ECHO Dumping [!Count2!/%Count%] %%~nC
-	%mysqlpath%\mysqldump --host=%host% --user=%user% --password=%pass% --port=%port% --routines --skip-comments %world_db% %%~nC > %dumppath%\%%~nxC
+	%mysqlpath%\mysqldump --host=%host% --user=%user% --password=%pass% --port=%port% --skip-comments %world_db% %%~nC > %dumppath%\%%~nxC
 )
 endlocal 
 
 ECHO  Finished ... %world_db% exported to %dumppath% folder...
 PAUSE
 GOTO begin
-
-:locals
-CLS
-ECHO   Here is a list of locals.!!!)
-ECHO.   
-ECHO   Spanish        = S
-ECHO   German         = G  "No Data Yet"
-ECHO   Russian        = R  "No Data Yet"
-ECHO   Italian        = I
-ECHO.
-ECHO   Return to main menu = B
-ECHO.
-set /p ch=      Number: 
-ECHO.
-IF %ch%==s GOTO install_sp
-IF %ch%==S GOTO install_sp
-IF %ch%==g GOTO install_gr
-IF %ch%==G GOTO install_gr
-IF %ch%==r GOTO install_ru
-IF %ch%==R GOTO install_ru
-IF %ch%==i GOTO install_it
-IF %ch%==I GOTO install_it
-IF %ch%==b GOTO begin
-IF %ch%==B GOTO begin
-IF %ch%=="" GOTO locals
-
-:install_sp
-ECHO Importing Spanish Data now...
-ECHO.
-FOR %%C IN (%local_sp%\*.sql) DO (
-	ECHO Importing: %%~nxC1
-	%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < "%%~fC"
-	ECHO Spanish Locals Successfully imported %%~nxC1
-)
-ECHO Done.
-GOTO Begin
-
-:install_gr
-ECHO Importing German Data now...
-ECHO.
-FOR %%C IN (%local_sp%\*.sql) DO (
-	ECHO Importing: %%~nxC1
-	%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < "%%~fC"
-	ECHO German Locals Successfully imported %%~nxC1
-)
-ECHO Done.
-GOTO Begin
-
-:install_ru
-ECHO Importing Russian Data now...
-ECHO.
-FOR %%C IN (%local_sp%\*.sql) DO (
-	ECHO Importing: %%~nxC1
-	%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < "%%~fC"
-	ECHO Russian Locals Successfully imported %%~nxC1
-)
-ECHO Done.
-GOTO Begin
-
-:install_it
-ECHO Importing Italian Data now...
-ECHO.
-FOR %%C IN (%local_it%\*.sql) DO (
-	ECHO Importing: %%~nxC1
-	%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < "%%~fC"
-	ECHO Italian Locals Successfully imported %%~nxC1
-)
-ECHO Done.
-GOTO Begin
 
 :dumpchar
 CLS

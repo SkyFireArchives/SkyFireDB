@@ -21,6 +21,7 @@ wdb="wow_world"
 server="localhost"
 port="3306"
 devpath="./main_db/world"
+procpath="./main_db/procs"
 uppath="./world_updates"
 bkpath="dump"
 
@@ -54,6 +55,15 @@ until [ "${option}" = "x" ]; do
 		echo
 		echo " [Cleaning World DB] Finished..."
 		
+		echo " Adding Stored Procedures"
+		max=`ls -1 "${procpath}"/*.sql | wc -l`
+		e=0
+		for table in "${procpath}"/*.sql; do
+			e=$((${i}+1))
+			echo " [${e}/${max}] import: ${table##*/}"
+			mysql -h ${server} --user=${user} --port=${port} --password=${pass} ${wdb} < "${table}"
+		echo " Adding Adding Stored Procedures Complete"
+        echo " Importing world data"		
 		max=`ls -1 "${devpath}"/*.sql | wc -l`
 		i=0
 		for table in "${devpath}"/*.sql; do
