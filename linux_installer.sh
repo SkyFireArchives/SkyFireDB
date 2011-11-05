@@ -62,6 +62,7 @@ until [ "${option}" = "x" ]; do
 			e=$((${i}+1))
 			echo " [${e}/${max}] import: ${table##*/}"
 			mysql -h ${server} --user=${user} --port=${port} --password=${pass} ${wdb} < "${table}"
+        done
 		echo " Adding Adding Stored Procedures Complete"
         echo " Importing world data"		
 		max=`ls -1 "${devpath}"/*.sql | wc -l`
