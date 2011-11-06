@@ -9,22 +9,16 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-DROP TABLE IF EXISTS `game_event_npc_vendor`;
-CREATE TABLE `game_event_npc_vendor` (
-  `event` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `guid` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `slot` smallint(6) NOT NULL DEFAULT '0',
-  `item` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `maxcount` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `incrtime` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `ExtendedCost` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  PRIMARY KEY (`guid`,`item`),
-  KEY `slot` (`slot`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+DROP TABLE IF EXISTS `areatrigger_queststart`;
+CREATE TABLE `areatrigger_queststart` (
+  `trigger_ID` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Identifier',
+  `quest_ID` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Quest Identifier',
+  PRIMARY KEY (`trigger_ID`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
-LOCK TABLES `game_event_npc_vendor` WRITE;
-/*!40000 ALTER TABLE `game_event_npc_vendor` DISABLE KEYS */;
-/*!40000 ALTER TABLE `game_event_npc_vendor` ENABLE KEYS */;
+LOCK TABLES `areatrigger_queststart` WRITE;
+/*!40000 ALTER TABLE `areatrigger_queststart` DISABLE KEYS */;
+/*!40000 ALTER TABLE `areatrigger_queststart` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
