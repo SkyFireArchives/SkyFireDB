@@ -11,9 +11,9 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 DROP TABLE IF EXISTS `game_event_battleground_holiday`;
 CREATE TABLE `game_event_battleground_holiday` (
-  `event` int(10) unsigned NOT NULL,
+  `eventEntry` int(10) unsigned NOT NULL,
   `bgflag` int(10) unsigned NOT NULL DEFAULT '0',
-  PRIMARY KEY (`event`)
+  PRIMARY KEY (`eventEntry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 LOCK TABLES `game_event_battleground_holiday` WRITE;

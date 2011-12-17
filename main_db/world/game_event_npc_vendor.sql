@@ -11,7 +11,7 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 DROP TABLE IF EXISTS `game_event_npc_vendor`;
 CREATE TABLE `game_event_npc_vendor` (
-  `event` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `eventEntry` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `guid` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `slot` smallint(6) NOT NULL DEFAULT '0',
   `item` mediumint(8) unsigned NOT NULL DEFAULT '0',

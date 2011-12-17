@@ -11,9 +11,9 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 DROP TABLE IF EXISTS `game_event_prerequisite`;
 CREATE TABLE `game_event_prerequisite` (
-  `prerequisite_event` mediumint(8) unsigned NOT NULL,
   `eventEntry` mediumint(8) unsigned NOT NULL,
-  PRIMARY KEY (`prerequisite_event`)
+  `prerequisite_event` mediumint(8) unsigned NOT NULL,
+  PRIMARY KEY (`eventEntry`,`prerequisite_event`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 LOCK TABLES `game_event_prerequisite` WRITE;
