@@ -24,7 +24,6 @@ devpath="./main_db/world"
 procpath="./main_db/procs"
 uppath="./world_updates"
 bkpath="dump"
-
 ############################################################################
 #
 #  Create a backup folder, if one doesn't exist
@@ -64,6 +63,7 @@ until [ "${option}" = "x" ]; do
 			e=$((${i}+1))
 			echo " [${e}/${max}] import: ${table##*/}"
 			mysql -h ${server} --user=${user} --port=${port} --password=${pass} ${wdb} < "${table}"
+        done
 		echo " Adding Adding Stored Procedures Complete"
         echo " Importing world data"		
 		max=`ls -1 "${devpath}"/*.sql | wc -l`
@@ -78,7 +78,7 @@ until [ "${option}" = "x" ]; do
 		echo " [Importing] Finished..."
 	elif [ "${option}" = "b" ]; then
 		
-		echo
+        echo
 		rm -rf "${bkpath}/logon_backup.sql"
 		rm -rf "${bkpath}/character_backup.sql"
 		echo " [Deleting Old Backups] Finished..."
