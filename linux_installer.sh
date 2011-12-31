@@ -44,6 +44,8 @@ until [ "${option}" = "x" ]; do
 	logo
 	echo " i - Install Clean World Database"
 	echo " u - Update World Database"
+	echo " r - Empty World Database"
+	echo " b - Backup World Database"
 	echo " x - Exit Tool"
 	echo
 	read -p " Enter option:  " option
