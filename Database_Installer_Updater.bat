@@ -9,7 +9,7 @@ ECHO          ษออออออออออออออออออออออออออออออออป
 ECHO          บ                                บ
 ECHO          บ    Welcome to the world DB     บ
 ECHO          บ              for               บ
-ECHO          บ      SkyFireEMU 406a/420a      บ
+ECHO          บ         SkyFireEMU 406a        บ
 ECHO          บ        Installation Tool       บ
 ECHO          บ                                บ
 ECHO          ศออออออออออออออออออออออออออออออออผ
@@ -98,7 +98,7 @@ for %%C in (%changsql%\*.sql) do (
 )
 ECHO Changesets imported sucesfully!
 ECHO.
-ECHO Your current 4.0.6a/4.2.0a database is complete.
+ECHO Your current 4.0.6a database is complete.
 ECHO Please check the SkyFire repository for any world updates "/sql/updates".
 ECHO.
 ECHO.

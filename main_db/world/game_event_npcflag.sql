@@ -12,9 +12,9 @@
 DROP TABLE IF EXISTS `game_event_npcflag`;
 CREATE TABLE `game_event_npcflag` (
   `guid` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `event_id` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `eventEntry` mediumint(8) NOT NULL DEFAULT '0',
   `npcflag` int(10) unsigned NOT NULL DEFAULT '0',
-  PRIMARY KEY (`guid`,`event_id`)
+  PRIMARY KEY (`guid`,`eventEntry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 LOCK TABLES `game_event_npcflag` WRITE;

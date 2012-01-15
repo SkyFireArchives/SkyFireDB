@@ -20,7 +20,7 @@ CREATE TABLE `version` (
 
 LOCK TABLES `version` WRITE;
 /*!40000 ALTER TABLE `version` DISABLE KEYS */;
-INSERT INTO `version` VALUES ('SkyFireEMU rev. 2011-11-10 21:13:45 -0600 (9b06c42327c9+) (Win32, Release)','9b06c42327c9+','SkyFireDB 406a-4.2.0a.08_18_2011 Rev 467','\"patch\" SmartAI Lab 420.03',0);
+INSERT INTO `version` VALUES ('SkyFireEMU rev. 2012-01-15 19:02:37 +0100 (b96e06d5af4b) (Win64, Release)','b96e06d5af4b','SkyFireDB 406a.01_15_2012 Rev 1','\"patch\" SmartAI Lab 420.03',0);
 /*!40000 ALTER TABLE `version` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
