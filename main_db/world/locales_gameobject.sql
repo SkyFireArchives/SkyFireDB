@@ -29,7 +29,7 @@ CREATE TABLE `locales_gameobject` (
   `castbarcaption_loc7` varchar(100) NOT NULL DEFAULT '',
   `castbarcaption_loc8` varchar(100) NOT NULL DEFAULT '',
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='CTDB Gameobjects locales';
 
 LOCK TABLES `locales_gameobject` WRITE;
 /*!40000 ALTER TABLE `locales_gameobject` DISABLE KEYS */;

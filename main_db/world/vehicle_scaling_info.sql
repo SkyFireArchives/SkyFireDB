@@ -15,7 +15,7 @@ CREATE TABLE `vehicle_scaling_info` (
   `baseItemLevel` float NOT NULL DEFAULT '0',
   `scalingFactor` float NOT NULL DEFAULT '0',
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='CTDB Vehicle Scaling Info';
 
 LOCK TABLES `vehicle_scaling_info` WRITE;
 /*!40000 ALTER TABLE `vehicle_scaling_info` DISABLE KEYS */;

@@ -30,7 +30,7 @@ CREATE TABLE `locales_gossip_menu_option` (
   `box_text_loc7` text,
   `box_text_loc8` text,
   PRIMARY KEY (`menu_id`,`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='CTDB Gossips locales';
 
 LOCK TABLES `locales_gossip_menu_option` WRITE;
 /*!40000 ALTER TABLE `locales_gossip_menu_option` DISABLE KEYS */;

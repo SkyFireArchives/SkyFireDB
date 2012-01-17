@@ -101,7 +101,7 @@ CREATE TABLE `locales_quest` (
   `ObjectiveText4_loc7` text,
   `ObjectiveText4_loc8` text,
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='CTDB Quest locales';
 
 LOCK TABLES `locales_quest` WRITE;
 /*!40000 ALTER TABLE `locales_quest` DISABLE KEYS */;

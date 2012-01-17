@@ -21,7 +21,7 @@ CREATE TABLE `locales_page_text` (
   `Text_loc7` longtext,
   `Text_loc8` longtext,
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='CTDB Page Text locales';
 
 LOCK TABLES `locales_page_text` WRITE;
 /*!40000 ALTER TABLE `locales_page_text` DISABLE KEYS */;

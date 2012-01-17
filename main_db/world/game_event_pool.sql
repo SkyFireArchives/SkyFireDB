@@ -14,7 +14,7 @@ CREATE TABLE `game_event_pool` (
   `pool_entry` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Id of the pool',
   `eventEntry` smallint(6) NOT NULL DEFAULT '0',
   PRIMARY KEY (`pool_entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='CTDB Game event pool';
 
 LOCK TABLES `game_event_pool` WRITE;
 /*!40000 ALTER TABLE `game_event_pool` DISABLE KEYS */;

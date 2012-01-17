@@ -16,7 +16,7 @@ CREATE TABLE `game_event_quest_condition` (
   `condition_id` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `num` float DEFAULT '0',
   PRIMARY KEY (`quest`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='CTDB Game event quest conditions';
 
 LOCK TABLES `game_event_quest_condition` WRITE;
 /*!40000 ALTER TABLE `game_event_quest_condition` DISABLE KEYS */;

@@ -23,6 +23,7 @@ CREATE TABLE `achievement_dbc` (
 
 LOCK TABLES `achievement_dbc` WRITE;
 /*!40000 ALTER TABLE `achievement_dbc` DISABLE KEYS */;
+INSERT INTO `achievement_dbc` VALUES (3696,-1,-1,0,2,1,0),(4788,-1,-1,0,2,1,0),(4789,-1,-1,0,2,1,0);
 /*!40000 ALTER TABLE `achievement_dbc` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

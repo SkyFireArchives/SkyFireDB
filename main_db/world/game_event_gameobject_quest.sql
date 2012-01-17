@@ -15,7 +15,7 @@ CREATE TABLE `game_event_gameobject_quest` (
   `quest` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `eventEntry` smallint(5) NOT NULL DEFAULT '0',
   PRIMARY KEY (`quest`,`eventEntry`,`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='CTDB Game event gameobject quest';
 
 LOCK TABLES `game_event_gameobject_quest` WRITE;
 /*!40000 ALTER TABLE `game_event_gameobject_quest` DISABLE KEYS */;

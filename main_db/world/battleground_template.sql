@@ -24,7 +24,7 @@ CREATE TABLE `battleground_template` (
   `ScriptName` char(64) NOT NULL DEFAULT '',
   `Comment` char(32) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='CTDB All battleground system.';
 
 LOCK TABLES `battleground_template` WRITE;
 /*!40000 ALTER TABLE `battleground_template` DISABLE KEYS */;

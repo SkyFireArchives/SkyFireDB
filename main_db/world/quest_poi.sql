@@ -21,7 +21,7 @@ CREATE TABLE `quest_poi` (
   `unk4` int(10) unsigned NOT NULL DEFAULT '0',
   KEY `questId` (`questId`,`id`),
   KEY `id` (`id`,`questId`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci COMMENT='CTDB Quest poi System';
 
 LOCK TABLES `quest_poi` WRITE;
 /*!40000 ALTER TABLE `quest_poi` DISABLE KEYS */;

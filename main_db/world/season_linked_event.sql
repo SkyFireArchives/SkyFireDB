@@ -15,7 +15,7 @@ CREATE TABLE `season_linked_event` (
   `event` int(8) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`season`),
   UNIQUE KEY `season` (`season`,`event`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='CTDB Season linked by events system';
 
 LOCK TABLES `season_linked_event` WRITE;
 /*!40000 ALTER TABLE `season_linked_event` DISABLE KEYS */;

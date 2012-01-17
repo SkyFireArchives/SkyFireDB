@@ -16,7 +16,7 @@ CREATE TABLE `item_set_names` (
   `InventoryType` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `WDBVerified` smallint(5) NOT NULL DEFAULT '1',
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='CTDB Item set names';
 
 LOCK TABLES `item_set_names` WRITE;
 /*!40000 ALTER TABLE `item_set_names` DISABLE KEYS */;

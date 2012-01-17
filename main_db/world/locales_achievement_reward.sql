@@ -29,7 +29,7 @@ CREATE TABLE `locales_achievement_reward` (
   `text_loc7` text,
   `text_loc8` text,
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='CTDB Achievement Reward Locales';
 
 LOCK TABLES `locales_achievement_reward` WRITE;
 /*!40000 ALTER TABLE `locales_achievement_reward` DISABLE KEYS */;

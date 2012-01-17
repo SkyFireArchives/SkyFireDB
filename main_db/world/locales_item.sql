@@ -29,7 +29,7 @@ CREATE TABLE `locales_item` (
   `description_loc7` varchar(255) DEFAULT NULL,
   `description_loc8` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='CTDB Items locales';
 
 LOCK TABLES `locales_item` WRITE;
 /*!40000 ALTER TABLE `locales_item` DISABLE KEYS */;

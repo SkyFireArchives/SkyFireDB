@@ -21,7 +21,7 @@ CREATE TABLE `locales_points_of_interest` (
   `icon_name_loc7` text,
   `icon_name_loc8` text,
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='CTDB Points of interest locales';
 
 LOCK TABLES `locales_points_of_interest` WRITE;
 /*!40000 ALTER TABLE `locales_points_of_interest` DISABLE KEYS */;

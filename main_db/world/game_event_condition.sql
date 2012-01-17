@@ -18,7 +18,7 @@ CREATE TABLE `game_event_condition` (
   `done_world_state_field` smallint(5) unsigned NOT NULL DEFAULT '0',
   `description` varchar(25) NOT NULL DEFAULT '',
   PRIMARY KEY (`eventEntry`,`condition_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='CTDB Game event conditions';
 
 LOCK TABLES `game_event_condition` WRITE;
 /*!40000 ALTER TABLE `game_event_condition` DISABLE KEYS */;

@@ -20,7 +20,7 @@ CREATE TABLE `game_event_npc_vendor` (
   `ExtendedCost` mediumint(8) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`guid`,`item`),
   KEY `slot` (`slot`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='CTDB Game event npc vendor';
 
 LOCK TABLES `game_event_npc_vendor` WRITE;
 /*!40000 ALTER TABLE `game_event_npc_vendor` DISABLE KEYS */;

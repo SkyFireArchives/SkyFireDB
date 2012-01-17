@@ -15,7 +15,7 @@ CREATE TABLE `game_event_npcflag` (
   `eventEntry` mediumint(8) NOT NULL DEFAULT '0',
   `npcflag` int(10) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`guid`,`eventEntry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='CTDB Game event npcflag';
 
 LOCK TABLES `game_event_npcflag` WRITE;
 /*!40000 ALTER TABLE `game_event_npcflag` DISABLE KEYS */;

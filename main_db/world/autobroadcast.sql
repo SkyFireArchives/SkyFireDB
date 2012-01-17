@@ -14,10 +14,11 @@ CREATE TABLE `autobroadcast` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `text` longtext NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='CTDB Define a broadcast message.';
 
 LOCK TABLES `autobroadcast` WRITE;
 /*!40000 ALTER TABLE `autobroadcast` DISABLE KEYS */;
+INSERT INTO `autobroadcast` VALUES (1,'This server is using CTDB! please change this autobroadcast :)');
 /*!40000 ALTER TABLE `autobroadcast` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

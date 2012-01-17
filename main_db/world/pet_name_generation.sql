@@ -16,7 +16,7 @@ CREATE TABLE `pet_name_generation` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `half` tinyint(4) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=314 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=314 DEFAULT CHARSET=utf8 COMMENT='CTDB Automatic pet name generation';
 
 LOCK TABLES `pet_name_generation` WRITE;
 /*!40000 ALTER TABLE `pet_name_generation` DISABLE KEYS */;

@@ -1,10 +1,8 @@
 = SkyFireDB -- General information =
 
-  Now supporting the latest SkyFireEMU via converters located in db_converters folder.
+  SkyFireEMU Support for 4.0.6a
   
-  The DB for old skyfie core can be downloaded here. https://github.com/ProjectSkyfire/SkyFireDB/tags
-
-  SkyFireEMU Support for 4.0.6a and 4.2.0a
+  This is for the rebase only. Not ready for use yet.
 
   Copyright (C) ProjectSkyfire (http://www.projectskyfire.org)
 

@@ -14,7 +14,7 @@ CREATE TABLE `game_event_battleground_holiday` (
   `eventEntry` int(10) NOT NULL DEFAULT '0',
   `bgflag` int(10) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`eventEntry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='CTDB Game event battlegrounds';
 
 LOCK TABLES `game_event_battleground_holiday` WRITE;
 /*!40000 ALTER TABLE `game_event_battleground_holiday` DISABLE KEYS */;

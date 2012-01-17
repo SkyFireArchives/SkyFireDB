@@ -15,7 +15,7 @@ CREATE TABLE `game_event_npc_gossip` (
   `event_id` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `textid` mediumint(8) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`guid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='CTDB Game event npc gossip';
 
 LOCK TABLES `game_event_npc_gossip` WRITE;
 /*!40000 ALTER TABLE `game_event_npc_gossip` DISABLE KEYS */;

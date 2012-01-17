@@ -27,7 +27,7 @@ CREATE TABLE `custom_texts` (
   `emote` smallint(5) unsigned NOT NULL DEFAULT '0',
   `comment` text,
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Custom Texts';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='CTDB Custom Texts';
 
 LOCK TABLES `custom_texts` WRITE;
 /*!40000 ALTER TABLE `custom_texts` DISABLE KEYS */;
