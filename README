@@ -1,5 +1,9 @@
 = SkyFireDB -- General information =
 
+  THIS DB REPOSITORY WILL NON LONGER BE UPDATED.
+  DOWNLOAD THE LATEST DATABASE FROM 
+  https://github.com/ProjectSkyfire/SkyFireEMU/downloads
+
   Now supporting the latest SkyFireEMU via converters located in db_converters folder.
   
   The DB for old skyfie core can be downloaded here. https://github.com/ProjectSkyfire/SkyFireDB/tags
