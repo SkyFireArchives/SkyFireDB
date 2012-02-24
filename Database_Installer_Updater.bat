@@ -49,8 +49,6 @@ ECHO.
 SET /p v= 		Enter a char: 
 IF %v%==* GOTO error
 IF %v%==1 GOTO importDB
-IF %v%==a GOTO 406sets
-IF %v%==A GOTO 406sets
 IF %v%==w GOTO dumpworld
 IF %v%==W GOTO dumpworld
 IF %v%==c GOTO dumpchar
