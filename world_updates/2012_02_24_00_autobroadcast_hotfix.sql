@@ -1,1 +1,0 @@
-DELETE FROM autobroadcast where id=1;
