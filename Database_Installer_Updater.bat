@@ -23,6 +23,7 @@ SET /p user= MySQL Username:
 SET /p pass= MySQL Password: 
 ECHO.
 SET /p world_db= World Database:
+SET charset=UTF8
 SET port=3306
 SET dumppath=.\dump\
 SET mysqlpath=.\dep\mysql\
@@ -37,7 +38,7 @@ ECHO.
 ECHO.
 ECHO    1 - Install 4.0.6a World Database and all updates, NOTE! Whole db will be overwritten!
 ECHO.
-ECHO.
+ECHO,
 ECHO    W - Backup World Database.
 ECHO    C - Backup Character Database.
 ECHO    U - Import Changeset.
@@ -68,7 +69,7 @@ ECHO First Lets Create database (or overwrite old) !!
 ECHO.
 ECHO DROP database IF EXISTS `%world_db%`; > %devsql%\databaseclean.sql
 ECHO CREATE database IF NOT EXISTS `%world_db%`; >> %devsql%\databaseclean.sql
-	%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% < %devsql%\databaseclean.sql
+	%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% --default-character-set=%charset% < %devsql%\databaseclean.sql
 @DEL %devsql%\databaseclean.sql
 
 ECHO Lets make a clean database.
@@ -76,25 +77,25 @@ ECHO.
 ECHO. Adding Stored Procedures
 for %%C in (%procsql%\*.sql) do (
 	ECHO import: %%~nxC
-	%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < "%%~fC"
+	%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% --default-character-set=%charset% %world_db% < "%%~fC"
 )
-ECHO Stored Procedures imported sucesfully!
+ECHO Stored Procedures imported successfully!
 ECHO.
 ECHO Installing World Data
 ECHO Importing Data now...
 ECHO.
 FOR %%C IN (%devsql%\*.sql) DO (
 	ECHO Importing: %%~nxC
-	%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < "%%~fC"
+	%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% --default-character-set=%charset% %world_db% < "%%~fC"
 	ECHO Successfully imported %%~nxC
 )
 ECHO.
 ECHO import: Changesets
 for %%C in (%changsql%\*.sql) do (
 	ECHO import: %%~nxC
-	%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < "%%~fC"
+	%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% --default-character-set=%charset% %world_db% < "%%~fC"
 )
-ECHO Changesets imported sucesfully!
+ECHO Changesets imported successfully!
 ECHO.
 ECHO Your current 4.0.6a database is complete.
 ECHO Please check the SkyFire repository for any world updates "/sql/updates".
@@ -115,7 +116,7 @@ setlocal enabledelayedexpansion
 FOR %%C IN (%devsql%\*.sql) DO (
 	SET /A Count2+=1
 	ECHO Dumping [!Count2!/%Count%] %%~nC
-	%mysqlpath%\mysqldump --host=%host% --user=%user% --password=%pass% --port=%port% --skip-comments %world_db% %%~nC > %dumppath%\%%~nxC
+	%mysqlpath%\mysqldump --host=%host% --user=%user% --password=%pass% --port=%port% --skip-comments --default-character-set=%charset% %world_db% %%~nC > %dumppath%\%%~nxC
 )
 endlocal 
 
@@ -130,7 +131,7 @@ SET /p chardb=   Enter name of your character DB:
 ECHO.
 IF NOT EXIST "%dumppath%" MKDIR %dumppath%
 ECHO Dumping %sqlname%.sql to %dumppath%
-%mysqlpath%\mysqldump -u%user% -p%pass% --routines --skip-comments --result-file="%dumppath%\%sqlname%.sql" %chardb%
+%mysqlpath%\mysqldump -u%user% -p%pass% --routines --skip-comments --default-character-set=%charset% --result-file="%dumppath%\%sqlname%.sql" %chardb%
 ECHO Done.
 PAUSE
 GOTO begin
@@ -159,9 +160,9 @@ ECHO.
 ECHO import: Changesets
 for %%C in (%changsql%\*.sql) do (
 	ECHO import: %%~nxC
-	%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < "%%~fC"
+	%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% --default-character-set=%charset% %world_db% < "%%~fC"
 )
-ECHO Changesets imported sucesfully!
+ECHO Changesets imported successfully!
 ECHO.
 PAUSE   
 GOTO begin
