@@ -112,7 +112,7 @@ until [ "${option}" = "x" ]; do
 
     elif [ "${option}" = "u" ]; then
         
-        available_changesets=("${uppath}/changeset_"*.sql)
+        available_changesets=("${uppath}/changeset_"*.sql")
         if [ "${available_changesets}" != "${uppath}/changeset_*.sql" ]; then
 
             echo
